@@ -1,53 +1,76 @@
 <p align="center">
-<img src="docs/banner.svg" width="100%">
+  <img src="docs/banner.svg" width="100%" alt="M-OS MEE Banner">
 </p>
 
-<h1 align="center">
-M-OS MEE — Execution Memory Reactor
-</h1>
+<h1 align="center">⚡ M-OS MEE — Execution Memory Reactor</h1>
 
 <p align="center">
-Pattern-Aware Execution • Reuse Routing • Proof Surface
+<b>Consequence-Aware Execution Engine</b><br>
+Pattern Memory • Signature Routing • Reuse Proof • Execution Intelligence
 </p>
 
 <p align="center">
 
-![Status](https://img.shields.io/badge/Status-PRC1-blue)
-![Mode](https://img.shields.io/badge/Mode-Proof%20Execution-cyan)
+![Status](https://img.shields.io/badge/Status-PRC--2%20Active-blue)
 ![Engine](https://img.shields.io/badge/Core-Memory%20Reactor-green)
+![Mode](https://img.shields.io/badge/Mode-Proof%20Execution-cyan)
 ![Research](https://img.shields.io/badge/Type-Experimental-orange)
+![License](https://img.shields.io/badge/License-MIT-lightgrey)
 
 </p>
 
 ---
 
-# What is M-OS MEE
+# 🧠 What is M-OS MEE?
 
-**M-OS MEE (Execution Memory Reactor)** is an experimental runtime surface exploring:
+M-OS MEE explores a simple thesis:
 
-- Signature-driven workload routing  
-- Pattern reuse detection  
-- Execution memory persistence  
-- Proof-oriented benchmark surfaces  
-- Repeatability evidence generation  
+```text
+Execution does not always need to begin from zero.
+```
 
-Core idea:
+Instead of recomputing everything:
+
+✔ Detect patterns  
+✔ Recognize prior structures  
+✔ Route reusable paths  
+✔ Activate memory-backed execution  
+✔ Produce measurable proof
+
+Core chain:
 
 ```text
 RUN → DETECT → ROUTE → REUSE → PROVE
 ```
 
-Instead of executing every workload as “new”, the system tests whether known structural patterns can be reused.
+---
+
+# ⚡ Why It Matters
+
+Modern systems repeatedly process structurally similar workloads.
+
+Most still treat:
+
+- Every run as new  
+- Every task as fresh compute  
+- Every decision as isolated
+
+M-OS MEE tests a different path:
+
+| Traditional Runtime | M-OS MEE |
+|---|---|
+| Recompute | Reuse |
+| Cache outputs | Remember structures |
+| Optimize after | Route before |
+| Runtime-only metrics | Reuse + Proof metrics |
 
 ---
 
-# Visual Architecture
+# 🌐 Visual Architecture
 
 <p align="center">
 <img src="docs/architecture.gif" width="100%">
 </p>
-
-Execution flow:
 
 ```text
 INPUT
@@ -61,49 +84,17 @@ MEMORY
 PROOF
 ```
 
----
+Layers:
 
-# Interactive Reactor Surface
-
-## Command Reactor
-
-- Upload-aware execution routing  
-- Backend-driven route engine  
-- Signature normalization chain  
-- Reuse-path promotion  
+🧩 Signature Layer  
+🛣 Routing Layer  
+🧠 Memory Reactor  
+🌌 Pattern Map  
+📜 Proof Surface
 
 ---
 
-## Memory Core
-
-- Structural family persistence  
-- Similar workload recall  
-- Bundle workload reuse  
-- Signature confidence tracking  
-
----
-
-## Pattern Map
-
-- Family relationship graph  
-- Orbit-style structural mapping  
-- Cross-signature association  
-
----
-
-## System Intelligence
-
-Tracks:
-
-- Total Runs  
-- Reuse %
-- Efficiency Score  
-- Saved Time  
-- Best Workflow  
-
----
-
-# Demo Proof
+# 🚀 Reactor Surface
 
 <p align="center">
 <img src="docs/mos_mee_demo_prc1.gif" width="100%">
@@ -111,113 +102,91 @@ Tracks:
 
 Shows:
 
-- Upload flow simulation  
-- Pattern match detection  
-- Reuse route activation  
-- Proof-state transitions  
+- Upload-aware routing  
+- Pattern detection  
+- Route promotion  
+- Reuse activation  
+- Proof-state transitions
 
 ---
 
-# Benchmark Evidence (PRC-2)
+# 📊 Benchmark Evidence (PRC-2)
 
 <p align="center">
-<img src="benchmarks/benchmark_results.png" width="100%">
+<img src="./benchmarks/benchmark_results.svg" width="95%">
 </p>
 
-Includes:
+Evidence pack includes:
 
 - Routing benchmark  
 - Signature recall metrics  
 - Persistence trials  
 - Failure cases  
-- Reuse metrics dataset  
+- Reuse metrics dataset
+
+### Sample Signals
+
+| Signal | Value |
+|---|---|
+| Reuse Match | 88–91% |
+| Saved Time | 4960 ms |
+| Recall | Stable |
+| Confidence | High |
+
+Bounded proof model:
+
+```text
+Cold Run
+Warm Match
+Reused Path
+Saved Time
+Proof Surface
+```
 
 ---
 
-# Repo Structure
+# 🧬 Core Hypothesis
 
-```bash
+```text
+Attack ≠ Loss
+
+Likewise —
+
+Execution ≠ Always New
+
+Patterns can be remembered.
+```
+
+---
+
+# 🗂 Repository Structure
+
+```text
 mos-mee-execution-reactor/
 
-backend/
-frontend/
+├── backend/
+├── frontend/
 
-benchmarks/
-├── routing_benchmark.md
-├── reuse_metrics.csv
-├── signature_recall.md
-├── persistence_trials.md
-├── failure_cases.md
-└── benchmark_results.png
+├── benchmarks/
+│  ├── benchmark_results.svg
+│  ├── routing_benchmark.md
+│  ├── reuse_metrics.csv
+│  ├── signature_recall.md
+│  ├── persistence_trials.md
+│  └── failure_cases.md
 
-docs/
-├── banner.svg
-├── architecture.gif
-├── mos_mee_demo_prc1.gif
-└── MOS_MEE_Project_Brief.docx
+├── docs/
+│  ├── banner.svg
+│  ├── architecture.gif
+│  ├── mos_mee_demo_prc1.gif
+│  └── MOS_MEE_Project_Brief.docx
+
+└── README.md
 ```
 
 ---
 
-# Proof Mode
-
-System tests the hypothesis:
-
-```text
-Known execution signatures
-can produce
-measurable reuse value.
-```
-
-Measured surfaces:
-
-| Signal | Example |
-|-------|---------|
-| Reuse | 88–91% |
-| Saved Time | 4960 ms |
-| Confidence | High |
-| Recall | Stable |
-
----
-
-# Positioning
-
-This is NOT:
-
-- Operating system replacement  
-- Production scheduler  
-- Final compute kernel  
-- Finished optimizer  
-
-This IS:
-
-- Experimental runtime layer  
-- Proof-oriented execution reactor  
-- Pattern-memory exploration surface  
-
----
-
-# Relation to Broader M-OS Work
-
-This repository extends:
-
-- M-OS Runtime  
-- mos-parameter-golf  
-- PSTG / Pattern Graph work  
-
-Position:
-
-```text
-M-OS Runtime
-  ↓
-Parameter Golf
-  ↓
-M-OS MEE
-```
-
----
-
-# Quick Run
+# ⚙ Quick Run
 
 ## Frontend
 
@@ -226,8 +195,6 @@ cd frontend
 npm install
 npm run dev
 ```
-
----
 
 ## Backend
 
@@ -238,7 +205,49 @@ python app.py
 
 ---
 
-# Research Brief
+# 🔬 Position in M-OS Lineage
+
+```text
+M-OS Runtime
+   ↓
+Pattern Graph / PSTG
+   ↓
+CRS / Parameter Golf
+   ↓
+M-OS MEE
+```
+
+Focus shift:
+
+- M-OS Runtime → pattern execution  
+- M-OS MEE → execution memory + reuse proof
+
+---
+
+# ❌ What This Is Not
+
+Not:
+
+- OS replacement  
+- Production scheduler  
+- Compute kernel  
+- Performance claim against production systems
+
+---
+
+# ✅ What This Is
+
+This is:
+
+✔ Experimental runtime layer  
+✔ Pattern-memory reactor  
+✔ Proof-oriented execution surface  
+✔ Reuse benchmark pack  
+✔ Execution intelligence research
+
+---
+
+# 📄 Research Brief
 
 See:
 
@@ -249,48 +258,42 @@ docs/MOS_MEE_Project_Brief.docx
 Contains:
 
 - Architecture summary  
-- Execution model  
-- Reactor concept  
-- PRC packaging notes  
+- Reactor model  
+- PRC notes  
+- Packaging brief
 
 ---
 
-# Author
+# 👤 Author
 
 **Raaj Mandale**  
-Founder — Eranest Technoware  
-Research: M-OS / XPADI / UNI-OS / QBAIX
+Founder — Eranest Technoware
+
+Research:
+
+- M-OS  
+- XPADI  
+- UNI-OS  
+- QBAIX
 
 GitHub:
+
 https://github.com/raajmandale
 
 ---
 
-# Core Hypothesis
+# ✔ PRC Status
 
-```text
-Attack ≠ Loss
-
-Likewise—
-
-Execution ≠ Always New
-
-Patterns can be remembered.
-```
-
----
-
-# PRC-1 Status
-
-✔ Architecture Surface  
-✔ Demo Reactor  
-✔ Proof Package  
-✔ Benchmark Layer  
+- [x] PRC-1 Reactor Surface  
+- [x] Demo Proof Loop  
+- [x] Benchmark Layer  
+- [x] Packaging Brief  
 
 Next:
 
-PRC-2 → Benchmark Evidence  
+```text
 PRC-3 → Repeatability Trials
+```
 
 ---
 
