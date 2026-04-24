@@ -1,0 +1,4 @@
+workload,baseline_ms,reuse_ms,improvement_percent
+Image Flow,220,130,40.9
+Bundle Workload,310,190,38.7
+Similar Match,180,95,47.2

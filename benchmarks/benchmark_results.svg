@@ -1,0 +1,116 @@
+<svg viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<linearGradient id="bg" x1="0" x2="1">
+<stop offset="0%" stop-color="#06142f"></stop>
+<stop offset="100%" stop-color="#0c1f4f"></stop>
+</linearGradient>
+
+<linearGradient id="cyanLine" x1="0" x2="1">
+<stop offset="0%" stop-color="#42ffe0"></stop>
+<stop offset="50%" stop-color="#ffffff"></stop>
+<stop offset="100%" stop-color="#42ffe0"></stop>
+</linearGradient>
+
+<filter id="glow">
+<feGaussianBlur stdDeviation="5" result="b"></feGaussianBlur>
+<feMerge><feMergeNode in="b"></feMergeNode><feMergeNode in="SourceGraphic"></feMergeNode></feMerge>
+</filter>
+
+<style>
+.title{fill:#eef4ff;font-size:54px;font-weight:900;font-family:Arial}
+.sub{fill:#8cbcff;font-size:20px;font-family:Arial}
+.label{fill:#dff2ff;font-size:22px;font-family:Arial;font-weight:700}
+.small{fill:#8cbcff;font-size:16px;font-family:Arial}
+.base{fill:#294a9a}
+.reuse{fill:#35efb5}
+.card{fill:rgba(255,255,255,.04);stroke:rgba(255,255,255,.08);stroke-width:2}
+.signal{
+stroke:url(#cyanLine);stroke-width:10;stroke-dasharray:120 820;
+animation:flow 3s linear infinite; filter:url(#glow)
+}
+.ring{
+fill:none;stroke:#42ffe0;stroke-width:3;opacity:.45;
+animation:pulse 2.8s ease-in-out infinite;
+transform-origin:center;
+}
+@keyframes flow{
+from{stroke-dashoffset:900}
+to{stroke-dashoffset:0}
+}
+@keyframes pulse{
+0%{opacity:.15}
+50%{opacity:.8}
+100%{opacity:.15}
+}
+</style>
+</defs>
+
+<rect width="1600" height="900" fill="url(#bg)"></rect>
+
+<!-- title -->
+<text x="90" y="90" class="title">PRC-2 Benchmark Evidence Surface</text>
+<text x="92" y="128" class="sub">Baseline vs Reuse Routing Performance</text>
+
+<!-- panel -->
+<rect x="70" y="170" width="1460" height="650" rx="28" class="card"></rect>
+
+<!-- chart axis -->
+<line x1="220" y1="700" x2="1320" y2="700" stroke="#5874b9" stroke-width="3"></line>
+<line x1="220" y1="300" x2="220" y2="700" stroke="#5874b9" stroke-width="3"></line>
+
+<!-- labels -->
+<text x="350" y="740" class="label">Image Flow</text>
+<text x="700" y="740" class="label">Bundle</text>
+<text x="1040" y="740" class="label">Similar Match</text>
+
+<!-- bars -->
+<!-- baseline -->
+<rect x="300" y="360" width="80" height="340" class="base"></rect>
+<rect x="650" y="250" width="80" height="450" class="base"></rect>
+<rect x="1000" y="420" width="80" height="280" class="base"></rect>
+
+<!-- reuse -->
+<rect x="400" y="500" width="80" height="200" class="reuse"></rect>
+<rect x="750" y="425" width="80" height="275" class="reuse"></rect>
+<rect x="1100" y="555" width="80" height="145" class="reuse"></rect>
+
+<!-- values -->
+<text x="305" y="345" class="small">220ms</text>
+<text x="405" y="485" class="small">130ms</text>
+
+<text x="655" y="235" class="small">310ms</text>
+<text x="755" y="410" class="small">190ms</text>
+
+<text x="1005" y="405" class="small">180ms</text>
+<text x="1105" y="540" class="small">95ms</text>
+
+<!-- improvement pills -->
+<rect x="280" y="215" rx="16" width="220" height="52" fill="#14355f" stroke="#35efb5"></rect>
+<text x="330" y="248" class="label">+40.9%</text>
+
+<rect x="630" y="150" rx="16" width="220" height="52" fill="#14355f" stroke="#35efb5"></rect>
+<text x="680" y="183" class="label">+38.7%</text>
+
+<rect x="980" y="280" rx="16" width="220" height="52" fill="#14355f" stroke="#35efb5"></rect>
+<text x="1030" y="313" class="label">+47.2%</text>
+
+<!-- signal line -->
+<line x1="260" y1="210" x2="1260" y2="210" class="signal"></line>
+
+<!-- right proof orb -->
+<circle cx="1390" cy="330" r="56" class="ring"></circle>
+<circle cx="1390" cy="330" r="44" fill="none" stroke="#42ffe0" stroke-width="5"></circle>
+<text x="1355" y="337" class="label">PROOF</text>
+
+<!-- bottom summary -->
+<rect x="260" y="785" rx="18" width="1080" height="50" fill="#10294e" stroke="#42ffe0"></rect>
+<text x="420" y="817" class="small">Avg Saved Time:</text>
+<text x="560" y="817" class="label">121ms</text>
+
+<text x="720" y="817" class="small">Recall Precision:</text>
+<text x="860" y="817" class="label">87%</text>
+
+<text x="1000" y="817" class="small">Failure Fallback:</text>
+<text x="1140" y="817" class="label">Enabled</text>
+
+</svg>

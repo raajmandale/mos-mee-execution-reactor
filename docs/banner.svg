@@ -1,0 +1,91 @@
+<svg viewBox="0 0 1600 520" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="core" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff"></stop>
+      <stop offset="20%" stop-color="#6dfff0"></stop>
+      <stop offset="55%" stop-color="#19d7ba"></stop>
+      <stop offset="100%" stop-color="#071634"></stop>
+    </radialGradient>
+
+    <linearGradient id="bg" x1="0" x2="1">
+      <stop offset="0%" stop-color="#040b1d"></stop>
+      <stop offset="45%" stop-color="#071634"></stop>
+      <stop offset="100%" stop-color="#101b3f"></stop>
+    </linearGradient>
+
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="7" result="blur"></feGaussianBlur>
+      <feMerge>
+        <feMergeNode in="blur"></feMergeNode>
+        <feMergeNode in="SourceGraphic"></feMergeNode>
+      </feMerge>
+    </filter>
+
+    <style>
+      .title{fill:#eef6ff;font-family:Arial,sans-serif;font-size:86px;font-weight:900;letter-spacing:-3px}
+      .sub{fill:#8fc7ff;font-family:Arial,sans-serif;font-size:25px;font-weight:700;letter-spacing:3px}
+      .micro{fill:#b6d4ff;font-family:Arial,sans-serif;font-size:20px}
+      .tag{fill:rgba(50,255,220,.10);stroke:#38ffde;stroke-width:2}
+      .tagText{fill:#dffcff;font-family:Arial,sans-serif;font-size:18px;font-weight:700}
+      .ring{fill:none;stroke:#39ffdc;stroke-width:3;opacity:.55;transform-origin:center;animation:pulse 3s ease-in-out infinite}
+      .ring2{fill:none;stroke:#5fa8ff;stroke-width:2;opacity:.35;transform-origin:center;animation:spin 11s linear infinite}
+      .spark{fill:#71fff0;filter:url(#glow);animation:blink 2.2s ease-in-out infinite}
+      .line{stroke:#38ffde;stroke-width:4;opacity:.25}
+      .flow{stroke:#ffffff;stroke-width:6;stroke-linecap:round;stroke-dasharray:70 760;animation:move 3s linear infinite;filter:url(#glow)}
+      @keyframes pulse{0%,100%{transform:scale(1);opacity:.25}50%{transform:scale(1.14);opacity:.85}}
+      @keyframes spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+      @keyframes blink{0%,100%{opacity:.25}50%{opacity:1}}
+      @keyframes move{from{stroke-dashoffset:760}to{stroke-dashoffset:0}}
+    </style>
+  </defs>
+
+  <rect width="1600" height="520" fill="url(#bg)"></rect>
+
+  <!-- grid -->
+  <g opacity=".32">
+    <path d="M0 90 H1600 M0 180 H1600 M0 270 H1600 M0 360 H1600 M0 450 H1600" stroke="#ffffff" stroke-width="1" opacity=".08"></path>
+    <path d="M120 0 V520 M240 0 V520 M360 0 V520 M480 0 V520 M600 0 V520 M720 0 V520 M840 0 V520 M960 0 V520 M1080 0 V520 M1200 0 V520 M1320 0 V520 M1440 0 V520" stroke="#ffffff" stroke-width="1" opacity=".06"></path>
+  </g>
+
+  <!-- left title -->
+  <text x="90" y="145" class="sub">MANDALE-OS RESEARCH PROGRAM</text>
+  <text x="90" y="245" class="title">M-OS MEE</text>
+  <text x="95" y="302" class="micro">Execution Memory Reactor for reuse-aware compute</text>
+
+  <!-- tags -->
+  <rect x="92" y="345" width="180" height="50" rx="20" class="tag"></rect>
+  <text x="123" y="377" class="tagText">Signature</text>
+
+  <rect x="292" y="345" width="180" height="50" rx="20" class="tag"></rect>
+  <text x="331" y="377" class="tagText">Routing</text>
+
+  <rect x="492" y="345" width="180" height="50" rx="20" class="tag"></rect>
+  <text x="536" y="377" class="tagText">Memory</text>
+
+  <rect x="692" y="345" width="180" height="50" rx="20" class="tag"></rect>
+  <text x="743" y="377" class="tagText">Proof</text>
+
+  <!-- center/right reactor -->
+  <g transform="translate(1120 250)">
+    <circle r="170" fill="rgba(40,255,220,.04)"></circle>
+    <circle r="140" class="ring"></circle>
+    <circle r="110" class="ring2"></circle>
+    <circle r="78" fill="url(#core)" filter="url(#glow)"></circle>
+    <circle r="16" fill="#ffffff" filter="url(#glow)"></circle>
+
+    <circle cx="0" cy="-142" r="5" class="spark"></circle>
+    <circle cx="98" cy="-98" r="4" class="spark" style="animation-delay:.2s"></circle>
+    <circle cx="142" cy="0" r="5" class="spark" style="animation-delay:.4s"></circle>
+    <circle cx="98" cy="98" r="4" class="spark" style="animation-delay:.6s"></circle>
+    <circle cx="0" cy="142" r="5" class="spark" style="animation-delay:.8s"></circle>
+    <circle cx="-98" cy="98" r="4" class="spark" style="animation-delay:1s"></circle>
+    <circle cx="-142" cy="0" r="5" class="spark" style="animation-delay:1.2s"></circle>
+    <circle cx="-98" cy="-98" r="4" class="spark" style="animation-delay:1.4s"></circle>
+  </g>
+
+  <!-- flow path -->
+  <line x1="900" y1="250" x2="1030" y2="250" class="line"></line>
+  <line x1="900" y1="250" x2="1030" y2="250" class="flow"></line>
+
+  <text x="90" y="465" class="sub">RUN → DETECT → ROUTE → REUSE → PROVE</text>
+</svg>
