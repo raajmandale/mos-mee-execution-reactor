@@ -1,0 +1,755 @@
+{
+  "totalRuns": 40,
+  "averageReuse": 90,
+  "bestWorkflow": "Image Flow",
+  "savedMs": 4960,
+  "efficiencyScore": 67,
+  "memory": {
+    "image:.png:tiny": {
+      "label": "Image Flow",
+      "family": "image",
+      "ext": ".png",
+      "size_bucket": "tiny",
+      "name_tokens": [
+        "demo",
+        "image"
+      ],
+      "zip_info": {
+        "inner_count": 0,
+        "inner_families": [],
+        "hybrid": false
+      },
+      "seen": 21,
+      "best_reuse": 91,
+      "last_confidence": "High",
+      "last_decision": "Pattern Reused",
+      "cluster_key": "image:tiny"
+    },
+    "image:.jpg:tiny": {
+      "label": "Image Flow",
+      "family": "image",
+      "ext": ".jpg",
+      "size_bucket": "tiny",
+      "name_tokens": [
+        "similar",
+        "image"
+      ],
+      "zip_info": {
+        "inner_count": 0,
+        "inner_families": [],
+        "hybrid": false
+      },
+      "seen": 18,
+      "best_reuse": 91,
+      "last_confidence": "High",
+      "last_decision": "Pattern Reused",
+      "cluster_key": "image:tiny"
+    },
+    "bundle:.zip:tiny": {
+      "label": "Bundle Workload",
+      "family": "bundle",
+      "ext": ".zip",
+      "size_bucket": "tiny",
+      "name_tokens": [
+        "demo",
+        "bundle"
+      ],
+      "zip_info": {
+        "inner_count": 0,
+        "inner_families": [],
+        "hybrid": false
+      },
+      "seen": 28,
+      "best_reuse": 88,
+      "last_confidence": "High",
+      "last_decision": "Pattern Reused",
+      "cluster_key": "bundle:tiny"
+    }
+  },
+  "history": [
+    {
+      "timestamp": "24/04/2026, 03:19:24 PM",
+      "workflow": "Bundle Workload",
+      "reuse": 88,
+      "mode": "reused",
+      "decision": "Pattern Reused",
+      "source": "demo_bundle.zip",
+      "time": 31,
+      "confidence": "High",
+      "estimatedBefore": 155
+    },
+    {
+      "timestamp": "24/04/2026, 03:19:03 PM",
+      "workflow": "Bundle Workload",
+      "reuse": 88,
+      "mode": "reused",
+      "decision": "Pattern Reused",
+      "source": "demo_bundle.zip",
+      "time": 31,
+      "confidence": "High",
+      "estimatedBefore": 155
+    },
+    {
+      "timestamp": "24/04/2026, 03:19:01 PM",
+      "workflow": "Image Flow",
+      "reuse": 91,
+      "mode": "reused",
+      "decision": "Pattern Reused",
+      "source": "demo_image.png",
+      "time": 31,
+      "confidence": "High",
+      "estimatedBefore": 155
+    },
+    {
+      "timestamp": "24/04/2026, 03:19:00 PM",
+      "workflow": "Image Flow",
+      "reuse": 91,
+      "mode": "reused",
+      "decision": "Pattern Reused",
+      "source": "similar_image.jpg",
+      "time": 31,
+      "confidence": "High",
+      "estimatedBefore": 155
+    },
+    {
+      "timestamp": "24/04/2026, 03:18:32 PM",
+      "workflow": "Image Flow",
+      "reuse": 91,
+      "mode": "reused",
+      "decision": "Pattern Reused",
+      "source": "similar_image.jpg",
+      "time": 31,
+      "confidence": "High",
+      "estimatedBefore": 155
+    },
+    {
+      "timestamp": "24/04/2026, 03:18:14 PM",
+      "workflow": "Bundle Workload",
+      "reuse": 88,
+      "mode": "reused",
+      "decision": "Pattern Reused",
+      "source": "MASTER_XMECK.zip",
+      "time": 31,
+      "confidence": "High",
+      "estimatedBefore": 155
+    },
+    {
+      "timestamp": "24/04/2026, 03:18:09 PM",
+      "workflow": "Image Flow",
+      "reuse": 91,
+      "mode": "reused",
+      "decision": "Pattern Reused",
+      "source": "demo_image.png",
+      "time": 31,
+      "confidence": "High",
+      "estimatedBefore": 155
+    },
+    {
+      "timestamp": "24/04/2026, 03:18:02 PM",
+      "workflow": "Image Flow",
+      "reuse": 91,
+      "mode": "reused",
+      "decision": "Pattern Reused",
+      "source": "demo_image.png",
+      "time": 31,
+      "confidence": "High",
+      "estimatedBefore": 155
+    },
+    {
+      "timestamp": "24/04/2026, 03:17:59 PM",
+      "workflow": "Bundle Workload",
+      "reuse": 88,
+      "mode": "reused",
+      "decision": "Pattern Reused",
+      "source": "MASTER_XMECK.zip",
+      "time": 31,
+      "confidence": "High",
+      "estimatedBefore": 155
+    },
+    {
+      "timestamp": "24/04/2026, 03:17:46 PM",
+      "workflow": "Image Flow",
+      "reuse": 91,
+      "mode": "reused",
+      "decision": "Pattern Reused",
+      "source": "demo_image.png",
+      "time": 31,
+      "confidence": "High",
+      "estimatedBefore": 155
+    },
+    {
+      "timestamp": "24/04/2026, 01:29:44 PM",
+      "workflow": "Bundle Workload",
+      "reuse": 88,
+      "mode": "reused",
+      "decision": "Pattern Reused",
+      "source": "demo_bundle.zip",
+      "time": 31,
+      "confidence": "High",
+      "estimatedBefore": 155
+    },
+    {
+      "timestamp": "24/04/2026, 01:29:42 PM",
+      "workflow": "Image Flow",
+      "reuse": 91,
+      "mode": "reused",
+      "decision": "Pattern Reused",
+      "source": "similar_image.jpg",
+      "time": 31,
+      "confidence": "High",
+      "estimatedBefore": 155
+    },
+    {
+      "timestamp": "24/04/2026, 01:29:39 PM",
+      "workflow": "Image Flow",
+      "reuse": 91,
+      "mode": "reused",
+      "decision": "Pattern Reused",
+      "source": "demo_image.png",
+      "time": 31,
+      "confidence": "High",
+      "estimatedBefore": 155
+    },
+    {
+      "timestamp": "19/04/2026, 08:41:54 PM",
+      "workflow": "Image Flow",
+      "reuse": 91,
+      "mode": "reused",
+      "decision": "Pattern Reused",
+      "source": "demo_image.png",
+      "time": 31,
+      "confidence": "High",
+      "estimatedBefore": 155
+    },
+    {
+      "timestamp": "18/04/2026, 04:32:46 AM",
+      "workflow": "Image Flow",
+      "reuse": 91,
+      "mode": "reused",
+      "decision": "Pattern Reused",
+      "source": "demo_image.png",
+      "time": 31,
+      "confidence": "High",
+      "estimatedBefore": 155
+    },
+    {
+      "timestamp": "18/04/2026, 04:32:23 AM",
+      "workflow": "Bundle Workload",
+      "reuse": 88,
+      "mode": "reused",
+      "decision": "Pattern Reused",
+      "source": "demo_bundle.zip",
+      "time": 31,
+      "confidence": "High",
+      "estimatedBefore": 155
+    },
+    {
+      "timestamp": "18/04/2026, 04:32:22 AM",
+      "workflow": "Image Flow",
+      "reuse": 91,
+      "mode": "reused",
+      "decision": "Pattern Reused",
+      "source": "similar_image.jpg",
+      "time": 31,
+      "confidence": "High",
+      "estimatedBefore": 155
+    },
+    {
+      "timestamp": "18/04/2026, 04:32:18 AM",
+      "workflow": "Image Flow",
+      "reuse": 91,
+      "mode": "reused",
+      "decision": "Pattern Reused",
+      "source": "demo_image.png",
+      "time": 31,
+      "confidence": "High",
+      "estimatedBefore": 155
+    },
+    {
+      "timestamp": "18/04/2026, 04:21:38 AM",
+      "workflow": "Image Flow",
+      "reuse": 91,
+      "mode": "reused",
+      "decision": "Pattern Reused",
+      "source": "similar_image.jpg",
+      "time": 31,
+      "confidence": "High",
+      "estimatedBefore": 155
+    },
+    {
+      "timestamp": "18/04/2026, 04:21:37 AM",
+      "workflow": "Bundle Workload",
+      "reuse": 88,
+      "mode": "reused",
+      "decision": "Pattern Reused",
+      "source": "demo_bundle.zip",
+      "time": 31,
+      "confidence": "High",
+      "estimatedBefore": 155
+    },
+    {
+      "timestamp": "18/04/2026, 04:21:08 AM",
+      "workflow": "Bundle Workload",
+      "reuse": 88,
+      "mode": "reused",
+      "decision": "Pattern Reused",
+      "source": "demo_bundle.zip",
+      "time": 31,
+      "confidence": "High",
+      "estimatedBefore": 155
+    },
+    {
+      "timestamp": "18/04/2026, 04:21:07 AM",
+      "workflow": "Image Flow",
+      "reuse": 91,
+      "mode": "reused",
+      "decision": "Pattern Reused",
+      "source": "similar_image.jpg",
+      "time": 31,
+      "confidence": "High",
+      "estimatedBefore": 155
+    },
+    {
+      "timestamp": "18/04/2026, 04:21:01 AM",
+      "workflow": "Image Flow",
+      "reuse": 91,
+      "mode": "reused",
+      "decision": "Pattern Reused",
+      "source": "demo_image.png",
+      "time": 31,
+      "confidence": "High",
+      "estimatedBefore": 155
+    },
+    {
+      "timestamp": "18/04/2026, 03:17:12 AM",
+      "workflow": "Image Flow",
+      "reuse": 91,
+      "mode": "reused",
+      "decision": "Pattern Reused",
+      "source": "similar_image.jpg",
+      "time": 31,
+      "confidence": "High",
+      "estimatedBefore": 155
+    },
+    {
+      "timestamp": "18/04/2026, 03:17:07 AM",
+      "workflow": "Image Flow",
+      "reuse": 91,
+      "mode": "reused",
+      "decision": "Pattern Reused",
+      "source": "demo_image.png",
+      "time": 31,
+      "confidence": "High",
+      "estimatedBefore": 155
+    },
+    {
+      "timestamp": "18/04/2026, 02:54:55 AM",
+      "workflow": "Bundle Workload",
+      "reuse": 88,
+      "mode": "reused",
+      "decision": "Pattern Reused",
+      "source": "demo_bundle.zip",
+      "time": 31,
+      "confidence": "High",
+      "estimatedBefore": 155
+    },
+    {
+      "timestamp": "18/04/2026, 02:54:54 AM",
+      "workflow": "Image Flow",
+      "reuse": 91,
+      "mode": "reused",
+      "decision": "Pattern Reused",
+      "source": "similar_image.jpg",
+      "time": 31,
+      "confidence": "High",
+      "estimatedBefore": 155
+    },
+    {
+      "timestamp": "18/04/2026, 02:54:52 AM",
+      "workflow": "Image Flow",
+      "reuse": 91,
+      "mode": "reused",
+      "decision": "Pattern Reused",
+      "source": "demo_image.png",
+      "time": 31,
+      "confidence": "High",
+      "estimatedBefore": 155
+    },
+    {
+      "timestamp": "18/04/2026, 02:54:50 AM",
+      "workflow": "Bundle Workload",
+      "reuse": 88,
+      "mode": "reused",
+      "decision": "Pattern Reused",
+      "source": "MASTER_XMECK.zip",
+      "time": 31,
+      "confidence": "High",
+      "estimatedBefore": 155
+    },
+    {
+      "timestamp": "18/04/2026, 02:54:43 AM",
+      "workflow": "Bundle Workload",
+      "reuse": 88,
+      "mode": "reused",
+      "decision": "Pattern Reused",
+      "source": "demo_bundle.zip",
+      "time": 31,
+      "confidence": "High",
+      "estimatedBefore": 155
+    },
+    {
+      "timestamp": "18/04/2026, 02:54:41 AM",
+      "workflow": "Image Flow",
+      "reuse": 91,
+      "mode": "reused",
+      "decision": "Pattern Reused",
+      "source": "similar_image.jpg",
+      "time": 31,
+      "confidence": "High",
+      "estimatedBefore": 155
+    },
+    {
+      "timestamp": "18/04/2026, 02:54:39 AM",
+      "workflow": "Image Flow",
+      "reuse": 91,
+      "mode": "reused",
+      "decision": "Pattern Reused",
+      "source": "demo_image.png",
+      "time": 31,
+      "confidence": "High",
+      "estimatedBefore": 155
+    },
+    {
+      "timestamp": "18/04/2026, 02:37:59 AM",
+      "workflow": "Bundle Workload",
+      "reuse": 88,
+      "mode": "reused",
+      "decision": "Pattern Reused",
+      "source": "demo_bundle.zip",
+      "time": 31,
+      "confidence": "High",
+      "estimatedBefore": 155
+    },
+    {
+      "timestamp": "18/04/2026, 02:36:53 AM",
+      "workflow": "Bundle Workload",
+      "reuse": 88,
+      "mode": "reused",
+      "decision": "Pattern Reused",
+      "source": "demo_bundle.zip",
+      "time": 31,
+      "confidence": "High",
+      "estimatedBefore": 155
+    },
+    {
+      "timestamp": "18/04/2026, 02:36:52 AM",
+      "workflow": "Image Flow",
+      "reuse": 91,
+      "mode": "reused",
+      "decision": "Pattern Reused",
+      "source": "similar_image.jpg",
+      "time": 31,
+      "confidence": "High",
+      "estimatedBefore": 155
+    },
+    {
+      "timestamp": "18/04/2026, 02:36:50 AM",
+      "workflow": "Image Flow",
+      "reuse": 91,
+      "mode": "reused",
+      "decision": "Pattern Reused",
+      "source": "demo_image.png",
+      "time": 31,
+      "confidence": "High",
+      "estimatedBefore": 155
+    },
+    {
+      "timestamp": "18/04/2026, 02:36:48 AM",
+      "workflow": "Bundle Workload",
+      "reuse": 88,
+      "mode": "reused",
+      "decision": "Pattern Reused",
+      "source": "MASTER_XMECK.zip",
+      "time": 31,
+      "confidence": "High",
+      "estimatedBefore": 155
+    },
+    {
+      "timestamp": "18/04/2026, 02:36:43 AM",
+      "workflow": "Bundle Workload",
+      "reuse": 88,
+      "mode": "reused",
+      "decision": "Pattern Reused",
+      "source": "demo_bundle.zip",
+      "time": 31,
+      "confidence": "High",
+      "estimatedBefore": 155
+    },
+    {
+      "timestamp": "18/04/2026, 02:36:42 AM",
+      "workflow": "Image Flow",
+      "reuse": 91,
+      "mode": "reused",
+      "decision": "Pattern Reused",
+      "source": "similar_image.jpg",
+      "time": 31,
+      "confidence": "High",
+      "estimatedBefore": 155
+    },
+    {
+      "timestamp": "18/04/2026, 02:36:41 AM",
+      "workflow": "Image Flow",
+      "reuse": 91,
+      "mode": "reused",
+      "decision": "Pattern Reused",
+      "source": "demo_image.png",
+      "time": 31,
+      "confidence": "High",
+      "estimatedBefore": 155
+    }
+  ],
+  "queue": [
+    {
+      "id": "151924508085",
+      "file": "demo_bundle.zip",
+      "status": "processed",
+      "timestamp": "24/04/2026, 03:19:24 PM"
+    },
+    {
+      "id": "151903743848",
+      "file": "demo_bundle.zip",
+      "status": "processed",
+      "timestamp": "24/04/2026, 03:19:03 PM"
+    },
+    {
+      "id": "151901828122",
+      "file": "demo_image.png",
+      "status": "processed",
+      "timestamp": "24/04/2026, 03:19:01 PM"
+    },
+    {
+      "id": "151900628331",
+      "file": "similar_image.jpg",
+      "status": "processed",
+      "timestamp": "24/04/2026, 03:19:00 PM"
+    },
+    {
+      "id": "151832992514",
+      "file": "similar_image.jpg",
+      "status": "processed",
+      "timestamp": "24/04/2026, 03:18:32 PM"
+    },
+    {
+      "id": "151814898685",
+      "file": "MASTER_XMECK.zip",
+      "status": "processed",
+      "timestamp": "24/04/2026, 03:18:14 PM"
+    },
+    {
+      "id": "151809270115",
+      "file": "demo_image.png",
+      "status": "processed",
+      "timestamp": "24/04/2026, 03:18:09 PM"
+    },
+    {
+      "id": "151802569882",
+      "file": "demo_image.png",
+      "status": "processed",
+      "timestamp": "24/04/2026, 03:18:02 PM"
+    },
+    {
+      "id": "151759605577",
+      "file": "MASTER_XMECK.zip",
+      "status": "processed",
+      "timestamp": "24/04/2026, 03:17:59 PM"
+    },
+    {
+      "id": "151746045142",
+      "file": "demo_image.png",
+      "status": "processed",
+      "timestamp": "24/04/2026, 03:17:46 PM"
+    },
+    {
+      "id": "132944117246",
+      "file": "demo_bundle.zip",
+      "status": "processed",
+      "timestamp": "24/04/2026, 01:29:44 PM"
+    },
+    {
+      "id": "132942239193",
+      "file": "similar_image.jpg",
+      "status": "processed",
+      "timestamp": "24/04/2026, 01:29:42 PM"
+    },
+    {
+      "id": "132939095403",
+      "file": "demo_image.png",
+      "status": "processed",
+      "timestamp": "24/04/2026, 01:29:39 PM"
+    },
+    {
+      "id": "204154076015",
+      "file": "demo_image.png",
+      "status": "processed",
+      "timestamp": "19/04/2026, 08:41:54 PM"
+    },
+    {
+      "id": "043246269846",
+      "file": "demo_image.png",
+      "status": "processed",
+      "timestamp": "18/04/2026, 04:32:46 AM"
+    },
+    {
+      "id": "043223956761",
+      "file": "demo_bundle.zip",
+      "status": "processed",
+      "timestamp": "18/04/2026, 04:32:23 AM"
+    },
+    {
+      "id": "043222796946",
+      "file": "similar_image.jpg",
+      "status": "processed",
+      "timestamp": "18/04/2026, 04:32:22 AM"
+    },
+    {
+      "id": "043218616776",
+      "file": "demo_image.png",
+      "status": "processed",
+      "timestamp": "18/04/2026, 04:32:18 AM"
+    },
+    {
+      "id": "042138550467",
+      "file": "similar_image.jpg",
+      "status": "processed",
+      "timestamp": "18/04/2026, 04:21:38 AM"
+    },
+    {
+      "id": "042137301291",
+      "file": "demo_bundle.zip",
+      "status": "processed",
+      "timestamp": "18/04/2026, 04:21:37 AM"
+    },
+    {
+      "id": "042108584359",
+      "file": "demo_bundle.zip",
+      "status": "processed",
+      "timestamp": "18/04/2026, 04:21:08 AM"
+    },
+    {
+      "id": "042107470904",
+      "file": "similar_image.jpg",
+      "status": "processed",
+      "timestamp": "18/04/2026, 04:21:07 AM"
+    },
+    {
+      "id": "042101591753",
+      "file": "demo_image.png",
+      "status": "processed",
+      "timestamp": "18/04/2026, 04:21:01 AM"
+    },
+    {
+      "id": "031712947664",
+      "file": "similar_image.jpg",
+      "status": "processed",
+      "timestamp": "18/04/2026, 03:17:12 AM"
+    },
+    {
+      "id": "031707486882",
+      "file": "demo_image.png",
+      "status": "processed",
+      "timestamp": "18/04/2026, 03:17:07 AM"
+    }
+  ],
+  "lastResult": {
+    "workflow": "Bundle Workload",
+    "family": "Bundle Workload",
+    "reuse": 88,
+    "confidence": "High",
+    "time": 31,
+    "decision": "Pattern Reused",
+    "mode": "reused",
+    "systemState": "High Intelligence",
+    "routeType": "linear",
+    "nodes": [
+      {
+        "short": "IN",
+        "label": "Input",
+        "state": "hot"
+      },
+      {
+        "short": "N",
+        "label": "Normalize",
+        "state": "hot"
+      },
+      {
+        "short": "M",
+        "label": "Match",
+        "state": "hot"
+      },
+      {
+        "short": "R",
+        "label": "Reuse",
+        "state": "hot"
+      },
+      {
+        "short": "OUT",
+        "label": "Bundle Workload",
+        "state": "hot"
+      }
+    ],
+    "topNodes": null,
+    "bottomNodes": null,
+    "notes": [
+      "Exact structural signature match found.",
+      "Known execution family recalled.",
+      "Reuse path promoted as active route."
+    ],
+    "console": [
+      "[signature] exact match found",
+      "[memory] promoting known execution family",
+      "[router] reused path locked"
+    ],
+    "sourceFile": "demo_bundle.zip",
+    "sizeBytes": 17,
+    "signature": {
+      "label": "Bundle Workload",
+      "family": "bundle",
+      "ext": ".zip",
+      "size_bucket": "tiny",
+      "name_tokens": [
+        "demo",
+        "bundle"
+      ],
+      "zip_info": {
+        "inner_count": 0,
+        "inner_families": [],
+        "hybrid": false
+      }
+    }
+  },
+  "prediction": {
+    "prediction": "Pattern Reused",
+    "confidence": "High",
+    "reason": "Recent strong reuse detected in Bundle Workload.",
+    "memoryClusters": [
+      {
+        "cluster": "image:tiny",
+        "family": "image",
+        "label": "Image Flow",
+        "items": 2,
+        "seen": 39,
+        "best_reuse": 91,
+        "confidence": "High"
+      },
+      {
+        "cluster": "bundle:tiny",
+        "family": "bundle",
+        "label": "Bundle Workload",
+        "items": 1,
+        "seen": 28,
+        "best_reuse": 88,
+        "confidence": "High"
+      }
+    ]
+  }
+}

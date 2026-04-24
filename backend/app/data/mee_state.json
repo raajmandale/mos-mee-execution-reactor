@@ -1,0 +1,233 @@
+{
+  "totalRuns": 11,
+  "averageReuse": 58,
+  "bestWorkflow": "Bundle Workload",
+  "savedMs": 16160,
+  "efficiencyScore": 50,
+  "memory": {
+    "image:png:tiny": {
+      "label": "Image Flow",
+      "family": "image",
+      "ext": ".png",
+      "size_bucket": "tiny",
+      "name_tokens": [
+        "demo",
+        "image",
+        "png"
+      ],
+      "zip_info": {
+        "inner_count": 0,
+        "inner_families": [],
+        "hybrid": false
+      },
+      "seen": 3,
+      "best_reuse": 80,
+      "last_confidence": "Medium",
+      "last_decision": "Partial Match"
+    },
+    "image:jpg:tiny": {
+      "label": "Image Flow",
+      "family": "image",
+      "ext": ".jpg",
+      "size_bucket": "tiny",
+      "name_tokens": [
+        "image",
+        "jpg",
+        "similar"
+      ],
+      "zip_info": {
+        "inner_count": 0,
+        "inner_families": [],
+        "hybrid": false
+      },
+      "seen": 4,
+      "best_reuse": 80,
+      "last_confidence": "Medium",
+      "last_decision": "Partial Match"
+    },
+    "bundle:zip:tiny": {
+      "label": "Bundle Workload",
+      "family": "bundle",
+      "ext": ".zip",
+      "size_bucket": "tiny",
+      "name_tokens": [
+        "bundle",
+        "demo",
+        "zip"
+      ],
+      "zip_info": {
+        "inner_count": 0,
+        "inner_families": [],
+        "hybrid": false
+      },
+      "seen": 4,
+      "best_reuse": 80,
+      "last_confidence": "Medium",
+      "last_decision": "Partial Match"
+    }
+  },
+  "history": [
+    {
+      "timestamp": "15/04/2026, 06:52:09 PM",
+      "workflow": "Bundle Workload",
+      "reuse": 80,
+      "mode": "partial",
+      "decision": "Partial Match",
+      "source": "demo_bundle.zip"
+    },
+    {
+      "timestamp": "15/04/2026, 06:52:04 PM",
+      "workflow": "Image Flow",
+      "reuse": 80,
+      "mode": "partial",
+      "decision": "Partial Match",
+      "source": "similar_image.jpg"
+    },
+    {
+      "timestamp": "15/04/2026, 06:52:03 PM",
+      "workflow": "Bundle Workload",
+      "reuse": 80,
+      "mode": "partial",
+      "decision": "Partial Match",
+      "source": "demo_bundle.zip"
+    },
+    {
+      "timestamp": "15/04/2026, 06:52:02 PM",
+      "workflow": "Image Flow",
+      "reuse": 80,
+      "mode": "partial",
+      "decision": "Partial Match",
+      "source": "similar_image.jpg"
+    },
+    {
+      "timestamp": "15/04/2026, 06:52:01 PM",
+      "workflow": "Image Flow",
+      "reuse": 80,
+      "mode": "partial",
+      "decision": "Partial Match",
+      "source": "demo_image.png"
+    },
+    {
+      "timestamp": "15/04/2026, 06:51:57 PM",
+      "workflow": "Bundle Workload",
+      "reuse": 80,
+      "mode": "partial",
+      "decision": "Partial Match",
+      "source": "demo_bundle.zip"
+    },
+    {
+      "timestamp": "15/04/2026, 06:51:56 PM",
+      "workflow": "Image Flow",
+      "reuse": 80,
+      "mode": "partial",
+      "decision": "Partial Match",
+      "source": "similar_image.jpg"
+    },
+    {
+      "timestamp": "15/04/2026, 06:51:53 PM",
+      "workflow": "Image Flow",
+      "reuse": 80,
+      "mode": "partial",
+      "decision": "Partial Match",
+      "source": "demo_image.png"
+    },
+    {
+      "timestamp": "15/04/2026, 06:51:34 PM",
+      "workflow": "Bundle Workload",
+      "reuse": 0,
+      "mode": "idle",
+      "decision": "Learning",
+      "source": "demo_bundle.zip"
+    },
+    {
+      "timestamp": "15/04/2026, 06:51:33 PM",
+      "workflow": "Image Flow",
+      "reuse": 0,
+      "mode": "idle",
+      "decision": "Learning",
+      "source": "similar_image.jpg"
+    },
+    {
+      "timestamp": "15/04/2026, 06:51:30 PM",
+      "workflow": "Image Flow",
+      "reuse": 0,
+      "mode": "idle",
+      "decision": "Learning",
+      "source": "demo_image.png"
+    }
+  ],
+  "queue": [
+    {
+      "id": "50b1081b",
+      "file": "demo_bundle.zip",
+      "status": "processing",
+      "timestamp": "17/04/2026, 11:29:03 PM"
+    },
+    {
+      "id": "9248995c",
+      "file": "similar_image.jpg",
+      "status": "processing",
+      "timestamp": "17/04/2026, 11:29:02 PM"
+    },
+    {
+      "id": "b3adc8e8",
+      "file": "demo_image.png",
+      "status": "processing",
+      "timestamp": "17/04/2026, 11:29:01 PM"
+    },
+    {
+      "id": "a9ecf6fd",
+      "file": "MASTER_XMECK.zip",
+      "status": "processing",
+      "timestamp": "17/04/2026, 11:28:59 PM"
+    },
+    {
+      "id": "17dbbd55",
+      "file": "demo_bundle.zip",
+      "status": "processing",
+      "timestamp": "17/04/2026, 11:28:54 PM"
+    },
+    {
+      "id": "bf16c846",
+      "file": "similar_image.jpg",
+      "status": "processing",
+      "timestamp": "17/04/2026, 11:28:53 PM"
+    },
+    {
+      "id": "eb6f2d55",
+      "file": "demo_image.png",
+      "status": "processing",
+      "timestamp": "17/04/2026, 11:28:53 PM"
+    },
+    {
+      "id": "e82308e1",
+      "file": "demo_image.png",
+      "status": "processing",
+      "timestamp": "17/04/2026, 11:28:49 PM"
+    },
+    {
+      "id": "6fc42516",
+      "file": "demo_bundle.zip",
+      "status": "processing",
+      "timestamp": "17/04/2026, 11:15:22 PM"
+    },
+    {
+      "id": "952f689d",
+      "file": "similar_image.jpg",
+      "status": "processing",
+      "timestamp": "17/04/2026, 11:15:22 PM"
+    },
+    {
+      "id": "69f5380a",
+      "file": "demo_image.png",
+      "status": "processing",
+      "timestamp": "17/04/2026, 11:15:21 PM"
+    },
+    {
+      "id": "fbae2daa",
+      "file": "similar_image.jpg",
+      "status": "processing",
+      "timestamp": "17/04/2026, 11:15:19 PM"
+    }
+  ]
+}

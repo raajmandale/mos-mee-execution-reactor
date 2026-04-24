@@ -1,0 +1,83 @@
+[
+  {
+    "timestamp": "15/04/2026, 06:26:13 PM",
+    "sourceFile": "demo_bundle.zip",
+    "workflow": "Bundle Workload",
+    "family": "Hybrid Pipeline",
+    "reuse": 84,
+    "decision": "Multi Routing",
+    "mode": "hybrid"
+  },
+  {
+    "timestamp": "15/04/2026, 06:26:12 PM",
+    "sourceFile": "similar_image.jpg",
+    "workflow": "Image Flow",
+    "family": "Creative Pipeline",
+    "reuse": 91,
+    "decision": "Pattern Reused",
+    "mode": "reused"
+  },
+  {
+    "timestamp": "15/04/2026, 06:26:10 PM",
+    "sourceFile": "demo_image.png",
+    "workflow": "Image Flow",
+    "family": "Creative Pipeline",
+    "reuse": 91,
+    "decision": "Pattern Reused",
+    "mode": "reused"
+  },
+  {
+    "timestamp": "15/04/2026, 03:08:32 PM",
+    "sourceFile": "similar_image.jpg",
+    "workflow": "Image Flow",
+    "family": "Creative Pipeline",
+    "reuse": 91,
+    "decision": "Pattern Reused",
+    "mode": "reused"
+  },
+  {
+    "timestamp": "15/04/2026, 03:08:31 PM",
+    "sourceFile": "demo_image.png",
+    "workflow": "Image Flow",
+    "family": "Creative Pipeline",
+    "reuse": 91,
+    "decision": "Pattern Reused",
+    "mode": "reused"
+  },
+  {
+    "timestamp": "15/04/2026, 03:08:18 PM",
+    "sourceFile": "similar_image.jpg",
+    "workflow": "Image Flow",
+    "family": "Creative Pipeline",
+    "reuse": 91,
+    "decision": "Pattern Reused",
+    "mode": "reused"
+  },
+  {
+    "timestamp": "15/04/2026, 03:08:17 PM",
+    "sourceFile": "demo_bundle.zip",
+    "workflow": "Bundle Workload",
+    "family": "Hybrid Pipeline",
+    "reuse": 84,
+    "decision": "Multi Routing",
+    "mode": "hybrid"
+  },
+  {
+    "timestamp": "15/04/2026, 03:08:16 PM",
+    "sourceFile": "demo_image.png",
+    "workflow": "Image Flow",
+    "family": "Creative Pipeline",
+    "reuse": 91,
+    "decision": "Pattern Reused",
+    "mode": "reused"
+  },
+  {
+    "timestamp": "14/04/2026, 10:15:38 PM",
+    "sourceFile": "MASTER_XMECK.zip",
+    "workflow": "Bundle Workload",
+    "family": "Hybrid Pipeline",
+    "reuse": 84,
+    "decision": "Multi Routing",
+    "mode": "hybrid"
+  }
+]

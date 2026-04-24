@@ -1,0 +1,559 @@
+{
+  "patterns": {
+    "b344d14a3c5a81fc1fbc6a53ece39f019c016ba7bf62dae6ea7c7a16c5616e42": {
+      "step_signature": "b344d14a3c5a81fc1fbc6a53ece39f019c016ba7bf62dae6ea7c7a16c5616e42",
+      "invariant_signature": "021f3a0fcaf7c35d19e6bf66bbae8c3f092e2b0f3593ab19925b0e4d3b617aa6",
+      "family_hint": "sorting",
+      "normalized_task": {
+        "raw_step": "sort array",
+        "canonical_step": "sort",
+        "normalized_features": {
+          "input_type": "list[int]",
+          "order": "asc",
+          "size": 5
+        },
+        "family_hint": "sorting",
+        "mode": "standard"
+      },
+      "graph": {
+        "graph_id": "b344d14a3c5a81fc1fbc6a53ece39f019c016ba7bf62dae6ea7c7a16c5616e42::graph",
+        "nodes": [
+          {
+            "id": "node_1",
+            "primitive_type": "transform",
+            "canonical_step": "sort",
+            "family_hint": "sorting",
+            "features": {
+              "primitive_scope": "transform",
+              "payload": {
+                "input_type": "list[int]",
+                "order": "asc",
+                "size": 5
+              }
+            },
+            "depends_on": []
+          },
+          {
+            "id": "node_2",
+            "primitive_type": "compare",
+            "canonical_step": "sort",
+            "family_hint": "sorting",
+            "features": {
+              "primitive_scope": "compare",
+              "payload": {
+                "input_type": "list[int]",
+                "order": "asc",
+                "size": 5
+              }
+            },
+            "depends_on": [
+              "node_1"
+            ]
+          },
+          {
+            "id": "node_3",
+            "primitive_type": "combine",
+            "canonical_step": "sort",
+            "family_hint": "sorting",
+            "features": {
+              "primitive_scope": "combine",
+              "payload": {
+                "input_type": "list[int]",
+                "order": "asc",
+                "size": 5
+              }
+            },
+            "depends_on": [
+              "node_2"
+            ]
+          }
+        ],
+        "edges": [
+          {
+            "source": "node_1",
+            "target": "node_2"
+          },
+          {
+            "source": "node_2",
+            "target": "node_3"
+          }
+        ]
+      }
+    },
+    "048b6835924826ffb02a9621b6c3ac776daaa0260131bca231c219fab2b048c9": {
+      "step_signature": "048b6835924826ffb02a9621b6c3ac776daaa0260131bca231c219fab2b048c9",
+      "invariant_signature": "dd6264dc60dd97a9c674c90d61391c9d77b1b5e6ea2f1a1af7a2368b7903b589",
+      "family_hint": "bundle",
+      "normalized_task": {
+        "raw_step": "bundle workload",
+        "canonical_step": "bundle_workload",
+        "normalized_features": {
+          "file_name": "M-OS images.zip",
+          "input_type": "zip",
+          "order": "asc",
+          "size": 3661220
+        },
+        "family_hint": "bundle",
+        "mode": "standard"
+      },
+      "graph": {
+        "graph_id": "048b6835924826ffb02a9621b6c3ac776daaa0260131bca231c219fab2b048c9::graph",
+        "nodes": [
+          {
+            "id": "node_1",
+            "primitive_type": "transform",
+            "canonical_step": "bundle_workload",
+            "family_hint": "bundle",
+            "features": {
+              "primitive_scope": "transform",
+              "payload": {
+                "file_name": "M-OS images.zip",
+                "input_type": "zip",
+                "order": "asc",
+                "size": 3661220
+              }
+            },
+            "depends_on": []
+          },
+          {
+            "id": "node_2",
+            "primitive_type": "combine",
+            "canonical_step": "bundle_workload",
+            "family_hint": "bundle",
+            "features": {
+              "primitive_scope": "combine",
+              "payload": {
+                "file_name": "M-OS images.zip",
+                "input_type": "zip",
+                "order": "asc",
+                "size": 3661220
+              }
+            },
+            "depends_on": [
+              "node_1"
+            ]
+          }
+        ],
+        "edges": [
+          {
+            "source": "node_1",
+            "target": "node_2"
+          }
+        ]
+      }
+    }
+  },
+  "invariant_index": {
+    "021f3a0fcaf7c35d19e6bf66bbae8c3f092e2b0f3593ab19925b0e4d3b617aa6": "b344d14a3c5a81fc1fbc6a53ece39f019c016ba7bf62dae6ea7c7a16c5616e42",
+    "dd6264dc60dd97a9c674c90d61391c9d77b1b5e6ea2f1a1af7a2368b7903b589": "048b6835924826ffb02a9621b6c3ac776daaa0260131bca231c219fab2b048c9"
+  },
+  "family_index": {
+    "sorting": [
+      "b344d14a3c5a81fc1fbc6a53ece39f019c016ba7bf62dae6ea7c7a16c5616e42"
+    ],
+    "bundle": [
+      "048b6835924826ffb02a9621b6c3ac776daaa0260131bca231c219fab2b048c9"
+    ]
+  },
+  "reuse_history": {
+    "b344d14a3c5a81fc1fbc6a53ece39f019c016ba7bf62dae6ea7c7a16c5616e42": {
+      "exact_hits": 3,
+      "partial_hits": 2,
+      "family_hits": 0,
+      "fresh_runs": 1
+    },
+    "048b6835924826ffb02a9621b6c3ac776daaa0260131bca231c219fab2b048c9": {
+      "exact_hits": 0,
+      "partial_hits": 0,
+      "family_hits": 0,
+      "fresh_runs": 1
+    }
+  },
+  "runs": [
+    {
+      "id": "run_1775907800467",
+      "demo_key": "creative",
+      "family": "Image Flow",
+      "workflow": "Creative Pipeline",
+      "reusePercent": 75,
+      "timeAfter": 548,
+      "timeSaved": 852,
+      "status": "Partial Reuse",
+      "timestamp": "2026-04-11T17:13:20Z",
+      "steps": [
+        {
+          "name": "transform::sort",
+          "reason": "Invariant signature match found.",
+          "match_type": "partial",
+          "status": "partial",
+          "confidence": 88
+        },
+        {
+          "name": "compare::sort",
+          "reason": "Invariant signature match found.",
+          "match_type": "partial",
+          "status": "partial",
+          "confidence": 88
+        },
+        {
+          "name": "combine::sort",
+          "reason": "Invariant signature match found.",
+          "match_type": "partial",
+          "status": "partial",
+          "confidence": 88
+        }
+      ],
+      "workloadSummary": {
+        "mode": "standard",
+        "files_scanned": 1,
+        "total_size_bytes": 0,
+        "exact_or_invariant_matches": 0,
+        "partial_matches": 3,
+        "fresh_steps": 0
+      },
+      "invariantSignature": {
+        "id": "021f3a0fcaf7c35d19e6bf66bbae8c3f092e2b0f3593ab19925b0e4d3b617aa6",
+        "structural_class": "sorting",
+        "input_shape": "input_type, order, size",
+        "reuse_safety": "medium",
+        "stable_invariants": [
+          "canonical_step=sort",
+          "family_hint=sorting",
+          "feature_keys=['input_type', 'order', 'size']",
+          "confidence=0.88"
+        ],
+        "decision_reason": "Invariant signature match found."
+      },
+      "sourceName": null
+    },
+    {
+      "id": "run_1775907799297",
+      "demo_key": "creative",
+      "family": "Image Flow",
+      "workflow": "Creative Pipeline",
+      "reusePercent": 85,
+      "timeAfter": 120,
+      "timeSaved": 1280,
+      "status": "Pattern Reused",
+      "timestamp": "2026-04-11T17:13:19Z",
+      "steps": [
+        {
+          "name": "transform::sort",
+          "reason": "Exact step signature match found.",
+          "match_type": "exact",
+          "status": "reused",
+          "confidence": 99
+        },
+        {
+          "name": "compare::sort",
+          "reason": "Exact step signature match found.",
+          "match_type": "exact",
+          "status": "reused",
+          "confidence": 99
+        },
+        {
+          "name": "combine::sort",
+          "reason": "Exact step signature match found.",
+          "match_type": "exact",
+          "status": "reused",
+          "confidence": 99
+        }
+      ],
+      "workloadSummary": {
+        "mode": "standard",
+        "files_scanned": 1,
+        "total_size_bytes": 0,
+        "exact_or_invariant_matches": 3,
+        "partial_matches": 0,
+        "fresh_steps": 0
+      },
+      "invariantSignature": {
+        "id": "021f3a0fcaf7c35d19e6bf66bbae8c3f092e2b0f3593ab19925b0e4d3b617aa6",
+        "structural_class": "sorting",
+        "input_shape": "input_type, order, size",
+        "reuse_safety": "high",
+        "stable_invariants": [
+          "canonical_step=sort",
+          "family_hint=sorting",
+          "feature_keys=['input_type', 'order', 'size']",
+          "confidence=0.99"
+        ],
+        "decision_reason": "Exact step signature match found."
+      },
+      "sourceName": null
+    },
+    {
+      "id": "run_1775907797817",
+      "demo_key": "bundle",
+      "family": "Bundle Workload",
+      "workflow": "Bundle Pipeline",
+      "reusePercent": 0,
+      "timeAfter": 1100,
+      "timeSaved": 300,
+      "status": "First Run",
+      "timestamp": "2026-04-11T17:13:17Z",
+      "steps": [
+        {
+          "name": "transform::bundle_workload",
+          "reason": "No reusable pattern found. Execute fresh.",
+          "match_type": "fresh",
+          "status": "new",
+          "confidence": 35
+        },
+        {
+          "name": "combine::bundle_workload",
+          "reason": "No reusable pattern found. Execute fresh.",
+          "match_type": "fresh",
+          "status": "new",
+          "confidence": 35
+        }
+      ],
+      "workloadSummary": {
+        "mode": "standard",
+        "files_scanned": 1,
+        "total_size_bytes": 0,
+        "exact_or_invariant_matches": 0,
+        "partial_matches": 0,
+        "fresh_steps": 2
+      },
+      "invariantSignature": {
+        "id": "dd6264dc60dd97a9c674c90d61391c9d77b1b5e6ea2f1a1af7a2368b7903b589",
+        "structural_class": "bundle",
+        "input_shape": "file_name, input_type, order, size",
+        "reuse_safety": "low",
+        "stable_invariants": [
+          "canonical_step=bundle_workload",
+          "family_hint=bundle",
+          "feature_keys=['file_name', 'input_type', 'order', 'size']",
+          "confidence=0.35"
+        ],
+        "decision_reason": "No reusable pattern found. Execute fresh."
+      },
+      "sourceName": null
+    },
+    {
+      "id": "run_1775907793042",
+      "demo_key": "creative",
+      "family": "Image Flow",
+      "workflow": "Creative Pipeline",
+      "reusePercent": 85,
+      "timeAfter": 120,
+      "timeSaved": 1280,
+      "status": "Pattern Reused",
+      "timestamp": "2026-04-11T17:13:13Z",
+      "steps": [
+        {
+          "name": "transform::sort",
+          "reason": "Exact step signature match found.",
+          "match_type": "exact",
+          "status": "reused",
+          "confidence": 99
+        },
+        {
+          "name": "compare::sort",
+          "reason": "Exact step signature match found.",
+          "match_type": "exact",
+          "status": "reused",
+          "confidence": 99
+        },
+        {
+          "name": "combine::sort",
+          "reason": "Exact step signature match found.",
+          "match_type": "exact",
+          "status": "reused",
+          "confidence": 99
+        }
+      ],
+      "workloadSummary": {
+        "mode": "standard",
+        "files_scanned": 1,
+        "total_size_bytes": 0,
+        "exact_or_invariant_matches": 3,
+        "partial_matches": 0,
+        "fresh_steps": 0
+      },
+      "invariantSignature": {
+        "id": "021f3a0fcaf7c35d19e6bf66bbae8c3f092e2b0f3593ab19925b0e4d3b617aa6",
+        "structural_class": "sorting",
+        "input_shape": "input_type, order, size",
+        "reuse_safety": "high",
+        "stable_invariants": [
+          "canonical_step=sort",
+          "family_hint=sorting",
+          "feature_keys=['input_type', 'order', 'size']",
+          "confidence=0.99"
+        ],
+        "decision_reason": "Exact step signature match found."
+      },
+      "sourceName": null
+    },
+    {
+      "id": "run_1775907791860",
+      "demo_key": "creative",
+      "family": "Image Flow",
+      "workflow": "Creative Pipeline",
+      "reusePercent": 75,
+      "timeAfter": 548,
+      "timeSaved": 852,
+      "status": "Partial Reuse",
+      "timestamp": "2026-04-11T17:13:11Z",
+      "steps": [
+        {
+          "name": "transform::sort",
+          "reason": "Invariant signature match found.",
+          "match_type": "partial",
+          "status": "partial",
+          "confidence": 88
+        },
+        {
+          "name": "compare::sort",
+          "reason": "Invariant signature match found.",
+          "match_type": "partial",
+          "status": "partial",
+          "confidence": 88
+        },
+        {
+          "name": "combine::sort",
+          "reason": "Invariant signature match found.",
+          "match_type": "partial",
+          "status": "partial",
+          "confidence": 88
+        }
+      ],
+      "workloadSummary": {
+        "mode": "standard",
+        "files_scanned": 1,
+        "total_size_bytes": 0,
+        "exact_or_invariant_matches": 0,
+        "partial_matches": 3,
+        "fresh_steps": 0
+      },
+      "invariantSignature": {
+        "id": "021f3a0fcaf7c35d19e6bf66bbae8c3f092e2b0f3593ab19925b0e4d3b617aa6",
+        "structural_class": "sorting",
+        "input_shape": "input_type, order, size",
+        "reuse_safety": "medium",
+        "stable_invariants": [
+          "canonical_step=sort",
+          "family_hint=sorting",
+          "feature_keys=['input_type', 'order', 'size']",
+          "confidence=0.88"
+        ],
+        "decision_reason": "Invariant signature match found."
+      },
+      "sourceName": null
+    },
+    {
+      "id": "run_1775907790688",
+      "demo_key": "creative",
+      "family": "Image Flow",
+      "workflow": "Creative Pipeline",
+      "reusePercent": 85,
+      "timeAfter": 120,
+      "timeSaved": 1280,
+      "status": "Pattern Reused",
+      "timestamp": "2026-04-11T17:13:10Z",
+      "steps": [
+        {
+          "name": "transform::sort",
+          "reason": "Exact step signature match found.",
+          "match_type": "exact",
+          "status": "reused",
+          "confidence": 99
+        },
+        {
+          "name": "compare::sort",
+          "reason": "Exact step signature match found.",
+          "match_type": "exact",
+          "status": "reused",
+          "confidence": 99
+        },
+        {
+          "name": "combine::sort",
+          "reason": "Exact step signature match found.",
+          "match_type": "exact",
+          "status": "reused",
+          "confidence": 99
+        }
+      ],
+      "workloadSummary": {
+        "mode": "standard",
+        "files_scanned": 1,
+        "total_size_bytes": 0,
+        "exact_or_invariant_matches": 3,
+        "partial_matches": 0,
+        "fresh_steps": 0
+      },
+      "invariantSignature": {
+        "id": "021f3a0fcaf7c35d19e6bf66bbae8c3f092e2b0f3593ab19925b0e4d3b617aa6",
+        "structural_class": "sorting",
+        "input_shape": "input_type, order, size",
+        "reuse_safety": "high",
+        "stable_invariants": [
+          "canonical_step=sort",
+          "family_hint=sorting",
+          "feature_keys=['input_type', 'order', 'size']",
+          "confidence=0.99"
+        ],
+        "decision_reason": "Exact step signature match found."
+      },
+      "sourceName": null
+    },
+    {
+      "id": "run_1775902209623",
+      "demo_key": "creative",
+      "family": "Image Flow",
+      "workflow": "Creative Pipeline",
+      "reusePercent": 0,
+      "timeAfter": 1100,
+      "timeSaved": 300,
+      "status": "First Run",
+      "timestamp": "2026-04-11T15:40:09Z",
+      "steps": [
+        {
+          "name": "transform::sort",
+          "reason": "No reusable pattern found. Execute fresh.",
+          "match_type": "fresh",
+          "status": "new",
+          "confidence": 35
+        },
+        {
+          "name": "compare::sort",
+          "reason": "No reusable pattern found. Execute fresh.",
+          "match_type": "fresh",
+          "status": "new",
+          "confidence": 35
+        },
+        {
+          "name": "combine::sort",
+          "reason": "No reusable pattern found. Execute fresh.",
+          "match_type": "fresh",
+          "status": "new",
+          "confidence": 35
+        }
+      ],
+      "workloadSummary": {
+        "mode": "standard",
+        "files_scanned": 1,
+        "total_size_bytes": 0,
+        "exact_or_invariant_matches": 0,
+        "partial_matches": 0,
+        "fresh_steps": 3
+      },
+      "invariantSignature": {
+        "id": "021f3a0fcaf7c35d19e6bf66bbae8c3f092e2b0f3593ab19925b0e4d3b617aa6",
+        "structural_class": "sorting",
+        "input_shape": "input_type, order, size",
+        "reuse_safety": "low",
+        "stable_invariants": [
+          "canonical_step=sort",
+          "family_hint=sorting",
+          "feature_keys=['input_type', 'order', 'size']",
+          "confidence=0.35"
+        ],
+        "decision_reason": "No reusable pattern found. Execute fresh."
+      },
+      "sourceName": null
+    }
+  ]
+}

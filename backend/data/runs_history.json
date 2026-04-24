@@ -1,0 +1,178 @@
+[
+  {
+    "id": "run-1776177997420",
+    "title": "Image Flow",
+    "workflow": "Creative Pipeline",
+    "reuse": 88,
+    "timeMs": 114,
+    "badge": "Pattern Reused",
+    "timestamp": "14/04/2026, 08:16:37 PM",
+    "sourceFile": "sort image assets",
+    "mode": "reused"
+  },
+  {
+    "id": "run-1776177770749",
+    "title": "Bundle Workload",
+    "workflow": "Bundle Pipeline",
+    "reuse": 82,
+    "timeMs": 131,
+    "badge": "Hybrid Routing",
+    "timestamp": "14/04/2026, 08:12:50 PM",
+    "sourceFile": "bundle workload",
+    "mode": "hybrid"
+  },
+  {
+    "id": "run-1776177766971",
+    "title": "Image Flow",
+    "workflow": "Creative Pipeline",
+    "reuse": 75,
+    "timeMs": 548,
+    "badge": "Partial Reuse",
+    "timestamp": "14/04/2026, 08:12:46 PM",
+    "sourceFile": "arrange image assets",
+    "mode": "partial"
+  },
+  {
+    "id": "run-1776177728359",
+    "title": "Image Flow",
+    "workflow": "Creative Pipeline",
+    "reuse": 75,
+    "timeMs": 548,
+    "badge": "Partial Reuse",
+    "timestamp": "14/04/2026, 08:12:08 PM",
+    "sourceFile": "arrange image assets",
+    "mode": "partial"
+  },
+  {
+    "id": "run-1776177724680",
+    "title": "Bundle Workload",
+    "workflow": "Bundle Pipeline",
+    "reuse": 75,
+    "timeMs": 548,
+    "badge": "Partial Reuse",
+    "timestamp": "14/04/2026, 08:12:04 PM",
+    "sourceFile": "MASTER_XMECK.zip",
+    "mode": "partial"
+  },
+  {
+    "id": "run-1776177718211",
+    "title": "Image Flow",
+    "workflow": "Creative Pipeline",
+    "reuse": 88,
+    "timeMs": 114,
+    "badge": "Pattern Reused",
+    "timestamp": "14/04/2026, 08:11:58 PM",
+    "sourceFile": "sort image assets",
+    "mode": "reused"
+  },
+  {
+    "id": "run-1776177714892",
+    "title": "Bundle Workload",
+    "workflow": "Bundle Pipeline",
+    "reuse": 75,
+    "timeMs": 548,
+    "badge": "Partial Reuse",
+    "timestamp": "14/04/2026, 08:11:54 PM",
+    "sourceFile": "MASTER_XMECK.zip",
+    "mode": "partial"
+  },
+  {
+    "id": "run-1776177699548",
+    "title": "Bundle Workload",
+    "workflow": "Bundle Pipeline",
+    "reuse": 82,
+    "timeMs": 131,
+    "badge": "Hybrid Routing",
+    "timestamp": "14/04/2026, 08:11:39 PM",
+    "sourceFile": "bundle workload",
+    "mode": "hybrid"
+  },
+  {
+    "id": "run-1776177692045",
+    "title": "Image Flow",
+    "workflow": "Creative Pipeline",
+    "reuse": 88,
+    "timeMs": 114,
+    "badge": "Pattern Reused",
+    "timestamp": "14/04/2026, 08:11:32 PM",
+    "sourceFile": "sort image assets",
+    "mode": "reused"
+  },
+  {
+    "id": "run-1776177687752",
+    "title": "Image Flow",
+    "workflow": "Creative Pipeline",
+    "reuse": 75,
+    "timeMs": 548,
+    "badge": "Partial Reuse",
+    "timestamp": "14/04/2026, 08:11:27 PM",
+    "sourceFile": "arrange image assets",
+    "mode": "partial"
+  },
+  {
+    "id": "Image Flow-6",
+    "title": "Image Flow",
+    "workflow": "Creative Pipeline",
+    "reuse": 75,
+    "timeMs": 548,
+    "badge": "Partial Reuse",
+    "timestamp": "13/04/2026, 02:01:51 PM",
+    "sourceFile": null,
+    "filesScanned": 1
+  },
+  {
+    "id": "Bundle Workload-5",
+    "title": "Bundle Workload",
+    "workflow": "Bundle Pipeline",
+    "reuse": 84,
+    "timeMs": 131,
+    "badge": "Pattern Reused",
+    "timestamp": "13/04/2026, 02:01:48 PM",
+    "sourceFile": null,
+    "filesScanned": 1
+  },
+  {
+    "id": "Image Flow-4",
+    "title": "Image Flow",
+    "workflow": "Creative Pipeline",
+    "reuse": 88,
+    "timeMs": 114,
+    "badge": "Pattern Reused",
+    "timestamp": "13/04/2026, 02:01:30 PM",
+    "sourceFile": null,
+    "filesScanned": 1
+  },
+  {
+    "id": "Bundle Workload-3",
+    "title": "Bundle Workload",
+    "workflow": "Bundle Pipeline",
+    "reuse": 84,
+    "timeMs": 131,
+    "badge": "Pattern Reused",
+    "timestamp": "13/04/2026, 02:01:29 PM",
+    "sourceFile": "MASTER_IDEA_XMECK.zip",
+    "filesScanned": 1
+  },
+  {
+    "id": "Image Flow-2",
+    "title": "Image Flow",
+    "workflow": "Creative Pipeline",
+    "reuse": 75,
+    "timeMs": 548,
+    "badge": "Partial Reuse",
+    "timestamp": "13/04/2026, 02:01:16 PM",
+    "sourceFile": null,
+    "filesScanned": 1
+  },
+  {
+    "id": "Image Flow-1",
+    "title": "Image Flow",
+    "workflow": "Creative Pipeline",
+    "reuse": 88,
+    "timeMs": 114,
+    "badge": "Pattern Reused",
+    "timestamp": "13/04/2026, 02:00:59 PM",
+    "sourceFile": null,
+    "filesScanned": 1
+  }
+]

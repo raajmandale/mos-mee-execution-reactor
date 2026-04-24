@@ -1,0 +1,5420 @@
+{
+  "runs": [
+    {
+      "id": "run_1775659685425",
+      "demo_key": "creative",
+      "family": "Image Flow",
+      "workflow": "Creative Pipeline",
+      "reusePercent": 100,
+      "timeAfter": 560,
+      "timeSaved": 10640,
+      "status": "Pattern Reused",
+      "timestamp": "08/04/2026, 08:18:05 PM",
+      "steps": [
+        {
+          "name": "Decode Asset",
+          "status": "reused",
+          "match_type": "exact",
+          "decision": "REUSE",
+          "confidence": 0.98,
+          "reason": "Same step signature seen before"
+        },
+        {
+          "name": "Resize Frame",
+          "status": "reused",
+          "match_type": "exact",
+          "decision": "REUSE",
+          "confidence": 0.98,
+          "reason": "Same step signature seen before"
+        },
+        {
+          "name": "Optimize Output",
+          "status": "reused",
+          "match_type": "exact",
+          "decision": "REUSE",
+          "confidence": 0.98,
+          "reason": "Same step signature seen before"
+        },
+        {
+          "name": "Export Render",
+          "status": "reused",
+          "match_type": "exact",
+          "decision": "REUSE",
+          "confidence": 0.98,
+          "reason": "Same step signature seen before"
+        }
+      ],
+      "fingerprint": null,
+      "sourceName": null,
+      "color": "#00c48c",
+      "workloadSummary": {
+        "mode": "demo",
+        "files_scanned": 1,
+        "total_size_bytes": 0,
+        "exact_or_invariant_matches": 4,
+        "partial_matches": 0,
+        "fresh_steps": 0
+      }
+    },
+    {
+      "id": "run_1775653213698",
+      "demo_key": "creative",
+      "family": "Image Flow",
+      "workflow": "Creative Pipeline",
+      "reusePercent": 100,
+      "timeAfter": 560,
+      "timeSaved": 10640,
+      "status": "Pattern Reused",
+      "timestamp": "08/04/2026, 06:30:13 PM",
+      "steps": [
+        {
+          "name": "Decode Asset",
+          "status": "reused",
+          "match_type": "exact",
+          "decision": "REUSE",
+          "confidence": 0.98,
+          "reason": "Same step signature seen before"
+        },
+        {
+          "name": "Resize Frame",
+          "status": "reused",
+          "match_type": "exact",
+          "decision": "REUSE",
+          "confidence": 0.98,
+          "reason": "Same step signature seen before"
+        },
+        {
+          "name": "Optimize Output",
+          "status": "reused",
+          "match_type": "exact",
+          "decision": "REUSE",
+          "confidence": 0.98,
+          "reason": "Same step signature seen before"
+        },
+        {
+          "name": "Export Render",
+          "status": "reused",
+          "match_type": "exact",
+          "decision": "REUSE",
+          "confidence": 0.98,
+          "reason": "Same step signature seen before"
+        }
+      ],
+      "fingerprint": null,
+      "sourceName": null,
+      "color": "#00c48c",
+      "workloadSummary": {
+        "mode": "demo",
+        "files_scanned": 1,
+        "total_size_bytes": 0,
+        "exact_or_invariant_matches": 4,
+        "partial_matches": 0,
+        "fresh_steps": 0
+      }
+    },
+    {
+      "id": "run_1775653208064",
+      "demo_key": "creative",
+      "family": "Image Flow",
+      "workflow": "Creative Pipeline",
+      "reusePercent": 100,
+      "timeAfter": 560,
+      "timeSaved": 10640,
+      "status": "Pattern Reused",
+      "timestamp": "08/04/2026, 06:30:08 PM",
+      "steps": [
+        {
+          "name": "Decode Asset",
+          "status": "reused",
+          "match_type": "exact",
+          "decision": "REUSE",
+          "confidence": 0.98,
+          "reason": "Same step signature seen before"
+        },
+        {
+          "name": "Resize Frame",
+          "status": "reused",
+          "match_type": "exact",
+          "decision": "REUSE",
+          "confidence": 0.98,
+          "reason": "Same step signature seen before"
+        },
+        {
+          "name": "Optimize Output",
+          "status": "reused",
+          "match_type": "exact",
+          "decision": "REUSE",
+          "confidence": 0.98,
+          "reason": "Same step signature seen before"
+        },
+        {
+          "name": "Export Render",
+          "status": "reused",
+          "match_type": "exact",
+          "decision": "REUSE",
+          "confidence": 0.98,
+          "reason": "Same step signature seen before"
+        }
+      ],
+      "fingerprint": null,
+      "sourceName": null,
+      "color": "#00c48c",
+      "workloadSummary": {
+        "mode": "demo",
+        "files_scanned": 1,
+        "total_size_bytes": 0,
+        "exact_or_invariant_matches": 4,
+        "partial_matches": 0,
+        "fresh_steps": 0
+      }
+    },
+    {
+      "id": "run_1775653207202",
+      "demo_key": "bundle",
+      "family": "Bundle Workload",
+      "workflow": "Bundle Pipeline",
+      "reusePercent": 100,
+      "timeAfter": 1160,
+      "timeSaved": 22040,
+      "status": "Pattern Reused",
+      "timestamp": "08/04/2026, 06:30:07 PM",
+      "steps": [
+        {
+          "name": "Expand Bundle",
+          "status": "reused",
+          "match_type": "exact",
+          "decision": "REUSE",
+          "confidence": 0.98,
+          "reason": "Same step signature seen before"
+        },
+        {
+          "name": "Classify Families",
+          "status": "reused",
+          "match_type": "exact",
+          "decision": "REUSE",
+          "confidence": 0.98,
+          "reason": "Same step signature seen before"
+        },
+        {
+          "name": "Build Workload Graph",
+          "status": "reused",
+          "match_type": "exact",
+          "decision": "REUSE",
+          "confidence": 0.98,
+          "reason": "Same step signature seen before"
+        },
+        {
+          "name": "Optimize Execution Plan",
+          "status": "reused",
+          "match_type": "exact",
+          "decision": "REUSE",
+          "confidence": 0.98,
+          "reason": "Same step signature seen before"
+        }
+      ],
+      "fingerprint": "137d172657403baf3f0d47bc41fa5e88035845054c61dc1d37d5b0e2aac43bc0",
+      "sourceName": "raajmandale_PUBLIC_FINAL_WHITE_ORANGE.zip",
+      "color": "#7c3aed",
+      "workloadSummary": {
+        "mode": "bundle",
+        "files_scanned": 28,
+        "total_size_bytes": 4447874,
+        "family_counts": {
+          "creative": 15,
+          "data": 12,
+          "dev": 1,
+          "other": 0
+        },
+        "sample_files": [
+          "README_DEPLOY.md",
+          "public/index.html",
+          "public/projects.html",
+          "public/system-map.html",
+          "public/about.html",
+          "public/updates.html",
+          "public/contact.html",
+          "public/assets/css/style.css"
+        ],
+        "exact_or_invariant_matches": 4,
+        "partial_matches": 0,
+        "fresh_steps": 0
+      }
+    },
+    {
+      "id": "run_1775653205970",
+      "demo_key": "dev",
+      "family": "Build Chain",
+      "workflow": "Dev Pipeline",
+      "reusePercent": 50,
+      "timeAfter": 820,
+      "timeSaved": 820,
+      "status": "Pattern Reused",
+      "timestamp": "08/04/2026, 06:30:05 PM",
+      "steps": [
+        {
+          "name": "Resolve Dependencies",
+          "status": "partial",
+          "match_type": "partial",
+          "decision": "PARTIAL_RECOMPUTE",
+          "confidence": 0.58,
+          "reason": "Same step type found, but structure changed"
+        },
+        {
+          "name": "Transpile Source",
+          "status": "partial",
+          "match_type": "partial",
+          "decision": "PARTIAL_RECOMPUTE",
+          "confidence": 0.58,
+          "reason": "Same step type found, but structure changed"
+        },
+        {
+          "name": "Bundle Modules",
+          "status": "partial",
+          "match_type": "partial",
+          "decision": "PARTIAL_RECOMPUTE",
+          "confidence": 0.58,
+          "reason": "Same step type found, but structure changed"
+        },
+        {
+          "name": "Package Build",
+          "status": "partial",
+          "match_type": "partial",
+          "decision": "PARTIAL_RECOMPUTE",
+          "confidence": 0.58,
+          "reason": "Same step type found, but structure changed"
+        }
+      ],
+      "fingerprint": null,
+      "sourceName": null,
+      "color": "#2563eb",
+      "workloadSummary": {
+        "mode": "demo",
+        "files_scanned": 1,
+        "total_size_bytes": 0,
+        "exact_or_invariant_matches": 0,
+        "partial_matches": 4,
+        "fresh_steps": 0
+      }
+    },
+    {
+      "id": "run_1775653203295",
+      "demo_key": "creative",
+      "family": "Image Flow",
+      "workflow": "Creative Pipeline",
+      "reusePercent": 100,
+      "timeAfter": 560,
+      "timeSaved": 10640,
+      "status": "Pattern Reused",
+      "timestamp": "08/04/2026, 06:30:03 PM",
+      "steps": [
+        {
+          "name": "Decode Asset",
+          "status": "reused",
+          "match_type": "exact",
+          "decision": "REUSE",
+          "confidence": 0.98,
+          "reason": "Same step signature seen before"
+        },
+        {
+          "name": "Resize Frame",
+          "status": "reused",
+          "match_type": "exact",
+          "decision": "REUSE",
+          "confidence": 0.98,
+          "reason": "Same step signature seen before"
+        },
+        {
+          "name": "Optimize Output",
+          "status": "reused",
+          "match_type": "exact",
+          "decision": "REUSE",
+          "confidence": 0.98,
+          "reason": "Same step signature seen before"
+        },
+        {
+          "name": "Export Render",
+          "status": "reused",
+          "match_type": "exact",
+          "decision": "REUSE",
+          "confidence": 0.98,
+          "reason": "Same step signature seen before"
+        }
+      ],
+      "fingerprint": null,
+      "sourceName": null,
+      "color": "#00c48c",
+      "workloadSummary": {
+        "mode": "demo",
+        "files_scanned": 1,
+        "total_size_bytes": 0,
+        "exact_or_invariant_matches": 4,
+        "partial_matches": 0,
+        "fresh_steps": 0
+      }
+    },
+    {
+      "id": "run_1775653201023",
+      "demo_key": "bundle",
+      "family": "Bundle Workload",
+      "workflow": "Bundle Pipeline",
+      "reusePercent": 100,
+      "timeAfter": 1160,
+      "timeSaved": 22040,
+      "status": "Pattern Reused",
+      "timestamp": "08/04/2026, 06:30:01 PM",
+      "steps": [
+        {
+          "name": "Expand Bundle",
+          "status": "reused",
+          "match_type": "exact",
+          "decision": "REUSE",
+          "confidence": 0.98,
+          "reason": "Same step signature seen before"
+        },
+        {
+          "name": "Classify Families",
+          "status": "reused",
+          "match_type": "exact",
+          "decision": "REUSE",
+          "confidence": 0.98,
+          "reason": "Same step signature seen before"
+        },
+        {
+          "name": "Build Workload Graph",
+          "status": "reused",
+          "match_type": "exact",
+          "decision": "REUSE",
+          "confidence": 0.98,
+          "reason": "Same step signature seen before"
+        },
+        {
+          "name": "Optimize Execution Plan",
+          "status": "reused",
+          "match_type": "exact",
+          "decision": "REUSE",
+          "confidence": 0.98,
+          "reason": "Same step signature seen before"
+        }
+      ],
+      "fingerprint": "137d172657403baf3f0d47bc41fa5e88035845054c61dc1d37d5b0e2aac43bc0",
+      "sourceName": "raajmandale_PUBLIC_FINAL_WHITE_ORANGE.zip",
+      "color": "#7c3aed",
+      "workloadSummary": {
+        "mode": "bundle",
+        "files_scanned": 28,
+        "total_size_bytes": 4447874,
+        "family_counts": {
+          "creative": 15,
+          "data": 12,
+          "dev": 1,
+          "other": 0
+        },
+        "sample_files": [
+          "README_DEPLOY.md",
+          "public/index.html",
+          "public/projects.html",
+          "public/system-map.html",
+          "public/about.html",
+          "public/updates.html",
+          "public/contact.html",
+          "public/assets/css/style.css"
+        ],
+        "exact_or_invariant_matches": 4,
+        "partial_matches": 0,
+        "fresh_steps": 0
+      }
+    },
+    {
+      "id": "run_1775653195696",
+      "demo_key": "data",
+      "family": "Data Clean",
+      "workflow": "Data Pipeline",
+      "reusePercent": 100,
+      "timeAfter": 730,
+      "timeSaved": 13870,
+      "status": "Pattern Reused",
+      "timestamp": "08/04/2026, 06:29:55 PM",
+      "steps": [
+        {
+          "name": "Ingest Dataset",
+          "status": "reused",
+          "match_type": "exact",
+          "decision": "REUSE",
+          "confidence": 0.98,
+          "reason": "Same step signature seen before"
+        },
+        {
+          "name": "Validate Schema",
+          "status": "reused",
+          "match_type": "exact",
+          "decision": "REUSE",
+          "confidence": 0.98,
+          "reason": "Same step signature seen before"
+        },
+        {
+          "name": "Normalize Columns",
+          "status": "reused",
+          "match_type": "exact",
+          "decision": "REUSE",
+          "confidence": 0.98,
+          "reason": "Same step signature seen before"
+        },
+        {
+          "name": "Aggregate Output",
+          "status": "reused",
+          "match_type": "exact",
+          "decision": "REUSE",
+          "confidence": 0.98,
+          "reason": "Same step signature seen before"
+        }
+      ],
+      "fingerprint": null,
+      "sourceName": null,
+      "color": "#ff8a00",
+      "workloadSummary": {
+        "mode": "demo",
+        "files_scanned": 1,
+        "total_size_bytes": 0,
+        "exact_or_invariant_matches": 4,
+        "partial_matches": 0,
+        "fresh_steps": 0
+      }
+    },
+    {
+      "id": "run_1775653192696",
+      "demo_key": "creative",
+      "family": "Image Flow",
+      "workflow": "Creative Pipeline",
+      "reusePercent": 100,
+      "timeAfter": 560,
+      "timeSaved": 10640,
+      "status": "Pattern Reused",
+      "timestamp": "08/04/2026, 06:29:52 PM",
+      "steps": [
+        {
+          "name": "Decode Asset",
+          "status": "reused",
+          "match_type": "exact",
+          "decision": "REUSE",
+          "confidence": 0.98,
+          "reason": "Same step signature seen before"
+        },
+        {
+          "name": "Resize Frame",
+          "status": "reused",
+          "match_type": "exact",
+          "decision": "REUSE",
+          "confidence": 0.98,
+          "reason": "Same step signature seen before"
+        },
+        {
+          "name": "Optimize Output",
+          "status": "reused",
+          "match_type": "exact",
+          "decision": "REUSE",
+          "confidence": 0.98,
+          "reason": "Same step signature seen before"
+        },
+        {
+          "name": "Export Render",
+          "status": "reused",
+          "match_type": "exact",
+          "decision": "REUSE",
+          "confidence": 0.98,
+          "reason": "Same step signature seen before"
+        }
+      ],
+      "fingerprint": null,
+      "sourceName": null,
+      "color": "#00c48c",
+      "workloadSummary": {
+        "mode": "demo",
+        "files_scanned": 1,
+        "total_size_bytes": 0,
+        "exact_or_invariant_matches": 4,
+        "partial_matches": 0,
+        "fresh_steps": 0
+      }
+    },
+    {
+      "id": "run_1775653188791",
+      "demo_key": "bundle",
+      "family": "Bundle Workload",
+      "workflow": "Bundle Pipeline",
+      "reusePercent": 50,
+      "timeAfter": 1520,
+      "timeSaved": 1520,
+      "status": "Pattern Reused",
+      "timestamp": "08/04/2026, 06:29:48 PM",
+      "steps": [
+        {
+          "name": "Expand Bundle",
+          "status": "partial",
+          "match_type": "partial",
+          "decision": "PARTIAL_RECOMPUTE",
+          "confidence": 0.58,
+          "reason": "Same step type found, but structure changed"
+        },
+        {
+          "name": "Classify Families",
+          "status": "partial",
+          "match_type": "partial",
+          "decision": "PARTIAL_RECOMPUTE",
+          "confidence": 0.58,
+          "reason": "Same step type found, but structure changed"
+        },
+        {
+          "name": "Build Workload Graph",
+          "status": "partial",
+          "match_type": "partial",
+          "decision": "PARTIAL_RECOMPUTE",
+          "confidence": 0.58,
+          "reason": "Same step type found, but structure changed"
+        },
+        {
+          "name": "Optimize Execution Plan",
+          "status": "partial",
+          "match_type": "partial",
+          "decision": "PARTIAL_RECOMPUTE",
+          "confidence": 0.58,
+          "reason": "Same step type found, but structure changed"
+        }
+      ],
+      "fingerprint": "137d172657403baf3f0d47bc41fa5e88035845054c61dc1d37d5b0e2aac43bc0",
+      "sourceName": "raajmandale_PUBLIC_FINAL_WHITE_ORANGE.zip",
+      "color": "#7c3aed",
+      "workloadSummary": {
+        "mode": "bundle",
+        "files_scanned": 28,
+        "total_size_bytes": 4447874,
+        "family_counts": {
+          "creative": 15,
+          "data": 12,
+          "dev": 1,
+          "other": 0
+        },
+        "sample_files": [
+          "README_DEPLOY.md",
+          "public/index.html",
+          "public/projects.html",
+          "public/system-map.html",
+          "public/about.html",
+          "public/updates.html",
+          "public/contact.html",
+          "public/assets/css/style.css"
+        ],
+        "exact_or_invariant_matches": 0,
+        "partial_matches": 4,
+        "fresh_steps": 0
+      }
+    },
+    {
+      "id": "run_1775653185562",
+      "demo_key": "creative",
+      "family": "Image Flow",
+      "workflow": "Creative Pipeline",
+      "reusePercent": 100,
+      "timeAfter": 560,
+      "timeSaved": 10640,
+      "status": "Pattern Reused",
+      "timestamp": "08/04/2026, 06:29:45 PM",
+      "steps": [
+        {
+          "name": "Decode Asset",
+          "status": "reused",
+          "match_type": "exact",
+          "decision": "REUSE",
+          "confidence": 0.98,
+          "reason": "Same step signature seen before"
+        },
+        {
+          "name": "Resize Frame",
+          "status": "reused",
+          "match_type": "exact",
+          "decision": "REUSE",
+          "confidence": 0.98,
+          "reason": "Same step signature seen before"
+        },
+        {
+          "name": "Optimize Output",
+          "status": "reused",
+          "match_type": "exact",
+          "decision": "REUSE",
+          "confidence": 0.98,
+          "reason": "Same step signature seen before"
+        },
+        {
+          "name": "Export Render",
+          "status": "reused",
+          "match_type": "exact",
+          "decision": "REUSE",
+          "confidence": 0.98,
+          "reason": "Same step signature seen before"
+        }
+      ],
+      "fingerprint": null,
+      "sourceName": null,
+      "color": "#00c48c",
+      "workloadSummary": {
+        "mode": "demo",
+        "files_scanned": 1,
+        "total_size_bytes": 0,
+        "exact_or_invariant_matches": 4,
+        "partial_matches": 0,
+        "fresh_steps": 0
+      }
+    },
+    {
+      "id": "run_1775653098735",
+      "demo_key": "creative",
+      "family": "Image Flow",
+      "workflow": "Creative Pipeline",
+      "reusePercent": 100,
+      "timeAfter": 560,
+      "timeSaved": 10640,
+      "status": "Pattern Reused",
+      "timestamp": "08/04/2026, 06:28:18 PM",
+      "steps": [
+        {
+          "name": "Decode Asset",
+          "status": "reused",
+          "match_type": "exact",
+          "decision": "REUSE",
+          "confidence": 0.98,
+          "reason": "Same step signature seen before"
+        },
+        {
+          "name": "Resize Frame",
+          "status": "reused",
+          "match_type": "exact",
+          "decision": "REUSE",
+          "confidence": 0.98,
+          "reason": "Same step signature seen before"
+        },
+        {
+          "name": "Optimize Output",
+          "status": "reused",
+          "match_type": "exact",
+          "decision": "REUSE",
+          "confidence": 0.98,
+          "reason": "Same step signature seen before"
+        },
+        {
+          "name": "Export Render",
+          "status": "reused",
+          "match_type": "exact",
+          "decision": "REUSE",
+          "confidence": 0.98,
+          "reason": "Same step signature seen before"
+        }
+      ],
+      "fingerprint": null,
+      "sourceName": null,
+      "color": "#00c48c",
+      "workloadSummary": {
+        "mode": "demo",
+        "files_scanned": 1,
+        "total_size_bytes": 0,
+        "exact_or_invariant_matches": 4,
+        "partial_matches": 0,
+        "fresh_steps": 0
+      }
+    },
+    {
+      "id": "run_1775653097836",
+      "demo_key": "bundle",
+      "family": "Bundle Workload",
+      "workflow": "Bundle Pipeline",
+      "reusePercent": 100,
+      "timeAfter": 1160,
+      "timeSaved": 22040,
+      "status": "Pattern Reused",
+      "timestamp": "08/04/2026, 06:28:17 PM",
+      "steps": [
+        {
+          "name": "Expand Bundle",
+          "status": "reused",
+          "match_type": "exact",
+          "decision": "REUSE",
+          "confidence": 0.98,
+          "reason": "Same step signature seen before"
+        },
+        {
+          "name": "Classify Families",
+          "status": "reused",
+          "match_type": "exact",
+          "decision": "REUSE",
+          "confidence": 0.98,
+          "reason": "Same step signature seen before"
+        },
+        {
+          "name": "Build Workload Graph",
+          "status": "reused",
+          "match_type": "exact",
+          "decision": "REUSE",
+          "confidence": 0.98,
+          "reason": "Same step signature seen before"
+        },
+        {
+          "name": "Optimize Execution Plan",
+          "status": "reused",
+          "match_type": "exact",
+          "decision": "REUSE",
+          "confidence": 0.98,
+          "reason": "Same step signature seen before"
+        }
+      ],
+      "fingerprint": "e039864a778ce48b44565e2a75e5e32c54881f78f2c655af518e328c0d2c49ec",
+      "sourceName": "XLP_Testing_Pack_v1.zip",
+      "color": "#7c3aed",
+      "workloadSummary": {
+        "mode": "bundle",
+        "files_scanned": 21,
+        "total_size_bytes": 13325,
+        "family_counts": {
+          "creative": 0,
+          "data": 7,
+          "dev": 14,
+          "other": 0
+        },
+        "sample_files": [
+          "README.md",
+          "requirements.txt",
+          "REAL_DEVICE_PILOT.md",
+          "common/__init__.py",
+          "common/signal_taxonomy.py",
+          "common/yuga_signal_engine.py",
+          "common/yuga_capability_trust.py",
+          "common/veda_policy.py"
+        ],
+        "exact_or_invariant_matches": 4,
+        "partial_matches": 0,
+        "fresh_steps": 0
+      }
+    },
+    {
+      "id": "run_1775653094616",
+      "demo_key": "creative",
+      "family": "Image Flow",
+      "workflow": "Creative Pipeline",
+      "reusePercent": 100,
+      "timeAfter": 560,
+      "timeSaved": 10640,
+      "status": "Pattern Reused",
+      "timestamp": "08/04/2026, 06:28:14 PM",
+      "steps": [
+        {
+          "name": "Decode Asset",
+          "status": "reused",
+          "match_type": "exact",
+          "decision": "REUSE",
+          "confidence": 0.98,
+          "reason": "Same step signature seen before"
+        },
+        {
+          "name": "Resize Frame",
+          "status": "reused",
+          "match_type": "exact",
+          "decision": "REUSE",
+          "confidence": 0.98,
+          "reason": "Same step signature seen before"
+        },
+        {
+          "name": "Optimize Output",
+          "status": "reused",
+          "match_type": "exact",
+          "decision": "REUSE",
+          "confidence": 0.98,
+          "reason": "Same step signature seen before"
+        },
+        {
+          "name": "Export Render",
+          "status": "reused",
+          "match_type": "exact",
+          "decision": "REUSE",
+          "confidence": 0.98,
+          "reason": "Same step signature seen before"
+        }
+      ],
+      "fingerprint": null,
+      "sourceName": null,
+      "color": "#00c48c",
+      "workloadSummary": {
+        "mode": "demo",
+        "files_scanned": 1,
+        "total_size_bytes": 0,
+        "exact_or_invariant_matches": 4,
+        "partial_matches": 0,
+        "fresh_steps": 0
+      }
+    },
+    {
+      "id": "run_1775653092797",
+      "demo_key": "bundle",
+      "family": "Bundle Workload",
+      "workflow": "Bundle Pipeline",
+      "reusePercent": 100,
+      "timeAfter": 1160,
+      "timeSaved": 22040,
+      "status": "Pattern Reused",
+      "timestamp": "08/04/2026, 06:28:12 PM",
+      "steps": [
+        {
+          "name": "Expand Bundle",
+          "status": "reused",
+          "match_type": "exact",
+          "decision": "REUSE",
+          "confidence": 0.98,
+          "reason": "Same step signature seen before"
+        },
+        {
+          "name": "Classify Families",
+          "status": "reused",
+          "match_type": "exact",
+          "decision": "REUSE",
+          "confidence": 0.98,
+          "reason": "Same step signature seen before"
+        },
+        {
+          "name": "Build Workload Graph",
+          "status": "reused",
+          "match_type": "exact",
+          "decision": "REUSE",
+          "confidence": 0.98,
+          "reason": "Same step signature seen before"
+        },
+        {
+          "name": "Optimize Execution Plan",
+          "status": "reused",
+          "match_type": "exact",
+          "decision": "REUSE",
+          "confidence": 0.98,
+          "reason": "Same step signature seen before"
+        }
+      ],
+      "fingerprint": "e039864a778ce48b44565e2a75e5e32c54881f78f2c655af518e328c0d2c49ec",
+      "sourceName": "XLP_Testing_Pack_v1.zip",
+      "color": "#7c3aed",
+      "workloadSummary": {
+        "mode": "bundle",
+        "files_scanned": 21,
+        "total_size_bytes": 13325,
+        "family_counts": {
+          "creative": 0,
+          "data": 7,
+          "dev": 14,
+          "other": 0
+        },
+        "sample_files": [
+          "README.md",
+          "requirements.txt",
+          "REAL_DEVICE_PILOT.md",
+          "common/__init__.py",
+          "common/signal_taxonomy.py",
+          "common/yuga_signal_engine.py",
+          "common/yuga_capability_trust.py",
+          "common/veda_policy.py"
+        ],
+        "exact_or_invariant_matches": 4,
+        "partial_matches": 0,
+        "fresh_steps": 0
+      }
+    },
+    {
+      "id": "run_1775653089722",
+      "demo_key": "data",
+      "family": "Data Clean",
+      "workflow": "Data Pipeline",
+      "reusePercent": 50,
+      "timeAfter": 1090,
+      "timeSaved": 1090,
+      "status": "Pattern Reused",
+      "timestamp": "08/04/2026, 06:28:09 PM",
+      "steps": [
+        {
+          "name": "Ingest Dataset",
+          "status": "partial",
+          "match_type": "partial",
+          "decision": "PARTIAL_RECOMPUTE",
+          "confidence": 0.58,
+          "reason": "Same step type found, but structure changed"
+        },
+        {
+          "name": "Validate Schema",
+          "status": "partial",
+          "match_type": "partial",
+          "decision": "PARTIAL_RECOMPUTE",
+          "confidence": 0.58,
+          "reason": "Same step type found, but structure changed"
+        },
+        {
+          "name": "Normalize Columns",
+          "status": "partial",
+          "match_type": "partial",
+          "decision": "PARTIAL_RECOMPUTE",
+          "confidence": 0.58,
+          "reason": "Same step type found, but structure changed"
+        },
+        {
+          "name": "Aggregate Output",
+          "status": "partial",
+          "match_type": "partial",
+          "decision": "PARTIAL_RECOMPUTE",
+          "confidence": 0.58,
+          "reason": "Same step type found, but structure changed"
+        }
+      ],
+      "fingerprint": null,
+      "sourceName": null,
+      "color": "#ff8a00",
+      "workloadSummary": {
+        "mode": "demo",
+        "files_scanned": 1,
+        "total_size_bytes": 0,
+        "exact_or_invariant_matches": 0,
+        "partial_matches": 4,
+        "fresh_steps": 0
+      }
+    },
+    {
+      "id": "run_1775653083391",
+      "demo_key": "creative",
+      "family": "Image Flow",
+      "workflow": "Creative Pipeline",
+      "reusePercent": 100,
+      "timeAfter": 560,
+      "timeSaved": 10640,
+      "status": "Pattern Reused",
+      "timestamp": "08/04/2026, 06:28:03 PM",
+      "steps": [
+        {
+          "name": "Decode Asset",
+          "status": "reused",
+          "match_type": "exact",
+          "decision": "REUSE",
+          "confidence": 0.98,
+          "reason": "Same step signature seen before"
+        },
+        {
+          "name": "Resize Frame",
+          "status": "reused",
+          "match_type": "exact",
+          "decision": "REUSE",
+          "confidence": 0.98,
+          "reason": "Same step signature seen before"
+        },
+        {
+          "name": "Optimize Output",
+          "status": "reused",
+          "match_type": "exact",
+          "decision": "REUSE",
+          "confidence": 0.98,
+          "reason": "Same step signature seen before"
+        },
+        {
+          "name": "Export Render",
+          "status": "reused",
+          "match_type": "exact",
+          "decision": "REUSE",
+          "confidence": 0.98,
+          "reason": "Same step signature seen before"
+        }
+      ],
+      "fingerprint": null,
+      "sourceName": null,
+      "color": "#00c48c",
+      "workloadSummary": {
+        "mode": "demo",
+        "files_scanned": 1,
+        "total_size_bytes": 0,
+        "exact_or_invariant_matches": 4,
+        "partial_matches": 0,
+        "fresh_steps": 0
+      }
+    },
+    {
+      "id": "run_1775653077895",
+      "demo_key": "creative",
+      "family": "Image Flow",
+      "workflow": "Creative Pipeline",
+      "reusePercent": 100,
+      "timeAfter": 560,
+      "timeSaved": 10640,
+      "status": "Pattern Reused",
+      "timestamp": "08/04/2026, 06:27:57 PM",
+      "steps": [
+        {
+          "name": "Decode Asset",
+          "status": "reused",
+          "match_type": "exact",
+          "decision": "REUSE",
+          "confidence": 0.98,
+          "reason": "Same step signature seen before"
+        },
+        {
+          "name": "Resize Frame",
+          "status": "reused",
+          "match_type": "exact",
+          "decision": "REUSE",
+          "confidence": 0.98,
+          "reason": "Same step signature seen before"
+        },
+        {
+          "name": "Optimize Output",
+          "status": "reused",
+          "match_type": "exact",
+          "decision": "REUSE",
+          "confidence": 0.98,
+          "reason": "Same step signature seen before"
+        },
+        {
+          "name": "Export Render",
+          "status": "reused",
+          "match_type": "exact",
+          "decision": "REUSE",
+          "confidence": 0.98,
+          "reason": "Same step signature seen before"
+        }
+      ],
+      "fingerprint": null,
+      "sourceName": null,
+      "color": "#00c48c",
+      "workloadSummary": {
+        "mode": "demo",
+        "files_scanned": 1,
+        "total_size_bytes": 0,
+        "exact_or_invariant_matches": 4,
+        "partial_matches": 0,
+        "fresh_steps": 0
+      }
+    },
+    {
+      "id": "run_1775653075799",
+      "demo_key": "bundle",
+      "family": "Bundle Workload",
+      "workflow": "Bundle Pipeline",
+      "reusePercent": 0,
+      "timeAfter": 1880,
+      "timeSaved": 0,
+      "status": "First Run",
+      "timestamp": "08/04/2026, 06:27:55 PM",
+      "steps": [
+        {
+          "name": "Expand Bundle",
+          "status": "new",
+          "match_type": "fresh",
+          "decision": "FULL_RECOMPUTE",
+          "confidence": 0.24,
+          "reason": "No equivalent step found in memory"
+        },
+        {
+          "name": "Classify Families",
+          "status": "new",
+          "match_type": "fresh",
+          "decision": "FULL_RECOMPUTE",
+          "confidence": 0.24,
+          "reason": "No equivalent step found in memory"
+        },
+        {
+          "name": "Build Workload Graph",
+          "status": "new",
+          "match_type": "fresh",
+          "decision": "FULL_RECOMPUTE",
+          "confidence": 0.24,
+          "reason": "No equivalent step found in memory"
+        },
+        {
+          "name": "Optimize Execution Plan",
+          "status": "new",
+          "match_type": "fresh",
+          "decision": "FULL_RECOMPUTE",
+          "confidence": 0.24,
+          "reason": "No equivalent step found in memory"
+        }
+      ],
+      "fingerprint": "e039864a778ce48b44565e2a75e5e32c54881f78f2c655af518e328c0d2c49ec",
+      "sourceName": "XLP_Testing_Pack_v1.zip",
+      "color": "#7c3aed",
+      "workloadSummary": {
+        "mode": "bundle",
+        "files_scanned": 21,
+        "total_size_bytes": 13325,
+        "family_counts": {
+          "creative": 0,
+          "data": 7,
+          "dev": 14,
+          "other": 0
+        },
+        "sample_files": [
+          "README.md",
+          "requirements.txt",
+          "REAL_DEVICE_PILOT.md",
+          "common/__init__.py",
+          "common/signal_taxonomy.py",
+          "common/yuga_signal_engine.py",
+          "common/yuga_capability_trust.py",
+          "common/veda_policy.py"
+        ],
+        "exact_or_invariant_matches": 0,
+        "partial_matches": 0,
+        "fresh_steps": 4
+      }
+    },
+    {
+      "id": "run_1775653070997",
+      "demo_key": "creative",
+      "family": "Image Flow",
+      "workflow": "Creative Pipeline",
+      "reusePercent": 50,
+      "timeAfter": 920,
+      "timeSaved": 920,
+      "status": "Pattern Reused",
+      "timestamp": "08/04/2026, 06:27:50 PM",
+      "steps": [
+        {
+          "name": "Decode Asset",
+          "status": "partial",
+          "match_type": "partial",
+          "decision": "PARTIAL_RECOMPUTE",
+          "confidence": 0.58,
+          "reason": "Same step type found, but structure changed"
+        },
+        {
+          "name": "Resize Frame",
+          "status": "partial",
+          "match_type": "partial",
+          "decision": "PARTIAL_RECOMPUTE",
+          "confidence": 0.58,
+          "reason": "Same step type found, but structure changed"
+        },
+        {
+          "name": "Optimize Output",
+          "status": "partial",
+          "match_type": "partial",
+          "decision": "PARTIAL_RECOMPUTE",
+          "confidence": 0.58,
+          "reason": "Same step type found, but structure changed"
+        },
+        {
+          "name": "Export Render",
+          "status": "partial",
+          "match_type": "partial",
+          "decision": "PARTIAL_RECOMPUTE",
+          "confidence": 0.58,
+          "reason": "Same step type found, but structure changed"
+        }
+      ],
+      "fingerprint": null,
+      "sourceName": null,
+      "color": "#00c48c",
+      "workloadSummary": {
+        "mode": "demo",
+        "files_scanned": 1,
+        "total_size_bytes": 0,
+        "exact_or_invariant_matches": 0,
+        "partial_matches": 4,
+        "fresh_steps": 0
+      }
+    },
+    {
+      "id": "run_1775503665867",
+      "demo_key": "creative",
+      "family": "Image Flow",
+      "workflow": "Creative Pipeline",
+      "reusePercent": 0,
+      "timeAfter": 1280,
+      "timeSaved": 0,
+      "status": "First Run",
+      "timestamp": "07/04/2026, 12:57:45 AM",
+      "steps": [
+        {
+          "name": "Decode Asset",
+          "status": "done"
+        },
+        {
+          "name": "Resize Frame",
+          "status": "done"
+        },
+        {
+          "name": "Optimize Output",
+          "status": "done"
+        },
+        {
+          "name": "Export Render",
+          "status": "done"
+        }
+      ]
+    },
+    {
+      "id": "run_1775504999864",
+      "demo_key": "creative",
+      "family": "Image Flow",
+      "workflow": "Creative Pipeline",
+      "reusePercent": 74,
+      "timeAfter": 332,
+      "timeSaved": 945,
+      "status": "Pattern Reused",
+      "timestamp": "07/04/2026, 01:19:59 AM",
+      "steps": [
+        {
+          "name": "Decode Asset",
+          "status": "reused"
+        },
+        {
+          "name": "Resize Frame",
+          "status": "reused"
+        },
+        {
+          "name": "Optimize Output",
+          "status": "reused"
+        },
+        {
+          "name": "Export Render",
+          "status": "skipped"
+        }
+      ]
+    },
+    {
+      "id": "run_1775505131221",
+      "demo_key": "creative",
+      "family": "Image Flow",
+      "workflow": "Creative Pipeline",
+      "reusePercent": 74,
+      "timeAfter": 332,
+      "timeSaved": 945,
+      "status": "Pattern Reused",
+      "timestamp": "07/04/2026, 01:22:11 AM",
+      "steps": [
+        {
+          "name": "Decode Asset",
+          "status": "reused"
+        },
+        {
+          "name": "Resize Frame",
+          "status": "reused"
+        },
+        {
+          "name": "Optimize Output",
+          "status": "reused"
+        },
+        {
+          "name": "Export Render",
+          "status": "skipped"
+        }
+      ]
+    },
+    {
+      "id": "run_1775505156324",
+      "demo_key": "creative",
+      "family": "Image Flow",
+      "workflow": "Creative Pipeline",
+      "reusePercent": 74,
+      "timeAfter": 332,
+      "timeSaved": 945,
+      "status": "Pattern Reused",
+      "timestamp": "07/04/2026, 01:22:36 AM",
+      "steps": [
+        {
+          "name": "Decode Asset",
+          "status": "reused"
+        },
+        {
+          "name": "Resize Frame",
+          "status": "reused"
+        },
+        {
+          "name": "Optimize Output",
+          "status": "reused"
+        },
+        {
+          "name": "Export Render",
+          "status": "skipped"
+        }
+      ]
+    },
+    {
+      "id": "run_1775505166596",
+      "demo_key": "data",
+      "family": "Data Clean",
+      "workflow": "Data Pipeline",
+      "reusePercent": 0,
+      "timeAfter": 1450,
+      "timeSaved": 0,
+      "status": "First Run",
+      "timestamp": "07/04/2026, 01:22:46 AM",
+      "steps": [
+        {
+          "name": "Ingest Dataset",
+          "status": "done"
+        },
+        {
+          "name": "Validate Schema",
+          "status": "done"
+        },
+        {
+          "name": "Normalize Columns",
+          "status": "done"
+        },
+        {
+          "name": "Aggregate Output",
+          "status": "done"
+        }
+      ]
+    },
+    {
+      "id": "run_1775505170114",
+      "demo_key": "data",
+      "family": "Data Clean",
+      "workflow": "Data Pipeline",
+      "reusePercent": 68,
+      "timeAfter": 464,
+      "timeSaved": 986,
+      "status": "Pattern Reused",
+      "timestamp": "07/04/2026, 01:22:50 AM",
+      "steps": [
+        {
+          "name": "Ingest Dataset",
+          "status": "reused"
+        },
+        {
+          "name": "Validate Schema",
+          "status": "reused"
+        },
+        {
+          "name": "Normalize Columns",
+          "status": "done"
+        },
+        {
+          "name": "Aggregate Output",
+          "status": "skipped"
+        }
+      ]
+    },
+    {
+      "id": "run_1775505192363",
+      "demo_key": "dev",
+      "family": "Build Chain",
+      "workflow": "Dev Pipeline",
+      "reusePercent": 0,
+      "timeAfter": 1180,
+      "timeSaved": 0,
+      "status": "First Run",
+      "timestamp": "07/04/2026, 01:23:12 AM",
+      "steps": [
+        {
+          "name": "Resolve Dependencies",
+          "status": "done"
+        },
+        {
+          "name": "Transpile Source",
+          "status": "done"
+        },
+        {
+          "name": "Bundle Modules",
+          "status": "done"
+        },
+        {
+          "name": "Package Build",
+          "status": "done"
+        }
+      ]
+    },
+    {
+      "id": "run_1775505195747",
+      "demo_key": "dev",
+      "family": "Build Chain",
+      "workflow": "Dev Pipeline",
+      "reusePercent": 79,
+      "timeAfter": 250,
+      "timeSaved": 940,
+      "status": "Pattern Reused",
+      "timestamp": "07/04/2026, 01:23:15 AM",
+      "steps": [
+        {
+          "name": "Resolve Dependencies",
+          "status": "reused"
+        },
+        {
+          "name": "Transpile Source",
+          "status": "reused"
+        },
+        {
+          "name": "Bundle Modules",
+          "status": "done"
+        },
+        {
+          "name": "Package Build",
+          "status": "skipped"
+        }
+      ]
+    },
+    {
+      "id": "run_1775511076272",
+      "demo_key": "creative",
+      "family": "Image Flow",
+      "workflow": "Creative Pipeline",
+      "reusePercent": 74,
+      "timeAfter": 332,
+      "timeSaved": 945,
+      "status": "Pattern Reused",
+      "timestamp": "07/04/2026, 03:01:16 AM",
+      "steps": [
+        {
+          "name": "Decode Asset",
+          "status": "reused"
+        },
+        {
+          "name": "Resize Frame",
+          "status": "reused"
+        },
+        {
+          "name": "Optimize Output",
+          "status": "reused"
+        },
+        {
+          "name": "Export Render",
+          "status": "skipped"
+        }
+      ],
+      "fingerprint": null,
+      "sourceName": null
+    },
+    {
+      "id": "run_1775511195002",
+      "demo_key": "creative",
+      "family": "Image Flow",
+      "workflow": "Creative Pipeline",
+      "reusePercent": 74,
+      "timeAfter": 332,
+      "timeSaved": 945,
+      "status": "Pattern Reused",
+      "timestamp": "07/04/2026, 03:03:15 AM",
+      "steps": [
+        {
+          "name": "Decode Asset",
+          "status": "reused"
+        },
+        {
+          "name": "Resize Frame",
+          "status": "reused"
+        },
+        {
+          "name": "Optimize Output",
+          "status": "reused"
+        },
+        {
+          "name": "Export Render",
+          "status": "skipped"
+        }
+      ],
+      "fingerprint": null,
+      "sourceName": null
+    },
+    {
+      "id": "run_1775511208945",
+      "demo_key": "creative",
+      "family": "Image Flow",
+      "workflow": "Creative Pipeline",
+      "reusePercent": 74,
+      "timeAfter": 332,
+      "timeSaved": 945,
+      "status": "Pattern Reused",
+      "timestamp": "07/04/2026, 03:03:28 AM",
+      "steps": [
+        {
+          "name": "Decode Asset",
+          "status": "reused"
+        },
+        {
+          "name": "Resize Frame",
+          "status": "reused"
+        },
+        {
+          "name": "Optimize Output",
+          "status": "reused"
+        },
+        {
+          "name": "Export Render",
+          "status": "skipped"
+        }
+      ],
+      "fingerprint": null,
+      "sourceName": null
+    },
+    {
+      "id": "run_1775511214825",
+      "demo_key": "data",
+      "family": "Data Clean",
+      "workflow": "Data Pipeline",
+      "reusePercent": 68,
+      "timeAfter": 464,
+      "timeSaved": 986,
+      "status": "Pattern Reused",
+      "timestamp": "07/04/2026, 03:03:34 AM",
+      "steps": [
+        {
+          "name": "Ingest Dataset",
+          "status": "reused"
+        },
+        {
+          "name": "Validate Schema",
+          "status": "reused"
+        },
+        {
+          "name": "Normalize Columns",
+          "status": "done"
+        },
+        {
+          "name": "Aggregate Output",
+          "status": "skipped"
+        }
+      ],
+      "fingerprint": null,
+      "sourceName": null
+    },
+    {
+      "id": "run_1775511218665",
+      "demo_key": "dev",
+      "family": "Build Chain",
+      "workflow": "Dev Pipeline",
+      "reusePercent": 79,
+      "timeAfter": 250,
+      "timeSaved": 940,
+      "status": "Pattern Reused",
+      "timestamp": "07/04/2026, 03:03:38 AM",
+      "steps": [
+        {
+          "name": "Resolve Dependencies",
+          "status": "reused"
+        },
+        {
+          "name": "Transpile Source",
+          "status": "reused"
+        },
+        {
+          "name": "Bundle Modules",
+          "status": "done"
+        },
+        {
+          "name": "Package Build",
+          "status": "skipped"
+        }
+      ],
+      "fingerprint": null,
+      "sourceName": null
+    },
+    {
+      "id": "run_1775511224085",
+      "demo_key": "data",
+      "family": "Data Clean",
+      "workflow": "Data Pipeline",
+      "reusePercent": 0,
+      "timeAfter": 1450,
+      "timeSaved": 0,
+      "status": "First Run",
+      "timestamp": "07/04/2026, 03:03:44 AM",
+      "steps": [
+        {
+          "name": "Ingest Dataset",
+          "status": "done"
+        },
+        {
+          "name": "Validate Schema",
+          "status": "done"
+        },
+        {
+          "name": "Normalize Columns",
+          "status": "done"
+        },
+        {
+          "name": "Aggregate Output",
+          "status": "done"
+        }
+      ],
+      "fingerprint": "12bdfced62dade48d2e57c5c37ee46f4d78fa3da6d75e1a51b39fee83e0d92e3",
+      "sourceName": "RAW_Concept ( Secure, ultra fast tech, compression, SIM-less,irreversal ).docx"
+    },
+    {
+      "id": "run_1775511229481",
+      "demo_key": "data",
+      "family": "Data Clean",
+      "workflow": "Data Pipeline",
+      "reusePercent": 68,
+      "timeAfter": 464,
+      "timeSaved": 986,
+      "status": "Pattern Reused",
+      "timestamp": "07/04/2026, 03:03:49 AM",
+      "steps": [
+        {
+          "name": "Ingest Dataset",
+          "status": "reused"
+        },
+        {
+          "name": "Validate Schema",
+          "status": "reused"
+        },
+        {
+          "name": "Normalize Columns",
+          "status": "done"
+        },
+        {
+          "name": "Aggregate Output",
+          "status": "skipped"
+        }
+      ],
+      "fingerprint": null,
+      "sourceName": null
+    },
+    {
+      "id": "run_1775511234211",
+      "demo_key": "data",
+      "family": "Data Clean",
+      "workflow": "Data Pipeline",
+      "reusePercent": 68,
+      "timeAfter": 464,
+      "timeSaved": 986,
+      "status": "Pattern Reused",
+      "timestamp": "07/04/2026, 03:03:54 AM",
+      "steps": [
+        {
+          "name": "Ingest Dataset",
+          "status": "reused"
+        },
+        {
+          "name": "Validate Schema",
+          "status": "reused"
+        },
+        {
+          "name": "Normalize Columns",
+          "status": "done"
+        },
+        {
+          "name": "Aggregate Output",
+          "status": "skipped"
+        }
+      ],
+      "fingerprint": "12bdfced62dade48d2e57c5c37ee46f4d78fa3da6d75e1a51b39fee83e0d92e3",
+      "sourceName": "RAW_Concept ( Secure, ultra fast tech, compression, SIM-less,irreversal ).docx"
+    },
+    {
+      "id": "run_1775511241410",
+      "demo_key": "data",
+      "family": "Data Clean",
+      "workflow": "Data Pipeline",
+      "reusePercent": 68,
+      "timeAfter": 464,
+      "timeSaved": 986,
+      "status": "Pattern Reused",
+      "timestamp": "07/04/2026, 03:04:01 AM",
+      "steps": [
+        {
+          "name": "Ingest Dataset",
+          "status": "reused"
+        },
+        {
+          "name": "Validate Schema",
+          "status": "reused"
+        },
+        {
+          "name": "Normalize Columns",
+          "status": "done"
+        },
+        {
+          "name": "Aggregate Output",
+          "status": "skipped"
+        }
+      ],
+      "fingerprint": null,
+      "sourceName": null
+    },
+    {
+      "id": "run_1775561678995",
+      "demo_key": "creative",
+      "family": "Image Flow",
+      "workflow": "Creative Pipeline",
+      "reusePercent": 0,
+      "timeAfter": 1280,
+      "timeSaved": 0,
+      "status": "First Run",
+      "timestamp": "07/04/2026, 05:04:38 PM",
+      "steps": [
+        {
+          "name": "Decode Asset",
+          "status": "done"
+        },
+        {
+          "name": "Resize Frame",
+          "status": "done"
+        },
+        {
+          "name": "Optimize Output",
+          "status": "done"
+        },
+        {
+          "name": "Export Render",
+          "status": "done"
+        }
+      ],
+      "fingerprint": "0c1534d0a38e629afe0a60a33860485d8922b83e5b16d016982a2b75dc754058",
+      "sourceName": "Qbaix - Runtime ecosys.png"
+    },
+    {
+      "id": "run_1775561693281",
+      "demo_key": "creative",
+      "family": "Image Flow",
+      "workflow": "Creative Pipeline",
+      "reusePercent": 74,
+      "timeAfter": 332,
+      "timeSaved": 945,
+      "status": "Pattern Reused",
+      "timestamp": "07/04/2026, 05:04:53 PM",
+      "steps": [
+        {
+          "name": "Decode Asset",
+          "status": "reused"
+        },
+        {
+          "name": "Resize Frame",
+          "status": "reused"
+        },
+        {
+          "name": "Optimize Output",
+          "status": "reused"
+        },
+        {
+          "name": "Export Render",
+          "status": "skipped"
+        }
+      ],
+      "fingerprint": "0c1534d0a38e629afe0a60a33860485d8922b83e5b16d016982a2b75dc754058",
+      "sourceName": "Qbaix - Runtime ecosys.png"
+    },
+    {
+      "id": "run_1775561708426",
+      "demo_key": "creative",
+      "family": "Image Flow",
+      "workflow": "Creative Pipeline",
+      "reusePercent": 74,
+      "timeAfter": 332,
+      "timeSaved": 945,
+      "status": "Pattern Reused",
+      "timestamp": "07/04/2026, 05:05:08 PM",
+      "steps": [
+        {
+          "name": "Decode Asset",
+          "status": "reused"
+        },
+        {
+          "name": "Resize Frame",
+          "status": "reused"
+        },
+        {
+          "name": "Optimize Output",
+          "status": "reused"
+        },
+        {
+          "name": "Export Render",
+          "status": "skipped"
+        }
+      ],
+      "fingerprint": "0c1534d0a38e629afe0a60a33860485d8922b83e5b16d016982a2b75dc754058",
+      "sourceName": "Qbaix - Runtime ecosys.png"
+    },
+    {
+      "id": "run_1775561732359",
+      "demo_key": "creative",
+      "family": "Image Flow",
+      "workflow": "Creative Pipeline",
+      "reusePercent": 74,
+      "timeAfter": 332,
+      "timeSaved": 945,
+      "status": "Pattern Reused",
+      "timestamp": "07/04/2026, 05:05:32 PM",
+      "steps": [
+        {
+          "name": "Decode Asset",
+          "status": "reused"
+        },
+        {
+          "name": "Resize Frame",
+          "status": "reused"
+        },
+        {
+          "name": "Optimize Output",
+          "status": "reused"
+        },
+        {
+          "name": "Export Render",
+          "status": "skipped"
+        }
+      ],
+      "fingerprint": "0c1534d0a38e629afe0a60a33860485d8922b83e5b16d016982a2b75dc754058",
+      "sourceName": "Qbaix - Runtime ecosys.png"
+    },
+    {
+      "id": "run_1775561738386",
+      "demo_key": "creative",
+      "family": "Image Flow",
+      "workflow": "Creative Pipeline",
+      "reusePercent": 74,
+      "timeAfter": 332,
+      "timeSaved": 945,
+      "status": "Pattern Reused",
+      "timestamp": "07/04/2026, 05:05:38 PM",
+      "steps": [
+        {
+          "name": "Decode Asset",
+          "status": "reused"
+        },
+        {
+          "name": "Resize Frame",
+          "status": "reused"
+        },
+        {
+          "name": "Optimize Output",
+          "status": "reused"
+        },
+        {
+          "name": "Export Render",
+          "status": "skipped"
+        }
+      ],
+      "fingerprint": "0c1534d0a38e629afe0a60a33860485d8922b83e5b16d016982a2b75dc754058",
+      "sourceName": "Qbaix - Runtime ecosys.png"
+    },
+    {
+      "id": "run_1775565407864",
+      "demo_key": "creative",
+      "family": "Image Flow",
+      "workflow": "Creative Pipeline",
+      "reusePercent": 0,
+      "timeAfter": 920,
+      "timeSaved": 0,
+      "status": "First Run",
+      "timestamp": "07/04/2026, 06:06:47 PM",
+      "steps": [
+        {
+          "name": "Decode Asset",
+          "status": "partial",
+          "match_type": "partial",
+          "reason": "Same step type found, but input features changed"
+        },
+        {
+          "name": "Resize Frame",
+          "status": "partial",
+          "match_type": "partial",
+          "reason": "Same step type found, but input features changed"
+        },
+        {
+          "name": "Optimize Output",
+          "status": "partial",
+          "match_type": "partial",
+          "reason": "Same step type found, but input features changed"
+        },
+        {
+          "name": "Export Render",
+          "status": "partial",
+          "match_type": "partial",
+          "reason": "Same step type found, but input features changed"
+        }
+      ],
+      "fingerprint": null,
+      "sourceName": null
+    },
+    {
+      "id": "run_1775566935394",
+      "demo_key": "creative",
+      "family": "Image Flow",
+      "workflow": "Creative Pipeline",
+      "reusePercent": 0,
+      "timeAfter": 920,
+      "timeSaved": 0,
+      "status": "First Run",
+      "timestamp": "07/04/2026, 06:32:15 PM",
+      "steps": [
+        {
+          "name": "Decode Asset",
+          "status": "partial",
+          "match_type": "partial",
+          "reason": "Same step type found, but input features changed"
+        },
+        {
+          "name": "Resize Frame",
+          "status": "partial",
+          "match_type": "partial",
+          "reason": "Same step type found, but input features changed"
+        },
+        {
+          "name": "Optimize Output",
+          "status": "partial",
+          "match_type": "partial",
+          "reason": "Same step type found, but input features changed"
+        },
+        {
+          "name": "Export Render",
+          "status": "partial",
+          "match_type": "partial",
+          "reason": "Same step type found, but input features changed"
+        }
+      ],
+      "fingerprint": null,
+      "sourceName": null
+    },
+    {
+      "id": "run_1775566995094",
+      "demo_key": "creative",
+      "family": "Image Flow",
+      "workflow": "Creative Pipeline",
+      "reusePercent": 0,
+      "timeAfter": 920,
+      "timeSaved": 0,
+      "status": "First Run",
+      "timestamp": "07/04/2026, 06:33:15 PM",
+      "steps": [
+        {
+          "name": "Decode Asset",
+          "status": "partial",
+          "match_type": "partial",
+          "reason": "Same step type found, but input features changed"
+        },
+        {
+          "name": "Resize Frame",
+          "status": "partial",
+          "match_type": "partial",
+          "reason": "Same step type found, but input features changed"
+        },
+        {
+          "name": "Optimize Output",
+          "status": "partial",
+          "match_type": "partial",
+          "reason": "Same step type found, but input features changed"
+        },
+        {
+          "name": "Export Render",
+          "status": "partial",
+          "match_type": "partial",
+          "reason": "Same step type found, but input features changed"
+        }
+      ],
+      "fingerprint": null,
+      "sourceName": null
+    },
+    {
+      "id": "run_1775566996700",
+      "demo_key": "data",
+      "family": "Data Clean",
+      "workflow": "Data Pipeline",
+      "reusePercent": 0,
+      "timeAfter": 1090,
+      "timeSaved": 0,
+      "status": "First Run",
+      "timestamp": "07/04/2026, 06:33:16 PM",
+      "steps": [
+        {
+          "name": "Ingest Dataset",
+          "status": "partial",
+          "match_type": "partial",
+          "reason": "Same step type found, but input features changed"
+        },
+        {
+          "name": "Validate Schema",
+          "status": "partial",
+          "match_type": "partial",
+          "reason": "Same step type found, but input features changed"
+        },
+        {
+          "name": "Normalize Columns",
+          "status": "partial",
+          "match_type": "partial",
+          "reason": "Same step type found, but input features changed"
+        },
+        {
+          "name": "Aggregate Output",
+          "status": "partial",
+          "match_type": "partial",
+          "reason": "Same step type found, but input features changed"
+        }
+      ],
+      "fingerprint": "12bdfced62dade48d2e57c5c37ee46f4d78fa3da6d75e1a51b39fee83e0d92e3",
+      "sourceName": "RAW_Concept ( Secure, ultra fast tech, compression, SIM-less,irreversal ).docx"
+    },
+    {
+      "id": "run_1775567007240",
+      "demo_key": "data",
+      "family": "Data Clean",
+      "workflow": "Data Pipeline",
+      "reusePercent": 0,
+      "timeAfter": 1090,
+      "timeSaved": 0,
+      "status": "First Run",
+      "timestamp": "07/04/2026, 06:33:27 PM",
+      "steps": [
+        {
+          "name": "Ingest Dataset",
+          "status": "partial",
+          "match_type": "partial",
+          "reason": "Same step type found, but input features changed"
+        },
+        {
+          "name": "Validate Schema",
+          "status": "partial",
+          "match_type": "partial",
+          "reason": "Same step type found, but input features changed"
+        },
+        {
+          "name": "Normalize Columns",
+          "status": "partial",
+          "match_type": "partial",
+          "reason": "Same step type found, but input features changed"
+        },
+        {
+          "name": "Aggregate Output",
+          "status": "partial",
+          "match_type": "partial",
+          "reason": "Same step type found, but input features changed"
+        }
+      ],
+      "fingerprint": null,
+      "sourceName": null
+    },
+    {
+      "id": "run_1775567010207",
+      "demo_key": "dev",
+      "family": "Build Chain",
+      "workflow": "Dev Pipeline",
+      "reusePercent": 0,
+      "timeAfter": 820,
+      "timeSaved": 0,
+      "status": "First Run",
+      "timestamp": "07/04/2026, 06:33:30 PM",
+      "steps": [
+        {
+          "name": "Resolve Dependencies",
+          "status": "partial",
+          "match_type": "partial",
+          "reason": "Same step type found, but input features changed"
+        },
+        {
+          "name": "Transpile Source",
+          "status": "partial",
+          "match_type": "partial",
+          "reason": "Same step type found, but input features changed"
+        },
+        {
+          "name": "Bundle Modules",
+          "status": "partial",
+          "match_type": "partial",
+          "reason": "Same step type found, but input features changed"
+        },
+        {
+          "name": "Package Build",
+          "status": "partial",
+          "match_type": "partial",
+          "reason": "Same step type found, but input features changed"
+        }
+      ],
+      "fingerprint": null,
+      "sourceName": null
+    },
+    {
+      "id": "run_1775567015600",
+      "demo_key": "dev",
+      "family": "Build Chain",
+      "workflow": "Dev Pipeline",
+      "reusePercent": 0,
+      "timeAfter": 820,
+      "timeSaved": 0,
+      "status": "First Run",
+      "timestamp": "07/04/2026, 06:33:35 PM",
+      "steps": [
+        {
+          "name": "Resolve Dependencies",
+          "status": "partial",
+          "match_type": "partial",
+          "reason": "Same step type found, but input features changed"
+        },
+        {
+          "name": "Transpile Source",
+          "status": "partial",
+          "match_type": "partial",
+          "reason": "Same step type found, but input features changed"
+        },
+        {
+          "name": "Bundle Modules",
+          "status": "partial",
+          "match_type": "partial",
+          "reason": "Same step type found, but input features changed"
+        },
+        {
+          "name": "Package Build",
+          "status": "partial",
+          "match_type": "partial",
+          "reason": "Same step type found, but input features changed"
+        }
+      ],
+      "fingerprint": null,
+      "sourceName": null
+    },
+    {
+      "id": "run_1775567019751",
+      "demo_key": "creative",
+      "family": "Image Flow",
+      "workflow": "Creative Pipeline",
+      "reusePercent": 0,
+      "timeAfter": 920,
+      "timeSaved": 0,
+      "status": "First Run",
+      "timestamp": "07/04/2026, 06:33:39 PM",
+      "steps": [
+        {
+          "name": "Decode Asset",
+          "status": "partial",
+          "match_type": "partial",
+          "reason": "Same step type found, but input features changed"
+        },
+        {
+          "name": "Resize Frame",
+          "status": "partial",
+          "match_type": "partial",
+          "reason": "Same step type found, but input features changed"
+        },
+        {
+          "name": "Optimize Output",
+          "status": "partial",
+          "match_type": "partial",
+          "reason": "Same step type found, but input features changed"
+        },
+        {
+          "name": "Export Render",
+          "status": "partial",
+          "match_type": "partial",
+          "reason": "Same step type found, but input features changed"
+        }
+      ],
+      "fingerprint": null,
+      "sourceName": null
+    },
+    {
+      "id": "run_1775567021481",
+      "demo_key": "data",
+      "family": "Data Clean",
+      "workflow": "Data Pipeline",
+      "reusePercent": 0,
+      "timeAfter": 1090,
+      "timeSaved": 0,
+      "status": "First Run",
+      "timestamp": "07/04/2026, 06:33:41 PM",
+      "steps": [
+        {
+          "name": "Ingest Dataset",
+          "status": "partial",
+          "match_type": "partial",
+          "reason": "Same step type found, but input features changed"
+        },
+        {
+          "name": "Validate Schema",
+          "status": "partial",
+          "match_type": "partial",
+          "reason": "Same step type found, but input features changed"
+        },
+        {
+          "name": "Normalize Columns",
+          "status": "partial",
+          "match_type": "partial",
+          "reason": "Same step type found, but input features changed"
+        },
+        {
+          "name": "Aggregate Output",
+          "status": "partial",
+          "match_type": "partial",
+          "reason": "Same step type found, but input features changed"
+        }
+      ],
+      "fingerprint": "12bdfced62dade48d2e57c5c37ee46f4d78fa3da6d75e1a51b39fee83e0d92e3",
+      "sourceName": "RAW_Concept ( Secure, ultra fast tech, compression, SIM-less,irreversal ).docx"
+    },
+    {
+      "id": "run_1775567068928",
+      "demo_key": "data",
+      "family": "Data Clean",
+      "workflow": "Data Pipeline",
+      "reusePercent": 0,
+      "timeAfter": 1090,
+      "timeSaved": 0,
+      "status": "First Run",
+      "timestamp": "07/04/2026, 06:34:28 PM",
+      "steps": [
+        {
+          "name": "Ingest Dataset",
+          "status": "partial",
+          "match_type": "partial",
+          "reason": "Same step type found, but input features changed"
+        },
+        {
+          "name": "Validate Schema",
+          "status": "partial",
+          "match_type": "partial",
+          "reason": "Same step type found, but input features changed"
+        },
+        {
+          "name": "Normalize Columns",
+          "status": "partial",
+          "match_type": "partial",
+          "reason": "Same step type found, but input features changed"
+        },
+        {
+          "name": "Aggregate Output",
+          "status": "partial",
+          "match_type": "partial",
+          "reason": "Same step type found, but input features changed"
+        }
+      ],
+      "fingerprint": null,
+      "sourceName": null
+    },
+    {
+      "id": "run_1775567078170",
+      "demo_key": "data",
+      "family": "Data Clean",
+      "workflow": "Data Pipeline",
+      "reusePercent": 0,
+      "timeAfter": 1090,
+      "timeSaved": 0,
+      "status": "First Run",
+      "timestamp": "07/04/2026, 06:34:38 PM",
+      "steps": [
+        {
+          "name": "Ingest Dataset",
+          "status": "partial",
+          "match_type": "partial",
+          "reason": "Same step type found, but input features changed"
+        },
+        {
+          "name": "Validate Schema",
+          "status": "partial",
+          "match_type": "partial",
+          "reason": "Same step type found, but input features changed"
+        },
+        {
+          "name": "Normalize Columns",
+          "status": "partial",
+          "match_type": "partial",
+          "reason": "Same step type found, but input features changed"
+        },
+        {
+          "name": "Aggregate Output",
+          "status": "partial",
+          "match_type": "partial",
+          "reason": "Same step type found, but input features changed"
+        }
+      ],
+      "fingerprint": "dde9fcf4e5ff5219a88b339a23fc7bd7e2740cdcd70412e35b0a28ce771382f6",
+      "sourceName": "XLP_MASTER_PROJECT.md"
+    },
+    {
+      "id": "run_1775567078975",
+      "demo_key": "data",
+      "family": "Data Clean",
+      "workflow": "Data Pipeline",
+      "reusePercent": 0,
+      "timeAfter": 1090,
+      "timeSaved": 0,
+      "status": "First Run",
+      "timestamp": "07/04/2026, 06:34:38 PM",
+      "steps": [
+        {
+          "name": "Ingest Dataset",
+          "status": "partial",
+          "match_type": "partial",
+          "reason": "Same step type found, but input features changed"
+        },
+        {
+          "name": "Validate Schema",
+          "status": "partial",
+          "match_type": "partial",
+          "reason": "Same step type found, but input features changed"
+        },
+        {
+          "name": "Normalize Columns",
+          "status": "partial",
+          "match_type": "partial",
+          "reason": "Same step type found, but input features changed"
+        },
+        {
+          "name": "Aggregate Output",
+          "status": "partial",
+          "match_type": "partial",
+          "reason": "Same step type found, but input features changed"
+        }
+      ],
+      "fingerprint": null,
+      "sourceName": null
+    },
+    {
+      "id": "run_1775567080926",
+      "demo_key": "creative",
+      "family": "Image Flow",
+      "workflow": "Creative Pipeline",
+      "reusePercent": 0,
+      "timeAfter": 920,
+      "timeSaved": 0,
+      "status": "First Run",
+      "timestamp": "07/04/2026, 06:34:40 PM",
+      "steps": [
+        {
+          "name": "Decode Asset",
+          "status": "partial",
+          "match_type": "partial",
+          "reason": "Same step type found, but input features changed"
+        },
+        {
+          "name": "Resize Frame",
+          "status": "partial",
+          "match_type": "partial",
+          "reason": "Same step type found, but input features changed"
+        },
+        {
+          "name": "Optimize Output",
+          "status": "partial",
+          "match_type": "partial",
+          "reason": "Same step type found, but input features changed"
+        },
+        {
+          "name": "Export Render",
+          "status": "partial",
+          "match_type": "partial",
+          "reason": "Same step type found, but input features changed"
+        }
+      ],
+      "fingerprint": null,
+      "sourceName": null
+    },
+    {
+      "id": "run_1775567082120",
+      "demo_key": "data",
+      "family": "Data Clean",
+      "workflow": "Data Pipeline",
+      "reusePercent": 0,
+      "timeAfter": 1090,
+      "timeSaved": 0,
+      "status": "First Run",
+      "timestamp": "07/04/2026, 06:34:42 PM",
+      "steps": [
+        {
+          "name": "Ingest Dataset",
+          "status": "partial",
+          "match_type": "partial",
+          "reason": "Same step type found, but input features changed"
+        },
+        {
+          "name": "Validate Schema",
+          "status": "partial",
+          "match_type": "partial",
+          "reason": "Same step type found, but input features changed"
+        },
+        {
+          "name": "Normalize Columns",
+          "status": "partial",
+          "match_type": "partial",
+          "reason": "Same step type found, but input features changed"
+        },
+        {
+          "name": "Aggregate Output",
+          "status": "partial",
+          "match_type": "partial",
+          "reason": "Same step type found, but input features changed"
+        }
+      ],
+      "fingerprint": "dde9fcf4e5ff5219a88b339a23fc7bd7e2740cdcd70412e35b0a28ce771382f6",
+      "sourceName": "XLP_MASTER_PROJECT.md"
+    },
+    {
+      "id": "run_1775567083078",
+      "demo_key": "data",
+      "family": "Data Clean",
+      "workflow": "Data Pipeline",
+      "reusePercent": 0,
+      "timeAfter": 1090,
+      "timeSaved": 0,
+      "status": "First Run",
+      "timestamp": "07/04/2026, 06:34:43 PM",
+      "steps": [
+        {
+          "name": "Ingest Dataset",
+          "status": "partial",
+          "match_type": "partial",
+          "reason": "Same step type found, but input features changed"
+        },
+        {
+          "name": "Validate Schema",
+          "status": "partial",
+          "match_type": "partial",
+          "reason": "Same step type found, but input features changed"
+        },
+        {
+          "name": "Normalize Columns",
+          "status": "partial",
+          "match_type": "partial",
+          "reason": "Same step type found, but input features changed"
+        },
+        {
+          "name": "Aggregate Output",
+          "status": "partial",
+          "match_type": "partial",
+          "reason": "Same step type found, but input features changed"
+        }
+      ],
+      "fingerprint": null,
+      "sourceName": null
+    },
+    {
+      "id": "run_1775567086064",
+      "demo_key": "data",
+      "family": "Data Clean",
+      "workflow": "Data Pipeline",
+      "reusePercent": 0,
+      "timeAfter": 1090,
+      "timeSaved": 0,
+      "status": "First Run",
+      "timestamp": "07/04/2026, 06:34:46 PM",
+      "steps": [
+        {
+          "name": "Ingest Dataset",
+          "status": "partial",
+          "match_type": "partial",
+          "reason": "Same step type found, but input features changed"
+        },
+        {
+          "name": "Validate Schema",
+          "status": "partial",
+          "match_type": "partial",
+          "reason": "Same step type found, but input features changed"
+        },
+        {
+          "name": "Normalize Columns",
+          "status": "partial",
+          "match_type": "partial",
+          "reason": "Same step type found, but input features changed"
+        },
+        {
+          "name": "Aggregate Output",
+          "status": "partial",
+          "match_type": "partial",
+          "reason": "Same step type found, but input features changed"
+        }
+      ],
+      "fingerprint": "dde9fcf4e5ff5219a88b339a23fc7bd7e2740cdcd70412e35b0a28ce771382f6",
+      "sourceName": "XLP_MASTER_PROJECT.md"
+    },
+    {
+      "id": "run_1775567089023",
+      "demo_key": "data",
+      "family": "Data Clean",
+      "workflow": "Data Pipeline",
+      "reusePercent": 0,
+      "timeAfter": 1090,
+      "timeSaved": 0,
+      "status": "First Run",
+      "timestamp": "07/04/2026, 06:34:49 PM",
+      "steps": [
+        {
+          "name": "Ingest Dataset",
+          "status": "partial",
+          "match_type": "partial",
+          "reason": "Same step type found, but input features changed"
+        },
+        {
+          "name": "Validate Schema",
+          "status": "partial",
+          "match_type": "partial",
+          "reason": "Same step type found, but input features changed"
+        },
+        {
+          "name": "Normalize Columns",
+          "status": "partial",
+          "match_type": "partial",
+          "reason": "Same step type found, but input features changed"
+        },
+        {
+          "name": "Aggregate Output",
+          "status": "partial",
+          "match_type": "partial",
+          "reason": "Same step type found, but input features changed"
+        }
+      ],
+      "fingerprint": null,
+      "sourceName": null
+    },
+    {
+      "id": "run_1775567092271",
+      "demo_key": "dev",
+      "family": "Build Chain",
+      "workflow": "Dev Pipeline",
+      "reusePercent": 0,
+      "timeAfter": 820,
+      "timeSaved": 0,
+      "status": "First Run",
+      "timestamp": "07/04/2026, 06:34:52 PM",
+      "steps": [
+        {
+          "name": "Resolve Dependencies",
+          "status": "partial",
+          "match_type": "partial",
+          "reason": "Same step type found, but input features changed"
+        },
+        {
+          "name": "Transpile Source",
+          "status": "partial",
+          "match_type": "partial",
+          "reason": "Same step type found, but input features changed"
+        },
+        {
+          "name": "Bundle Modules",
+          "status": "partial",
+          "match_type": "partial",
+          "reason": "Same step type found, but input features changed"
+        },
+        {
+          "name": "Package Build",
+          "status": "partial",
+          "match_type": "partial",
+          "reason": "Same step type found, but input features changed"
+        }
+      ],
+      "fingerprint": null,
+      "sourceName": null
+    },
+    {
+      "id": "run_1775567093914",
+      "demo_key": "data",
+      "family": "Data Clean",
+      "workflow": "Data Pipeline",
+      "reusePercent": 0,
+      "timeAfter": 1090,
+      "timeSaved": 0,
+      "status": "First Run",
+      "timestamp": "07/04/2026, 06:34:53 PM",
+      "steps": [
+        {
+          "name": "Ingest Dataset",
+          "status": "partial",
+          "match_type": "partial",
+          "reason": "Same step type found, but input features changed"
+        },
+        {
+          "name": "Validate Schema",
+          "status": "partial",
+          "match_type": "partial",
+          "reason": "Same step type found, but input features changed"
+        },
+        {
+          "name": "Normalize Columns",
+          "status": "partial",
+          "match_type": "partial",
+          "reason": "Same step type found, but input features changed"
+        },
+        {
+          "name": "Aggregate Output",
+          "status": "partial",
+          "match_type": "partial",
+          "reason": "Same step type found, but input features changed"
+        }
+      ],
+      "fingerprint": "dde9fcf4e5ff5219a88b339a23fc7bd7e2740cdcd70412e35b0a28ce771382f6",
+      "sourceName": "XLP_MASTER_PROJECT.md"
+    },
+    {
+      "id": "run_1775567095479",
+      "demo_key": "data",
+      "family": "Data Clean",
+      "workflow": "Data Pipeline",
+      "reusePercent": 0,
+      "timeAfter": 1090,
+      "timeSaved": 0,
+      "status": "First Run",
+      "timestamp": "07/04/2026, 06:34:55 PM",
+      "steps": [
+        {
+          "name": "Ingest Dataset",
+          "status": "partial",
+          "match_type": "partial",
+          "reason": "Same step type found, but input features changed"
+        },
+        {
+          "name": "Validate Schema",
+          "status": "partial",
+          "match_type": "partial",
+          "reason": "Same step type found, but input features changed"
+        },
+        {
+          "name": "Normalize Columns",
+          "status": "partial",
+          "match_type": "partial",
+          "reason": "Same step type found, but input features changed"
+        },
+        {
+          "name": "Aggregate Output",
+          "status": "partial",
+          "match_type": "partial",
+          "reason": "Same step type found, but input features changed"
+        }
+      ],
+      "fingerprint": null,
+      "sourceName": null
+    }
+  ],
+  "signatures": [
+    {
+      "step_type": "decode_asset",
+      "input_kind": "creative",
+      "features": {
+        "demo": true
+      },
+      "feature_hash": "264da7f91f36cccd"
+    },
+    {
+      "step_type": "resize_frame",
+      "input_kind": "creative",
+      "features": {
+        "demo": true
+      },
+      "feature_hash": "085f436c663f6651"
+    },
+    {
+      "step_type": "optimize_output",
+      "input_kind": "creative",
+      "features": {
+        "demo": true
+      },
+      "feature_hash": "e2f0cfe05905458a"
+    },
+    {
+      "step_type": "export_render",
+      "input_kind": "creative",
+      "features": {
+        "demo": true
+      },
+      "feature_hash": "a784c488d6849b18"
+    },
+    {
+      "step_type": "decode_asset",
+      "input_kind": "creative",
+      "features": {
+        "demo": true
+      },
+      "feature_hash": "264da7f91f36cccd"
+    },
+    {
+      "step_type": "resize_frame",
+      "input_kind": "creative",
+      "features": {
+        "demo": true
+      },
+      "feature_hash": "085f436c663f6651"
+    },
+    {
+      "step_type": "optimize_output",
+      "input_kind": "creative",
+      "features": {
+        "demo": true
+      },
+      "feature_hash": "e2f0cfe05905458a"
+    },
+    {
+      "step_type": "export_render",
+      "input_kind": "creative",
+      "features": {
+        "demo": true
+      },
+      "feature_hash": "a784c488d6849b18"
+    },
+    {
+      "step_type": "decode_asset",
+      "input_kind": "creative",
+      "features": {
+        "demo": true
+      },
+      "feature_hash": "264da7f91f36cccd"
+    },
+    {
+      "step_type": "resize_frame",
+      "input_kind": "creative",
+      "features": {
+        "demo": true
+      },
+      "feature_hash": "085f436c663f6651"
+    },
+    {
+      "step_type": "optimize_output",
+      "input_kind": "creative",
+      "features": {
+        "demo": true
+      },
+      "feature_hash": "e2f0cfe05905458a"
+    },
+    {
+      "step_type": "export_render",
+      "input_kind": "creative",
+      "features": {
+        "demo": true
+      },
+      "feature_hash": "a784c488d6849b18"
+    },
+    {
+      "step_type": "decode_asset",
+      "input_kind": "creative",
+      "features": {
+        "demo": true
+      },
+      "feature_hash": "264da7f91f36cccd"
+    },
+    {
+      "step_type": "resize_frame",
+      "input_kind": "creative",
+      "features": {
+        "demo": true
+      },
+      "feature_hash": "085f436c663f6651"
+    },
+    {
+      "step_type": "optimize_output",
+      "input_kind": "creative",
+      "features": {
+        "demo": true
+      },
+      "feature_hash": "e2f0cfe05905458a"
+    },
+    {
+      "step_type": "export_render",
+      "input_kind": "creative",
+      "features": {
+        "demo": true
+      },
+      "feature_hash": "a784c488d6849b18"
+    },
+    {
+      "step_type": "decode_asset",
+      "input_kind": "creative",
+      "features": {
+        "demo": true
+      },
+      "feature_hash": "264da7f91f36cccd"
+    },
+    {
+      "step_type": "resize_frame",
+      "input_kind": "creative",
+      "features": {
+        "demo": true
+      },
+      "feature_hash": "085f436c663f6651"
+    },
+    {
+      "step_type": "optimize_output",
+      "input_kind": "creative",
+      "features": {
+        "demo": true
+      },
+      "feature_hash": "e2f0cfe05905458a"
+    },
+    {
+      "step_type": "export_render",
+      "input_kind": "creative",
+      "features": {
+        "demo": true
+      },
+      "feature_hash": "a784c488d6849b18"
+    },
+    {
+      "step_type": "ingest_dataset",
+      "input_kind": "data",
+      "features": {
+        "demo": true
+      },
+      "feature_hash": "675b0db4b3e14824"
+    },
+    {
+      "step_type": "validate_schema",
+      "input_kind": "data",
+      "features": {
+        "demo": true
+      },
+      "feature_hash": "87df780e01708243"
+    },
+    {
+      "step_type": "normalize_columns",
+      "input_kind": "data",
+      "features": {
+        "demo": true
+      },
+      "feature_hash": "bfeb36f18dd456db"
+    },
+    {
+      "step_type": "aggregate_output",
+      "input_kind": "data",
+      "features": {
+        "demo": true
+      },
+      "feature_hash": "374cf2a1a5ceed8a"
+    },
+    {
+      "step_type": "decode_asset",
+      "input_kind": "creative",
+      "features": {
+        "demo": true
+      },
+      "feature_hash": "264da7f91f36cccd"
+    },
+    {
+      "step_type": "resize_frame",
+      "input_kind": "creative",
+      "features": {
+        "demo": true
+      },
+      "feature_hash": "085f436c663f6651"
+    },
+    {
+      "step_type": "optimize_output",
+      "input_kind": "creative",
+      "features": {
+        "demo": true
+      },
+      "feature_hash": "e2f0cfe05905458a"
+    },
+    {
+      "step_type": "export_render",
+      "input_kind": "creative",
+      "features": {
+        "demo": true
+      },
+      "feature_hash": "a784c488d6849b18"
+    },
+    {
+      "step_type": "ingest_dataset",
+      "input_kind": "data",
+      "features": {
+        "demo": true
+      },
+      "feature_hash": "675b0db4b3e14824"
+    },
+    {
+      "step_type": "validate_schema",
+      "input_kind": "data",
+      "features": {
+        "demo": true
+      },
+      "feature_hash": "87df780e01708243"
+    },
+    {
+      "step_type": "normalize_columns",
+      "input_kind": "data",
+      "features": {
+        "demo": true
+      },
+      "feature_hash": "bfeb36f18dd456db"
+    },
+    {
+      "step_type": "aggregate_output",
+      "input_kind": "data",
+      "features": {
+        "demo": true
+      },
+      "feature_hash": "374cf2a1a5ceed8a"
+    },
+    {
+      "step_type": "ingest_dataset",
+      "input_kind": "data",
+      "features": {
+        "demo": true
+      },
+      "feature_hash": "675b0db4b3e14824"
+    },
+    {
+      "step_type": "validate_schema",
+      "input_kind": "data",
+      "features": {
+        "demo": true
+      },
+      "feature_hash": "87df780e01708243"
+    },
+    {
+      "step_type": "normalize_columns",
+      "input_kind": "data",
+      "features": {
+        "demo": true
+      },
+      "feature_hash": "bfeb36f18dd456db"
+    },
+    {
+      "step_type": "aggregate_output",
+      "input_kind": "data",
+      "features": {
+        "demo": true
+      },
+      "feature_hash": "374cf2a1a5ceed8a"
+    },
+    {
+      "step_type": "ingest_dataset",
+      "input_kind": "data",
+      "features": {
+        "demo": true
+      },
+      "feature_hash": "675b0db4b3e14824"
+    },
+    {
+      "step_type": "validate_schema",
+      "input_kind": "data",
+      "features": {
+        "demo": true
+      },
+      "feature_hash": "87df780e01708243"
+    },
+    {
+      "step_type": "normalize_columns",
+      "input_kind": "data",
+      "features": {
+        "demo": true
+      },
+      "feature_hash": "bfeb36f18dd456db"
+    },
+    {
+      "step_type": "aggregate_output",
+      "input_kind": "data",
+      "features": {
+        "demo": true
+      },
+      "feature_hash": "374cf2a1a5ceed8a"
+    },
+    {
+      "step_type": "decode_asset",
+      "input_kind": "creative",
+      "features": {
+        "demo": true
+      },
+      "feature_hash": "264da7f91f36cccd"
+    },
+    {
+      "step_type": "resize_frame",
+      "input_kind": "creative",
+      "features": {
+        "demo": true
+      },
+      "feature_hash": "085f436c663f6651"
+    },
+    {
+      "step_type": "optimize_output",
+      "input_kind": "creative",
+      "features": {
+        "demo": true
+      },
+      "feature_hash": "e2f0cfe05905458a"
+    },
+    {
+      "step_type": "export_render",
+      "input_kind": "creative",
+      "features": {
+        "demo": true
+      },
+      "feature_hash": "a784c488d6849b18"
+    },
+    {
+      "step_type": "resolve_dependencies",
+      "input_kind": "dev",
+      "features": {
+        "demo": true
+      },
+      "feature_hash": "b6db062127965bb6"
+    },
+    {
+      "step_type": "transpile_source",
+      "input_kind": "dev",
+      "features": {
+        "demo": true
+      },
+      "feature_hash": "6f225b5802a5694d"
+    },
+    {
+      "step_type": "bundle_modules",
+      "input_kind": "dev",
+      "features": {
+        "demo": true
+      },
+      "feature_hash": "2759b9e929bb89bc"
+    },
+    {
+      "step_type": "package_build",
+      "input_kind": "dev",
+      "features": {
+        "demo": true
+      },
+      "feature_hash": "8214dfa06dce6671"
+    },
+    {
+      "step_type": "decode_asset",
+      "input_kind": "creative",
+      "features": {
+        "demo": true
+      },
+      "feature_hash": "264da7f91f36cccd"
+    },
+    {
+      "step_type": "resize_frame",
+      "input_kind": "creative",
+      "features": {
+        "demo": true
+      },
+      "feature_hash": "085f436c663f6651"
+    },
+    {
+      "step_type": "optimize_output",
+      "input_kind": "creative",
+      "features": {
+        "demo": true
+      },
+      "feature_hash": "e2f0cfe05905458a"
+    },
+    {
+      "step_type": "export_render",
+      "input_kind": "creative",
+      "features": {
+        "demo": true
+      },
+      "feature_hash": "a784c488d6849b18"
+    },
+    {
+      "step_type": "decode_asset",
+      "input_kind": "creative",
+      "features": {
+        "mode": "demo",
+        "workflow": "creative"
+      },
+      "feature_hash": "748e26d935724b16"
+    },
+    {
+      "step_type": "resize_frame",
+      "input_kind": "creative",
+      "features": {
+        "mode": "demo",
+        "workflow": "creative"
+      },
+      "feature_hash": "209b0910859a65e1"
+    },
+    {
+      "step_type": "optimize_output",
+      "input_kind": "creative",
+      "features": {
+        "mode": "demo",
+        "workflow": "creative"
+      },
+      "feature_hash": "ed966f5fccf4d58f"
+    },
+    {
+      "step_type": "export_render",
+      "input_kind": "creative",
+      "features": {
+        "mode": "demo",
+        "workflow": "creative"
+      },
+      "feature_hash": "75d87e9ed6f2855e"
+    },
+    {
+      "step_type": "decode_asset",
+      "input_kind": "creative",
+      "features": {
+        "mode": "demo",
+        "workflow": "creative"
+      },
+      "feature_hash": "748e26d935724b16"
+    },
+    {
+      "step_type": "resize_frame",
+      "input_kind": "creative",
+      "features": {
+        "mode": "demo",
+        "workflow": "creative"
+      },
+      "feature_hash": "209b0910859a65e1"
+    },
+    {
+      "step_type": "optimize_output",
+      "input_kind": "creative",
+      "features": {
+        "mode": "demo",
+        "workflow": "creative"
+      },
+      "feature_hash": "ed966f5fccf4d58f"
+    },
+    {
+      "step_type": "export_render",
+      "input_kind": "creative",
+      "features": {
+        "mode": "demo",
+        "workflow": "creative"
+      },
+      "feature_hash": "75d87e9ed6f2855e"
+    },
+    {
+      "step_type": "decode_asset",
+      "input_kind": "creative",
+      "features": {
+        "mode": "demo",
+        "workflow": "creative"
+      },
+      "feature_hash": "748e26d935724b16"
+    },
+    {
+      "step_type": "resize_frame",
+      "input_kind": "creative",
+      "features": {
+        "mode": "demo",
+        "workflow": "creative"
+      },
+      "feature_hash": "209b0910859a65e1"
+    },
+    {
+      "step_type": "optimize_output",
+      "input_kind": "creative",
+      "features": {
+        "mode": "demo",
+        "workflow": "creative"
+      },
+      "feature_hash": "ed966f5fccf4d58f"
+    },
+    {
+      "step_type": "export_render",
+      "input_kind": "creative",
+      "features": {
+        "mode": "demo",
+        "workflow": "creative"
+      },
+      "feature_hash": "75d87e9ed6f2855e"
+    },
+    {
+      "step_type": "ingest_dataset",
+      "input_kind": "data",
+      "features": {
+        "mode": "file",
+        "filename": "raw_concept ( secure, ultra fast tech, compression, sim-less,irreversal ).docx",
+        "size": 137362,
+        "fingerprint": "12bdfced62dade48"
+      },
+      "feature_hash": "6978ecbc7caf0940"
+    },
+    {
+      "step_type": "validate_schema",
+      "input_kind": "data",
+      "features": {
+        "mode": "file",
+        "filename": "raw_concept ( secure, ultra fast tech, compression, sim-less,irreversal ).docx",
+        "size": 137362,
+        "fingerprint": "12bdfced62dade48"
+      },
+      "feature_hash": "bc1d7ae46bac600b"
+    },
+    {
+      "step_type": "normalize_columns",
+      "input_kind": "data",
+      "features": {
+        "mode": "file",
+        "filename": "raw_concept ( secure, ultra fast tech, compression, sim-less,irreversal ).docx",
+        "size": 137362,
+        "fingerprint": "12bdfced62dade48"
+      },
+      "feature_hash": "fdc458e9fdafa4db"
+    },
+    {
+      "step_type": "aggregate_output",
+      "input_kind": "data",
+      "features": {
+        "mode": "file",
+        "filename": "raw_concept ( secure, ultra fast tech, compression, sim-less,irreversal ).docx",
+        "size": 137362,
+        "fingerprint": "12bdfced62dade48"
+      },
+      "feature_hash": "9b9f879148d2a063"
+    },
+    {
+      "step_type": "ingest_dataset",
+      "input_kind": "data",
+      "features": {
+        "mode": "demo",
+        "workflow": "data"
+      },
+      "feature_hash": "d0b3fa4480c293f4"
+    },
+    {
+      "step_type": "validate_schema",
+      "input_kind": "data",
+      "features": {
+        "mode": "demo",
+        "workflow": "data"
+      },
+      "feature_hash": "ffa2dae5f2aa997a"
+    },
+    {
+      "step_type": "normalize_columns",
+      "input_kind": "data",
+      "features": {
+        "mode": "demo",
+        "workflow": "data"
+      },
+      "feature_hash": "2a63f569054bc10e"
+    },
+    {
+      "step_type": "aggregate_output",
+      "input_kind": "data",
+      "features": {
+        "mode": "demo",
+        "workflow": "data"
+      },
+      "feature_hash": "e98c926196dbcda3"
+    },
+    {
+      "step_type": "resolve_dependencies",
+      "input_kind": "dev",
+      "features": {
+        "mode": "demo",
+        "workflow": "dev"
+      },
+      "feature_hash": "a4965ab3a1ddd79d"
+    },
+    {
+      "step_type": "transpile_source",
+      "input_kind": "dev",
+      "features": {
+        "mode": "demo",
+        "workflow": "dev"
+      },
+      "feature_hash": "4f986f5b17229424"
+    },
+    {
+      "step_type": "bundle_modules",
+      "input_kind": "dev",
+      "features": {
+        "mode": "demo",
+        "workflow": "dev"
+      },
+      "feature_hash": "8891e42abd907a0e"
+    },
+    {
+      "step_type": "package_build",
+      "input_kind": "dev",
+      "features": {
+        "mode": "demo",
+        "workflow": "dev"
+      },
+      "feature_hash": "0687f8ae4061f322"
+    },
+    {
+      "step_type": "resolve_dependencies",
+      "input_kind": "dev",
+      "features": {
+        "mode": "demo",
+        "workflow": "dev"
+      },
+      "feature_hash": "a4965ab3a1ddd79d"
+    },
+    {
+      "step_type": "transpile_source",
+      "input_kind": "dev",
+      "features": {
+        "mode": "demo",
+        "workflow": "dev"
+      },
+      "feature_hash": "4f986f5b17229424"
+    },
+    {
+      "step_type": "bundle_modules",
+      "input_kind": "dev",
+      "features": {
+        "mode": "demo",
+        "workflow": "dev"
+      },
+      "feature_hash": "8891e42abd907a0e"
+    },
+    {
+      "step_type": "package_build",
+      "input_kind": "dev",
+      "features": {
+        "mode": "demo",
+        "workflow": "dev"
+      },
+      "feature_hash": "0687f8ae4061f322"
+    },
+    {
+      "step_type": "decode_asset",
+      "input_kind": "creative",
+      "features": {
+        "mode": "demo",
+        "workflow": "creative"
+      },
+      "feature_hash": "748e26d935724b16"
+    },
+    {
+      "step_type": "resize_frame",
+      "input_kind": "creative",
+      "features": {
+        "mode": "demo",
+        "workflow": "creative"
+      },
+      "feature_hash": "209b0910859a65e1"
+    },
+    {
+      "step_type": "optimize_output",
+      "input_kind": "creative",
+      "features": {
+        "mode": "demo",
+        "workflow": "creative"
+      },
+      "feature_hash": "ed966f5fccf4d58f"
+    },
+    {
+      "step_type": "export_render",
+      "input_kind": "creative",
+      "features": {
+        "mode": "demo",
+        "workflow": "creative"
+      },
+      "feature_hash": "75d87e9ed6f2855e"
+    },
+    {
+      "step_type": "ingest_dataset",
+      "input_kind": "data",
+      "features": {
+        "mode": "file",
+        "filename": "raw_concept ( secure, ultra fast tech, compression, sim-less,irreversal ).docx",
+        "size": 137362,
+        "fingerprint": "12bdfced62dade48"
+      },
+      "feature_hash": "6978ecbc7caf0940"
+    },
+    {
+      "step_type": "validate_schema",
+      "input_kind": "data",
+      "features": {
+        "mode": "file",
+        "filename": "raw_concept ( secure, ultra fast tech, compression, sim-less,irreversal ).docx",
+        "size": 137362,
+        "fingerprint": "12bdfced62dade48"
+      },
+      "feature_hash": "bc1d7ae46bac600b"
+    },
+    {
+      "step_type": "normalize_columns",
+      "input_kind": "data",
+      "features": {
+        "mode": "file",
+        "filename": "raw_concept ( secure, ultra fast tech, compression, sim-less,irreversal ).docx",
+        "size": 137362,
+        "fingerprint": "12bdfced62dade48"
+      },
+      "feature_hash": "fdc458e9fdafa4db"
+    },
+    {
+      "step_type": "aggregate_output",
+      "input_kind": "data",
+      "features": {
+        "mode": "file",
+        "filename": "raw_concept ( secure, ultra fast tech, compression, sim-less,irreversal ).docx",
+        "size": 137362,
+        "fingerprint": "12bdfced62dade48"
+      },
+      "feature_hash": "9b9f879148d2a063"
+    },
+    {
+      "step_type": "ingest_dataset",
+      "input_kind": "data",
+      "features": {
+        "mode": "demo",
+        "workflow": "data"
+      },
+      "feature_hash": "d0b3fa4480c293f4"
+    },
+    {
+      "step_type": "validate_schema",
+      "input_kind": "data",
+      "features": {
+        "mode": "demo",
+        "workflow": "data"
+      },
+      "feature_hash": "ffa2dae5f2aa997a"
+    },
+    {
+      "step_type": "normalize_columns",
+      "input_kind": "data",
+      "features": {
+        "mode": "demo",
+        "workflow": "data"
+      },
+      "feature_hash": "2a63f569054bc10e"
+    },
+    {
+      "step_type": "aggregate_output",
+      "input_kind": "data",
+      "features": {
+        "mode": "demo",
+        "workflow": "data"
+      },
+      "feature_hash": "e98c926196dbcda3"
+    },
+    {
+      "step_type": "ingest_dataset",
+      "input_kind": "data",
+      "features": {
+        "mode": "file",
+        "filename": "xlp_master_project.md",
+        "size": 357,
+        "fingerprint": "dde9fcf4e5ff5219"
+      },
+      "feature_hash": "961099c10fcf8a40"
+    },
+    {
+      "step_type": "validate_schema",
+      "input_kind": "data",
+      "features": {
+        "mode": "file",
+        "filename": "xlp_master_project.md",
+        "size": 357,
+        "fingerprint": "dde9fcf4e5ff5219"
+      },
+      "feature_hash": "2d4a90841fa1fc7c"
+    },
+    {
+      "step_type": "normalize_columns",
+      "input_kind": "data",
+      "features": {
+        "mode": "file",
+        "filename": "xlp_master_project.md",
+        "size": 357,
+        "fingerprint": "dde9fcf4e5ff5219"
+      },
+      "feature_hash": "ea953c57744cd4db"
+    },
+    {
+      "step_type": "aggregate_output",
+      "input_kind": "data",
+      "features": {
+        "mode": "file",
+        "filename": "xlp_master_project.md",
+        "size": 357,
+        "fingerprint": "dde9fcf4e5ff5219"
+      },
+      "feature_hash": "e81f13d17cfaecba"
+    },
+    {
+      "step_type": "ingest_dataset",
+      "input_kind": "data",
+      "features": {
+        "mode": "demo",
+        "workflow": "data"
+      },
+      "feature_hash": "d0b3fa4480c293f4"
+    },
+    {
+      "step_type": "validate_schema",
+      "input_kind": "data",
+      "features": {
+        "mode": "demo",
+        "workflow": "data"
+      },
+      "feature_hash": "ffa2dae5f2aa997a"
+    },
+    {
+      "step_type": "normalize_columns",
+      "input_kind": "data",
+      "features": {
+        "mode": "demo",
+        "workflow": "data"
+      },
+      "feature_hash": "2a63f569054bc10e"
+    },
+    {
+      "step_type": "aggregate_output",
+      "input_kind": "data",
+      "features": {
+        "mode": "demo",
+        "workflow": "data"
+      },
+      "feature_hash": "e98c926196dbcda3"
+    },
+    {
+      "step_type": "decode_asset",
+      "input_kind": "creative",
+      "features": {
+        "mode": "demo",
+        "workflow": "creative"
+      },
+      "feature_hash": "748e26d935724b16"
+    },
+    {
+      "step_type": "resize_frame",
+      "input_kind": "creative",
+      "features": {
+        "mode": "demo",
+        "workflow": "creative"
+      },
+      "feature_hash": "209b0910859a65e1"
+    },
+    {
+      "step_type": "optimize_output",
+      "input_kind": "creative",
+      "features": {
+        "mode": "demo",
+        "workflow": "creative"
+      },
+      "feature_hash": "ed966f5fccf4d58f"
+    },
+    {
+      "step_type": "export_render",
+      "input_kind": "creative",
+      "features": {
+        "mode": "demo",
+        "workflow": "creative"
+      },
+      "feature_hash": "75d87e9ed6f2855e"
+    },
+    {
+      "step_type": "ingest_dataset",
+      "input_kind": "data",
+      "features": {
+        "mode": "file",
+        "filename": "xlp_master_project.md",
+        "size": 357,
+        "fingerprint": "dde9fcf4e5ff5219"
+      },
+      "feature_hash": "961099c10fcf8a40"
+    },
+    {
+      "step_type": "validate_schema",
+      "input_kind": "data",
+      "features": {
+        "mode": "file",
+        "filename": "xlp_master_project.md",
+        "size": 357,
+        "fingerprint": "dde9fcf4e5ff5219"
+      },
+      "feature_hash": "2d4a90841fa1fc7c"
+    },
+    {
+      "step_type": "normalize_columns",
+      "input_kind": "data",
+      "features": {
+        "mode": "file",
+        "filename": "xlp_master_project.md",
+        "size": 357,
+        "fingerprint": "dde9fcf4e5ff5219"
+      },
+      "feature_hash": "ea953c57744cd4db"
+    },
+    {
+      "step_type": "aggregate_output",
+      "input_kind": "data",
+      "features": {
+        "mode": "file",
+        "filename": "xlp_master_project.md",
+        "size": 357,
+        "fingerprint": "dde9fcf4e5ff5219"
+      },
+      "feature_hash": "e81f13d17cfaecba"
+    },
+    {
+      "step_type": "ingest_dataset",
+      "input_kind": "data",
+      "features": {
+        "mode": "demo",
+        "workflow": "data"
+      },
+      "feature_hash": "d0b3fa4480c293f4"
+    },
+    {
+      "step_type": "validate_schema",
+      "input_kind": "data",
+      "features": {
+        "mode": "demo",
+        "workflow": "data"
+      },
+      "feature_hash": "ffa2dae5f2aa997a"
+    },
+    {
+      "step_type": "normalize_columns",
+      "input_kind": "data",
+      "features": {
+        "mode": "demo",
+        "workflow": "data"
+      },
+      "feature_hash": "2a63f569054bc10e"
+    },
+    {
+      "step_type": "aggregate_output",
+      "input_kind": "data",
+      "features": {
+        "mode": "demo",
+        "workflow": "data"
+      },
+      "feature_hash": "e98c926196dbcda3"
+    },
+    {
+      "step_type": "ingest_dataset",
+      "input_kind": "data",
+      "features": {
+        "mode": "file",
+        "filename": "xlp_master_project.md",
+        "size": 357,
+        "fingerprint": "dde9fcf4e5ff5219"
+      },
+      "feature_hash": "961099c10fcf8a40"
+    },
+    {
+      "step_type": "validate_schema",
+      "input_kind": "data",
+      "features": {
+        "mode": "file",
+        "filename": "xlp_master_project.md",
+        "size": 357,
+        "fingerprint": "dde9fcf4e5ff5219"
+      },
+      "feature_hash": "2d4a90841fa1fc7c"
+    },
+    {
+      "step_type": "normalize_columns",
+      "input_kind": "data",
+      "features": {
+        "mode": "file",
+        "filename": "xlp_master_project.md",
+        "size": 357,
+        "fingerprint": "dde9fcf4e5ff5219"
+      },
+      "feature_hash": "ea953c57744cd4db"
+    },
+    {
+      "step_type": "aggregate_output",
+      "input_kind": "data",
+      "features": {
+        "mode": "file",
+        "filename": "xlp_master_project.md",
+        "size": 357,
+        "fingerprint": "dde9fcf4e5ff5219"
+      },
+      "feature_hash": "e81f13d17cfaecba"
+    },
+    {
+      "step_type": "ingest_dataset",
+      "input_kind": "data",
+      "features": {
+        "mode": "demo",
+        "workflow": "data"
+      },
+      "feature_hash": "d0b3fa4480c293f4"
+    },
+    {
+      "step_type": "validate_schema",
+      "input_kind": "data",
+      "features": {
+        "mode": "demo",
+        "workflow": "data"
+      },
+      "feature_hash": "ffa2dae5f2aa997a"
+    },
+    {
+      "step_type": "normalize_columns",
+      "input_kind": "data",
+      "features": {
+        "mode": "demo",
+        "workflow": "data"
+      },
+      "feature_hash": "2a63f569054bc10e"
+    },
+    {
+      "step_type": "aggregate_output",
+      "input_kind": "data",
+      "features": {
+        "mode": "demo",
+        "workflow": "data"
+      },
+      "feature_hash": "e98c926196dbcda3"
+    },
+    {
+      "step_type": "resolve_dependencies",
+      "input_kind": "dev",
+      "features": {
+        "mode": "demo",
+        "workflow": "dev"
+      },
+      "feature_hash": "a4965ab3a1ddd79d"
+    },
+    {
+      "step_type": "transpile_source",
+      "input_kind": "dev",
+      "features": {
+        "mode": "demo",
+        "workflow": "dev"
+      },
+      "feature_hash": "4f986f5b17229424"
+    },
+    {
+      "step_type": "bundle_modules",
+      "input_kind": "dev",
+      "features": {
+        "mode": "demo",
+        "workflow": "dev"
+      },
+      "feature_hash": "8891e42abd907a0e"
+    },
+    {
+      "step_type": "package_build",
+      "input_kind": "dev",
+      "features": {
+        "mode": "demo",
+        "workflow": "dev"
+      },
+      "feature_hash": "0687f8ae4061f322"
+    },
+    {
+      "step_type": "ingest_dataset",
+      "input_kind": "data",
+      "features": {
+        "mode": "file",
+        "filename": "xlp_master_project.md",
+        "size": 357,
+        "fingerprint": "dde9fcf4e5ff5219"
+      },
+      "feature_hash": "961099c10fcf8a40"
+    },
+    {
+      "step_type": "validate_schema",
+      "input_kind": "data",
+      "features": {
+        "mode": "file",
+        "filename": "xlp_master_project.md",
+        "size": 357,
+        "fingerprint": "dde9fcf4e5ff5219"
+      },
+      "feature_hash": "2d4a90841fa1fc7c"
+    },
+    {
+      "step_type": "normalize_columns",
+      "input_kind": "data",
+      "features": {
+        "mode": "file",
+        "filename": "xlp_master_project.md",
+        "size": 357,
+        "fingerprint": "dde9fcf4e5ff5219"
+      },
+      "feature_hash": "ea953c57744cd4db"
+    },
+    {
+      "step_type": "aggregate_output",
+      "input_kind": "data",
+      "features": {
+        "mode": "file",
+        "filename": "xlp_master_project.md",
+        "size": 357,
+        "fingerprint": "dde9fcf4e5ff5219"
+      },
+      "feature_hash": "e81f13d17cfaecba"
+    },
+    {
+      "step_type": "ingest_dataset",
+      "input_kind": "data",
+      "features": {
+        "mode": "demo",
+        "workflow": "data"
+      },
+      "feature_hash": "d0b3fa4480c293f4"
+    },
+    {
+      "step_type": "validate_schema",
+      "input_kind": "data",
+      "features": {
+        "mode": "demo",
+        "workflow": "data"
+      },
+      "feature_hash": "ffa2dae5f2aa997a"
+    },
+    {
+      "step_type": "normalize_columns",
+      "input_kind": "data",
+      "features": {
+        "mode": "demo",
+        "workflow": "data"
+      },
+      "feature_hash": "2a63f569054bc10e"
+    },
+    {
+      "step_type": "aggregate_output",
+      "input_kind": "data",
+      "features": {
+        "mode": "demo",
+        "workflow": "data"
+      },
+      "feature_hash": "e98c926196dbcda3"
+    },
+    {
+      "step_type": "decode_asset",
+      "input_kind": "creative",
+      "invariant_hash": "aec888c62833ae71",
+      "invariant": {
+        "mode": "demo",
+        "workflow": "creative",
+        "step_index": 0,
+        "family": "Image Flow"
+      },
+      "features": {
+        "mode": "demo",
+        "workflow": "creative"
+      },
+      "feature_hash": "6c6df8fb58064620"
+    },
+    {
+      "step_type": "resize_frame",
+      "input_kind": "creative",
+      "invariant_hash": "56a72173865c65f6",
+      "invariant": {
+        "mode": "demo",
+        "workflow": "creative",
+        "step_index": 1,
+        "family": "Image Flow"
+      },
+      "features": {
+        "mode": "demo",
+        "workflow": "creative"
+      },
+      "feature_hash": "cf46ee0bccaeccea"
+    },
+    {
+      "step_type": "optimize_output",
+      "input_kind": "creative",
+      "invariant_hash": "f83f5940c69bfc01",
+      "invariant": {
+        "mode": "demo",
+        "workflow": "creative",
+        "step_index": 2,
+        "family": "Image Flow"
+      },
+      "features": {
+        "mode": "demo",
+        "workflow": "creative"
+      },
+      "feature_hash": "e350179d7550ace9"
+    },
+    {
+      "step_type": "export_render",
+      "input_kind": "creative",
+      "invariant_hash": "2da3db057eaf9950",
+      "invariant": {
+        "mode": "demo",
+        "workflow": "creative",
+        "step_index": 3,
+        "family": "Image Flow"
+      },
+      "features": {
+        "mode": "demo",
+        "workflow": "creative"
+      },
+      "feature_hash": "71b33071813ac872"
+    },
+    {
+      "step_type": "expand_bundle",
+      "input_kind": "bundle",
+      "invariant_hash": "b75437791493041d",
+      "invariant": {
+        "mode": "bundle",
+        "files": 21,
+        "family_counts": {
+          "creative": 0,
+          "data": 7,
+          "dev": 14,
+          "other": 0
+        },
+        "step_index": 0
+      },
+      "features": {
+        "bundle_name": "xlp_testing_pack_v1.zip",
+        "total_files": 21,
+        "family_counts": {
+          "creative": 0,
+          "data": 7,
+          "dev": 14,
+          "other": 0
+        },
+        "size_bucket": "tiny"
+      },
+      "feature_hash": "cb052b0d937fdf5d"
+    },
+    {
+      "step_type": "classify_families",
+      "input_kind": "bundle",
+      "invariant_hash": "03ed3fdcbdfcdf17",
+      "invariant": {
+        "mode": "bundle",
+        "files": 21,
+        "family_counts": {
+          "creative": 0,
+          "data": 7,
+          "dev": 14,
+          "other": 0
+        },
+        "step_index": 1
+      },
+      "features": {
+        "bundle_name": "xlp_testing_pack_v1.zip",
+        "total_files": 21,
+        "family_counts": {
+          "creative": 0,
+          "data": 7,
+          "dev": 14,
+          "other": 0
+        },
+        "size_bucket": "tiny"
+      },
+      "feature_hash": "5ad6b1cf91e5dc1b"
+    },
+    {
+      "step_type": "build_workload_graph",
+      "input_kind": "bundle",
+      "invariant_hash": "b52923d4d31aefbe",
+      "invariant": {
+        "mode": "bundle",
+        "files": 21,
+        "family_counts": {
+          "creative": 0,
+          "data": 7,
+          "dev": 14,
+          "other": 0
+        },
+        "step_index": 2
+      },
+      "features": {
+        "bundle_name": "xlp_testing_pack_v1.zip",
+        "total_files": 21,
+        "family_counts": {
+          "creative": 0,
+          "data": 7,
+          "dev": 14,
+          "other": 0
+        },
+        "size_bucket": "tiny"
+      },
+      "feature_hash": "13ba98af9d11027b"
+    },
+    {
+      "step_type": "optimize_execution_plan",
+      "input_kind": "bundle",
+      "invariant_hash": "ce56e2e4de32c9c0",
+      "invariant": {
+        "mode": "bundle",
+        "files": 21,
+        "family_counts": {
+          "creative": 0,
+          "data": 7,
+          "dev": 14,
+          "other": 0
+        },
+        "step_index": 3
+      },
+      "features": {
+        "bundle_name": "xlp_testing_pack_v1.zip",
+        "total_files": 21,
+        "family_counts": {
+          "creative": 0,
+          "data": 7,
+          "dev": 14,
+          "other": 0
+        },
+        "size_bucket": "tiny"
+      },
+      "feature_hash": "72a475ed40ffe676"
+    },
+    {
+      "step_type": "decode_asset",
+      "input_kind": "creative",
+      "invariant_hash": "aec888c62833ae71",
+      "invariant": {
+        "mode": "demo",
+        "workflow": "creative",
+        "step_index": 0,
+        "family": "Image Flow"
+      },
+      "features": {
+        "mode": "demo",
+        "workflow": "creative"
+      },
+      "feature_hash": "6c6df8fb58064620"
+    },
+    {
+      "step_type": "resize_frame",
+      "input_kind": "creative",
+      "invariant_hash": "56a72173865c65f6",
+      "invariant": {
+        "mode": "demo",
+        "workflow": "creative",
+        "step_index": 1,
+        "family": "Image Flow"
+      },
+      "features": {
+        "mode": "demo",
+        "workflow": "creative"
+      },
+      "feature_hash": "cf46ee0bccaeccea"
+    },
+    {
+      "step_type": "optimize_output",
+      "input_kind": "creative",
+      "invariant_hash": "f83f5940c69bfc01",
+      "invariant": {
+        "mode": "demo",
+        "workflow": "creative",
+        "step_index": 2,
+        "family": "Image Flow"
+      },
+      "features": {
+        "mode": "demo",
+        "workflow": "creative"
+      },
+      "feature_hash": "e350179d7550ace9"
+    },
+    {
+      "step_type": "export_render",
+      "input_kind": "creative",
+      "invariant_hash": "2da3db057eaf9950",
+      "invariant": {
+        "mode": "demo",
+        "workflow": "creative",
+        "step_index": 3,
+        "family": "Image Flow"
+      },
+      "features": {
+        "mode": "demo",
+        "workflow": "creative"
+      },
+      "feature_hash": "71b33071813ac872"
+    },
+    {
+      "step_type": "decode_asset",
+      "input_kind": "creative",
+      "invariant_hash": "aec888c62833ae71",
+      "invariant": {
+        "mode": "demo",
+        "workflow": "creative",
+        "step_index": 0,
+        "family": "Image Flow"
+      },
+      "features": {
+        "mode": "demo",
+        "workflow": "creative"
+      },
+      "feature_hash": "6c6df8fb58064620"
+    },
+    {
+      "step_type": "resize_frame",
+      "input_kind": "creative",
+      "invariant_hash": "56a72173865c65f6",
+      "invariant": {
+        "mode": "demo",
+        "workflow": "creative",
+        "step_index": 1,
+        "family": "Image Flow"
+      },
+      "features": {
+        "mode": "demo",
+        "workflow": "creative"
+      },
+      "feature_hash": "cf46ee0bccaeccea"
+    },
+    {
+      "step_type": "optimize_output",
+      "input_kind": "creative",
+      "invariant_hash": "f83f5940c69bfc01",
+      "invariant": {
+        "mode": "demo",
+        "workflow": "creative",
+        "step_index": 2,
+        "family": "Image Flow"
+      },
+      "features": {
+        "mode": "demo",
+        "workflow": "creative"
+      },
+      "feature_hash": "e350179d7550ace9"
+    },
+    {
+      "step_type": "export_render",
+      "input_kind": "creative",
+      "invariant_hash": "2da3db057eaf9950",
+      "invariant": {
+        "mode": "demo",
+        "workflow": "creative",
+        "step_index": 3,
+        "family": "Image Flow"
+      },
+      "features": {
+        "mode": "demo",
+        "workflow": "creative"
+      },
+      "feature_hash": "71b33071813ac872"
+    },
+    {
+      "step_type": "ingest_dataset",
+      "input_kind": "data",
+      "invariant_hash": "6e572e36d77605bf",
+      "invariant": {
+        "mode": "demo",
+        "workflow": "data",
+        "step_index": 0,
+        "family": "Data Clean"
+      },
+      "features": {
+        "mode": "demo",
+        "workflow": "data"
+      },
+      "feature_hash": "0ff0b3808b21e039"
+    },
+    {
+      "step_type": "validate_schema",
+      "input_kind": "data",
+      "invariant_hash": "5be597d8ce4020ce",
+      "invariant": {
+        "mode": "demo",
+        "workflow": "data",
+        "step_index": 1,
+        "family": "Data Clean"
+      },
+      "features": {
+        "mode": "demo",
+        "workflow": "data"
+      },
+      "feature_hash": "e84d984f2a6c7dc3"
+    },
+    {
+      "step_type": "normalize_columns",
+      "input_kind": "data",
+      "invariant_hash": "2839295ee181f9d4",
+      "invariant": {
+        "mode": "demo",
+        "workflow": "data",
+        "step_index": 2,
+        "family": "Data Clean"
+      },
+      "features": {
+        "mode": "demo",
+        "workflow": "data"
+      },
+      "feature_hash": "5d7d2f06c09ca4a0"
+    },
+    {
+      "step_type": "aggregate_output",
+      "input_kind": "data",
+      "invariant_hash": "340e34769c835b07",
+      "invariant": {
+        "mode": "demo",
+        "workflow": "data",
+        "step_index": 3,
+        "family": "Data Clean"
+      },
+      "features": {
+        "mode": "demo",
+        "workflow": "data"
+      },
+      "feature_hash": "1cebe9d96a900b71"
+    },
+    {
+      "step_type": "expand_bundle",
+      "input_kind": "bundle",
+      "invariant_hash": "b75437791493041d",
+      "invariant": {
+        "mode": "bundle",
+        "files": 21,
+        "family_counts": {
+          "creative": 0,
+          "data": 7,
+          "dev": 14,
+          "other": 0
+        },
+        "step_index": 0
+      },
+      "features": {
+        "bundle_name": "xlp_testing_pack_v1.zip",
+        "total_files": 21,
+        "family_counts": {
+          "creative": 0,
+          "data": 7,
+          "dev": 14,
+          "other": 0
+        },
+        "size_bucket": "tiny"
+      },
+      "feature_hash": "cb052b0d937fdf5d"
+    },
+    {
+      "step_type": "classify_families",
+      "input_kind": "bundle",
+      "invariant_hash": "03ed3fdcbdfcdf17",
+      "invariant": {
+        "mode": "bundle",
+        "files": 21,
+        "family_counts": {
+          "creative": 0,
+          "data": 7,
+          "dev": 14,
+          "other": 0
+        },
+        "step_index": 1
+      },
+      "features": {
+        "bundle_name": "xlp_testing_pack_v1.zip",
+        "total_files": 21,
+        "family_counts": {
+          "creative": 0,
+          "data": 7,
+          "dev": 14,
+          "other": 0
+        },
+        "size_bucket": "tiny"
+      },
+      "feature_hash": "5ad6b1cf91e5dc1b"
+    },
+    {
+      "step_type": "build_workload_graph",
+      "input_kind": "bundle",
+      "invariant_hash": "b52923d4d31aefbe",
+      "invariant": {
+        "mode": "bundle",
+        "files": 21,
+        "family_counts": {
+          "creative": 0,
+          "data": 7,
+          "dev": 14,
+          "other": 0
+        },
+        "step_index": 2
+      },
+      "features": {
+        "bundle_name": "xlp_testing_pack_v1.zip",
+        "total_files": 21,
+        "family_counts": {
+          "creative": 0,
+          "data": 7,
+          "dev": 14,
+          "other": 0
+        },
+        "size_bucket": "tiny"
+      },
+      "feature_hash": "13ba98af9d11027b"
+    },
+    {
+      "step_type": "optimize_execution_plan",
+      "input_kind": "bundle",
+      "invariant_hash": "ce56e2e4de32c9c0",
+      "invariant": {
+        "mode": "bundle",
+        "files": 21,
+        "family_counts": {
+          "creative": 0,
+          "data": 7,
+          "dev": 14,
+          "other": 0
+        },
+        "step_index": 3
+      },
+      "features": {
+        "bundle_name": "xlp_testing_pack_v1.zip",
+        "total_files": 21,
+        "family_counts": {
+          "creative": 0,
+          "data": 7,
+          "dev": 14,
+          "other": 0
+        },
+        "size_bucket": "tiny"
+      },
+      "feature_hash": "72a475ed40ffe676"
+    },
+    {
+      "step_type": "decode_asset",
+      "input_kind": "creative",
+      "invariant_hash": "aec888c62833ae71",
+      "invariant": {
+        "mode": "demo",
+        "workflow": "creative",
+        "step_index": 0,
+        "family": "Image Flow"
+      },
+      "features": {
+        "mode": "demo",
+        "workflow": "creative"
+      },
+      "feature_hash": "6c6df8fb58064620"
+    },
+    {
+      "step_type": "resize_frame",
+      "input_kind": "creative",
+      "invariant_hash": "56a72173865c65f6",
+      "invariant": {
+        "mode": "demo",
+        "workflow": "creative",
+        "step_index": 1,
+        "family": "Image Flow"
+      },
+      "features": {
+        "mode": "demo",
+        "workflow": "creative"
+      },
+      "feature_hash": "cf46ee0bccaeccea"
+    },
+    {
+      "step_type": "optimize_output",
+      "input_kind": "creative",
+      "invariant_hash": "f83f5940c69bfc01",
+      "invariant": {
+        "mode": "demo",
+        "workflow": "creative",
+        "step_index": 2,
+        "family": "Image Flow"
+      },
+      "features": {
+        "mode": "demo",
+        "workflow": "creative"
+      },
+      "feature_hash": "e350179d7550ace9"
+    },
+    {
+      "step_type": "export_render",
+      "input_kind": "creative",
+      "invariant_hash": "2da3db057eaf9950",
+      "invariant": {
+        "mode": "demo",
+        "workflow": "creative",
+        "step_index": 3,
+        "family": "Image Flow"
+      },
+      "features": {
+        "mode": "demo",
+        "workflow": "creative"
+      },
+      "feature_hash": "71b33071813ac872"
+    },
+    {
+      "step_type": "expand_bundle",
+      "input_kind": "bundle",
+      "invariant_hash": "b75437791493041d",
+      "invariant": {
+        "mode": "bundle",
+        "files": 21,
+        "family_counts": {
+          "creative": 0,
+          "data": 7,
+          "dev": 14,
+          "other": 0
+        },
+        "step_index": 0
+      },
+      "features": {
+        "bundle_name": "xlp_testing_pack_v1.zip",
+        "total_files": 21,
+        "family_counts": {
+          "creative": 0,
+          "data": 7,
+          "dev": 14,
+          "other": 0
+        },
+        "size_bucket": "tiny"
+      },
+      "feature_hash": "cb052b0d937fdf5d"
+    },
+    {
+      "step_type": "classify_families",
+      "input_kind": "bundle",
+      "invariant_hash": "03ed3fdcbdfcdf17",
+      "invariant": {
+        "mode": "bundle",
+        "files": 21,
+        "family_counts": {
+          "creative": 0,
+          "data": 7,
+          "dev": 14,
+          "other": 0
+        },
+        "step_index": 1
+      },
+      "features": {
+        "bundle_name": "xlp_testing_pack_v1.zip",
+        "total_files": 21,
+        "family_counts": {
+          "creative": 0,
+          "data": 7,
+          "dev": 14,
+          "other": 0
+        },
+        "size_bucket": "tiny"
+      },
+      "feature_hash": "5ad6b1cf91e5dc1b"
+    },
+    {
+      "step_type": "build_workload_graph",
+      "input_kind": "bundle",
+      "invariant_hash": "b52923d4d31aefbe",
+      "invariant": {
+        "mode": "bundle",
+        "files": 21,
+        "family_counts": {
+          "creative": 0,
+          "data": 7,
+          "dev": 14,
+          "other": 0
+        },
+        "step_index": 2
+      },
+      "features": {
+        "bundle_name": "xlp_testing_pack_v1.zip",
+        "total_files": 21,
+        "family_counts": {
+          "creative": 0,
+          "data": 7,
+          "dev": 14,
+          "other": 0
+        },
+        "size_bucket": "tiny"
+      },
+      "feature_hash": "13ba98af9d11027b"
+    },
+    {
+      "step_type": "optimize_execution_plan",
+      "input_kind": "bundle",
+      "invariant_hash": "ce56e2e4de32c9c0",
+      "invariant": {
+        "mode": "bundle",
+        "files": 21,
+        "family_counts": {
+          "creative": 0,
+          "data": 7,
+          "dev": 14,
+          "other": 0
+        },
+        "step_index": 3
+      },
+      "features": {
+        "bundle_name": "xlp_testing_pack_v1.zip",
+        "total_files": 21,
+        "family_counts": {
+          "creative": 0,
+          "data": 7,
+          "dev": 14,
+          "other": 0
+        },
+        "size_bucket": "tiny"
+      },
+      "feature_hash": "72a475ed40ffe676"
+    },
+    {
+      "step_type": "decode_asset",
+      "input_kind": "creative",
+      "invariant_hash": "aec888c62833ae71",
+      "invariant": {
+        "mode": "demo",
+        "workflow": "creative",
+        "step_index": 0,
+        "family": "Image Flow"
+      },
+      "features": {
+        "mode": "demo",
+        "workflow": "creative"
+      },
+      "feature_hash": "6c6df8fb58064620"
+    },
+    {
+      "step_type": "resize_frame",
+      "input_kind": "creative",
+      "invariant_hash": "56a72173865c65f6",
+      "invariant": {
+        "mode": "demo",
+        "workflow": "creative",
+        "step_index": 1,
+        "family": "Image Flow"
+      },
+      "features": {
+        "mode": "demo",
+        "workflow": "creative"
+      },
+      "feature_hash": "cf46ee0bccaeccea"
+    },
+    {
+      "step_type": "optimize_output",
+      "input_kind": "creative",
+      "invariant_hash": "f83f5940c69bfc01",
+      "invariant": {
+        "mode": "demo",
+        "workflow": "creative",
+        "step_index": 2,
+        "family": "Image Flow"
+      },
+      "features": {
+        "mode": "demo",
+        "workflow": "creative"
+      },
+      "feature_hash": "e350179d7550ace9"
+    },
+    {
+      "step_type": "export_render",
+      "input_kind": "creative",
+      "invariant_hash": "2da3db057eaf9950",
+      "invariant": {
+        "mode": "demo",
+        "workflow": "creative",
+        "step_index": 3,
+        "family": "Image Flow"
+      },
+      "features": {
+        "mode": "demo",
+        "workflow": "creative"
+      },
+      "feature_hash": "71b33071813ac872"
+    },
+    {
+      "step_type": "decode_asset",
+      "input_kind": "creative",
+      "invariant_hash": "aec888c62833ae71",
+      "invariant": {
+        "mode": "demo",
+        "workflow": "creative",
+        "step_index": 0,
+        "family": "Image Flow"
+      },
+      "features": {
+        "mode": "demo",
+        "workflow": "creative"
+      },
+      "feature_hash": "6c6df8fb58064620"
+    },
+    {
+      "step_type": "resize_frame",
+      "input_kind": "creative",
+      "invariant_hash": "56a72173865c65f6",
+      "invariant": {
+        "mode": "demo",
+        "workflow": "creative",
+        "step_index": 1,
+        "family": "Image Flow"
+      },
+      "features": {
+        "mode": "demo",
+        "workflow": "creative"
+      },
+      "feature_hash": "cf46ee0bccaeccea"
+    },
+    {
+      "step_type": "optimize_output",
+      "input_kind": "creative",
+      "invariant_hash": "f83f5940c69bfc01",
+      "invariant": {
+        "mode": "demo",
+        "workflow": "creative",
+        "step_index": 2,
+        "family": "Image Flow"
+      },
+      "features": {
+        "mode": "demo",
+        "workflow": "creative"
+      },
+      "feature_hash": "e350179d7550ace9"
+    },
+    {
+      "step_type": "export_render",
+      "input_kind": "creative",
+      "invariant_hash": "2da3db057eaf9950",
+      "invariant": {
+        "mode": "demo",
+        "workflow": "creative",
+        "step_index": 3,
+        "family": "Image Flow"
+      },
+      "features": {
+        "mode": "demo",
+        "workflow": "creative"
+      },
+      "feature_hash": "71b33071813ac872"
+    },
+    {
+      "step_type": "expand_bundle",
+      "input_kind": "bundle",
+      "invariant_hash": "f102bcc878984c26",
+      "invariant": {
+        "mode": "bundle",
+        "files": 28,
+        "family_counts": {
+          "creative": 15,
+          "data": 12,
+          "dev": 1,
+          "other": 0
+        },
+        "step_index": 0
+      },
+      "features": {
+        "bundle_name": "raajmandale_public_final_white_orange.zip",
+        "total_files": 28,
+        "family_counts": {
+          "creative": 15,
+          "data": 12,
+          "dev": 1,
+          "other": 0
+        },
+        "size_bucket": "medium"
+      },
+      "feature_hash": "1774f0cc62d6a20d"
+    },
+    {
+      "step_type": "classify_families",
+      "input_kind": "bundle",
+      "invariant_hash": "060e3246fa93570a",
+      "invariant": {
+        "mode": "bundle",
+        "files": 28,
+        "family_counts": {
+          "creative": 15,
+          "data": 12,
+          "dev": 1,
+          "other": 0
+        },
+        "step_index": 1
+      },
+      "features": {
+        "bundle_name": "raajmandale_public_final_white_orange.zip",
+        "total_files": 28,
+        "family_counts": {
+          "creative": 15,
+          "data": 12,
+          "dev": 1,
+          "other": 0
+        },
+        "size_bucket": "medium"
+      },
+      "feature_hash": "ba3eeb2b814a30d4"
+    },
+    {
+      "step_type": "build_workload_graph",
+      "input_kind": "bundle",
+      "invariant_hash": "77c134c0b436a5f4",
+      "invariant": {
+        "mode": "bundle",
+        "files": 28,
+        "family_counts": {
+          "creative": 15,
+          "data": 12,
+          "dev": 1,
+          "other": 0
+        },
+        "step_index": 2
+      },
+      "features": {
+        "bundle_name": "raajmandale_public_final_white_orange.zip",
+        "total_files": 28,
+        "family_counts": {
+          "creative": 15,
+          "data": 12,
+          "dev": 1,
+          "other": 0
+        },
+        "size_bucket": "medium"
+      },
+      "feature_hash": "a74bbfeb0babb864"
+    },
+    {
+      "step_type": "optimize_execution_plan",
+      "input_kind": "bundle",
+      "invariant_hash": "86bf76c2fbaea349",
+      "invariant": {
+        "mode": "bundle",
+        "files": 28,
+        "family_counts": {
+          "creative": 15,
+          "data": 12,
+          "dev": 1,
+          "other": 0
+        },
+        "step_index": 3
+      },
+      "features": {
+        "bundle_name": "raajmandale_public_final_white_orange.zip",
+        "total_files": 28,
+        "family_counts": {
+          "creative": 15,
+          "data": 12,
+          "dev": 1,
+          "other": 0
+        },
+        "size_bucket": "medium"
+      },
+      "feature_hash": "46d8bbd1fd5606d1"
+    },
+    {
+      "step_type": "decode_asset",
+      "input_kind": "creative",
+      "invariant_hash": "aec888c62833ae71",
+      "invariant": {
+        "mode": "demo",
+        "workflow": "creative",
+        "step_index": 0,
+        "family": "Image Flow"
+      },
+      "features": {
+        "mode": "demo",
+        "workflow": "creative"
+      },
+      "feature_hash": "6c6df8fb58064620"
+    },
+    {
+      "step_type": "resize_frame",
+      "input_kind": "creative",
+      "invariant_hash": "56a72173865c65f6",
+      "invariant": {
+        "mode": "demo",
+        "workflow": "creative",
+        "step_index": 1,
+        "family": "Image Flow"
+      },
+      "features": {
+        "mode": "demo",
+        "workflow": "creative"
+      },
+      "feature_hash": "cf46ee0bccaeccea"
+    },
+    {
+      "step_type": "optimize_output",
+      "input_kind": "creative",
+      "invariant_hash": "f83f5940c69bfc01",
+      "invariant": {
+        "mode": "demo",
+        "workflow": "creative",
+        "step_index": 2,
+        "family": "Image Flow"
+      },
+      "features": {
+        "mode": "demo",
+        "workflow": "creative"
+      },
+      "feature_hash": "e350179d7550ace9"
+    },
+    {
+      "step_type": "export_render",
+      "input_kind": "creative",
+      "invariant_hash": "2da3db057eaf9950",
+      "invariant": {
+        "mode": "demo",
+        "workflow": "creative",
+        "step_index": 3,
+        "family": "Image Flow"
+      },
+      "features": {
+        "mode": "demo",
+        "workflow": "creative"
+      },
+      "feature_hash": "71b33071813ac872"
+    },
+    {
+      "step_type": "ingest_dataset",
+      "input_kind": "data",
+      "invariant_hash": "6e572e36d77605bf",
+      "invariant": {
+        "mode": "demo",
+        "workflow": "data",
+        "step_index": 0,
+        "family": "Data Clean"
+      },
+      "features": {
+        "mode": "demo",
+        "workflow": "data"
+      },
+      "feature_hash": "0ff0b3808b21e039"
+    },
+    {
+      "step_type": "validate_schema",
+      "input_kind": "data",
+      "invariant_hash": "5be597d8ce4020ce",
+      "invariant": {
+        "mode": "demo",
+        "workflow": "data",
+        "step_index": 1,
+        "family": "Data Clean"
+      },
+      "features": {
+        "mode": "demo",
+        "workflow": "data"
+      },
+      "feature_hash": "e84d984f2a6c7dc3"
+    },
+    {
+      "step_type": "normalize_columns",
+      "input_kind": "data",
+      "invariant_hash": "2839295ee181f9d4",
+      "invariant": {
+        "mode": "demo",
+        "workflow": "data",
+        "step_index": 2,
+        "family": "Data Clean"
+      },
+      "features": {
+        "mode": "demo",
+        "workflow": "data"
+      },
+      "feature_hash": "5d7d2f06c09ca4a0"
+    },
+    {
+      "step_type": "aggregate_output",
+      "input_kind": "data",
+      "invariant_hash": "340e34769c835b07",
+      "invariant": {
+        "mode": "demo",
+        "workflow": "data",
+        "step_index": 3,
+        "family": "Data Clean"
+      },
+      "features": {
+        "mode": "demo",
+        "workflow": "data"
+      },
+      "feature_hash": "1cebe9d96a900b71"
+    },
+    {
+      "step_type": "expand_bundle",
+      "input_kind": "bundle",
+      "invariant_hash": "f102bcc878984c26",
+      "invariant": {
+        "mode": "bundle",
+        "files": 28,
+        "family_counts": {
+          "creative": 15,
+          "data": 12,
+          "dev": 1,
+          "other": 0
+        },
+        "step_index": 0
+      },
+      "features": {
+        "bundle_name": "raajmandale_public_final_white_orange.zip",
+        "total_files": 28,
+        "family_counts": {
+          "creative": 15,
+          "data": 12,
+          "dev": 1,
+          "other": 0
+        },
+        "size_bucket": "medium"
+      },
+      "feature_hash": "1774f0cc62d6a20d"
+    },
+    {
+      "step_type": "classify_families",
+      "input_kind": "bundle",
+      "invariant_hash": "060e3246fa93570a",
+      "invariant": {
+        "mode": "bundle",
+        "files": 28,
+        "family_counts": {
+          "creative": 15,
+          "data": 12,
+          "dev": 1,
+          "other": 0
+        },
+        "step_index": 1
+      },
+      "features": {
+        "bundle_name": "raajmandale_public_final_white_orange.zip",
+        "total_files": 28,
+        "family_counts": {
+          "creative": 15,
+          "data": 12,
+          "dev": 1,
+          "other": 0
+        },
+        "size_bucket": "medium"
+      },
+      "feature_hash": "ba3eeb2b814a30d4"
+    },
+    {
+      "step_type": "build_workload_graph",
+      "input_kind": "bundle",
+      "invariant_hash": "77c134c0b436a5f4",
+      "invariant": {
+        "mode": "bundle",
+        "files": 28,
+        "family_counts": {
+          "creative": 15,
+          "data": 12,
+          "dev": 1,
+          "other": 0
+        },
+        "step_index": 2
+      },
+      "features": {
+        "bundle_name": "raajmandale_public_final_white_orange.zip",
+        "total_files": 28,
+        "family_counts": {
+          "creative": 15,
+          "data": 12,
+          "dev": 1,
+          "other": 0
+        },
+        "size_bucket": "medium"
+      },
+      "feature_hash": "a74bbfeb0babb864"
+    },
+    {
+      "step_type": "optimize_execution_plan",
+      "input_kind": "bundle",
+      "invariant_hash": "86bf76c2fbaea349",
+      "invariant": {
+        "mode": "bundle",
+        "files": 28,
+        "family_counts": {
+          "creative": 15,
+          "data": 12,
+          "dev": 1,
+          "other": 0
+        },
+        "step_index": 3
+      },
+      "features": {
+        "bundle_name": "raajmandale_public_final_white_orange.zip",
+        "total_files": 28,
+        "family_counts": {
+          "creative": 15,
+          "data": 12,
+          "dev": 1,
+          "other": 0
+        },
+        "size_bucket": "medium"
+      },
+      "feature_hash": "46d8bbd1fd5606d1"
+    },
+    {
+      "step_type": "decode_asset",
+      "input_kind": "creative",
+      "invariant_hash": "aec888c62833ae71",
+      "invariant": {
+        "mode": "demo",
+        "workflow": "creative",
+        "step_index": 0,
+        "family": "Image Flow"
+      },
+      "features": {
+        "mode": "demo",
+        "workflow": "creative"
+      },
+      "feature_hash": "6c6df8fb58064620"
+    },
+    {
+      "step_type": "resize_frame",
+      "input_kind": "creative",
+      "invariant_hash": "56a72173865c65f6",
+      "invariant": {
+        "mode": "demo",
+        "workflow": "creative",
+        "step_index": 1,
+        "family": "Image Flow"
+      },
+      "features": {
+        "mode": "demo",
+        "workflow": "creative"
+      },
+      "feature_hash": "cf46ee0bccaeccea"
+    },
+    {
+      "step_type": "optimize_output",
+      "input_kind": "creative",
+      "invariant_hash": "f83f5940c69bfc01",
+      "invariant": {
+        "mode": "demo",
+        "workflow": "creative",
+        "step_index": 2,
+        "family": "Image Flow"
+      },
+      "features": {
+        "mode": "demo",
+        "workflow": "creative"
+      },
+      "feature_hash": "e350179d7550ace9"
+    },
+    {
+      "step_type": "export_render",
+      "input_kind": "creative",
+      "invariant_hash": "2da3db057eaf9950",
+      "invariant": {
+        "mode": "demo",
+        "workflow": "creative",
+        "step_index": 3,
+        "family": "Image Flow"
+      },
+      "features": {
+        "mode": "demo",
+        "workflow": "creative"
+      },
+      "feature_hash": "71b33071813ac872"
+    },
+    {
+      "step_type": "resolve_dependencies",
+      "input_kind": "dev",
+      "invariant_hash": "5a27df68e05cf75a",
+      "invariant": {
+        "mode": "demo",
+        "workflow": "dev",
+        "step_index": 0,
+        "family": "Build Chain"
+      },
+      "features": {
+        "mode": "demo",
+        "workflow": "dev"
+      },
+      "feature_hash": "698c911e75c06539"
+    },
+    {
+      "step_type": "transpile_source",
+      "input_kind": "dev",
+      "invariant_hash": "3848ee1e15d55344",
+      "invariant": {
+        "mode": "demo",
+        "workflow": "dev",
+        "step_index": 1,
+        "family": "Build Chain"
+      },
+      "features": {
+        "mode": "demo",
+        "workflow": "dev"
+      },
+      "feature_hash": "fc63d1c3a080c984"
+    },
+    {
+      "step_type": "bundle_modules",
+      "input_kind": "dev",
+      "invariant_hash": "355ed0e0a6f02a51",
+      "invariant": {
+        "mode": "demo",
+        "workflow": "dev",
+        "step_index": 2,
+        "family": "Build Chain"
+      },
+      "features": {
+        "mode": "demo",
+        "workflow": "dev"
+      },
+      "feature_hash": "631b414f062020b8"
+    },
+    {
+      "step_type": "package_build",
+      "input_kind": "dev",
+      "invariant_hash": "cc62a0695b15d706",
+      "invariant": {
+        "mode": "demo",
+        "workflow": "dev",
+        "step_index": 3,
+        "family": "Build Chain"
+      },
+      "features": {
+        "mode": "demo",
+        "workflow": "dev"
+      },
+      "feature_hash": "18d9fd1f12f4e2d8"
+    },
+    {
+      "step_type": "expand_bundle",
+      "input_kind": "bundle",
+      "invariant_hash": "f102bcc878984c26",
+      "invariant": {
+        "mode": "bundle",
+        "files": 28,
+        "family_counts": {
+          "creative": 15,
+          "data": 12,
+          "dev": 1,
+          "other": 0
+        },
+        "step_index": 0
+      },
+      "features": {
+        "bundle_name": "raajmandale_public_final_white_orange.zip",
+        "total_files": 28,
+        "family_counts": {
+          "creative": 15,
+          "data": 12,
+          "dev": 1,
+          "other": 0
+        },
+        "size_bucket": "medium"
+      },
+      "feature_hash": "1774f0cc62d6a20d"
+    },
+    {
+      "step_type": "classify_families",
+      "input_kind": "bundle",
+      "invariant_hash": "060e3246fa93570a",
+      "invariant": {
+        "mode": "bundle",
+        "files": 28,
+        "family_counts": {
+          "creative": 15,
+          "data": 12,
+          "dev": 1,
+          "other": 0
+        },
+        "step_index": 1
+      },
+      "features": {
+        "bundle_name": "raajmandale_public_final_white_orange.zip",
+        "total_files": 28,
+        "family_counts": {
+          "creative": 15,
+          "data": 12,
+          "dev": 1,
+          "other": 0
+        },
+        "size_bucket": "medium"
+      },
+      "feature_hash": "ba3eeb2b814a30d4"
+    },
+    {
+      "step_type": "build_workload_graph",
+      "input_kind": "bundle",
+      "invariant_hash": "77c134c0b436a5f4",
+      "invariant": {
+        "mode": "bundle",
+        "files": 28,
+        "family_counts": {
+          "creative": 15,
+          "data": 12,
+          "dev": 1,
+          "other": 0
+        },
+        "step_index": 2
+      },
+      "features": {
+        "bundle_name": "raajmandale_public_final_white_orange.zip",
+        "total_files": 28,
+        "family_counts": {
+          "creative": 15,
+          "data": 12,
+          "dev": 1,
+          "other": 0
+        },
+        "size_bucket": "medium"
+      },
+      "feature_hash": "a74bbfeb0babb864"
+    },
+    {
+      "step_type": "optimize_execution_plan",
+      "input_kind": "bundle",
+      "invariant_hash": "86bf76c2fbaea349",
+      "invariant": {
+        "mode": "bundle",
+        "files": 28,
+        "family_counts": {
+          "creative": 15,
+          "data": 12,
+          "dev": 1,
+          "other": 0
+        },
+        "step_index": 3
+      },
+      "features": {
+        "bundle_name": "raajmandale_public_final_white_orange.zip",
+        "total_files": 28,
+        "family_counts": {
+          "creative": 15,
+          "data": 12,
+          "dev": 1,
+          "other": 0
+        },
+        "size_bucket": "medium"
+      },
+      "feature_hash": "46d8bbd1fd5606d1"
+    },
+    {
+      "step_type": "decode_asset",
+      "input_kind": "creative",
+      "invariant_hash": "aec888c62833ae71",
+      "invariant": {
+        "mode": "demo",
+        "workflow": "creative",
+        "step_index": 0,
+        "family": "Image Flow"
+      },
+      "features": {
+        "mode": "demo",
+        "workflow": "creative"
+      },
+      "feature_hash": "6c6df8fb58064620"
+    },
+    {
+      "step_type": "resize_frame",
+      "input_kind": "creative",
+      "invariant_hash": "56a72173865c65f6",
+      "invariant": {
+        "mode": "demo",
+        "workflow": "creative",
+        "step_index": 1,
+        "family": "Image Flow"
+      },
+      "features": {
+        "mode": "demo",
+        "workflow": "creative"
+      },
+      "feature_hash": "cf46ee0bccaeccea"
+    },
+    {
+      "step_type": "optimize_output",
+      "input_kind": "creative",
+      "invariant_hash": "f83f5940c69bfc01",
+      "invariant": {
+        "mode": "demo",
+        "workflow": "creative",
+        "step_index": 2,
+        "family": "Image Flow"
+      },
+      "features": {
+        "mode": "demo",
+        "workflow": "creative"
+      },
+      "feature_hash": "e350179d7550ace9"
+    },
+    {
+      "step_type": "export_render",
+      "input_kind": "creative",
+      "invariant_hash": "2da3db057eaf9950",
+      "invariant": {
+        "mode": "demo",
+        "workflow": "creative",
+        "step_index": 3,
+        "family": "Image Flow"
+      },
+      "features": {
+        "mode": "demo",
+        "workflow": "creative"
+      },
+      "feature_hash": "71b33071813ac872"
+    },
+    {
+      "step_type": "decode_asset",
+      "input_kind": "creative",
+      "invariant_hash": "aec888c62833ae71",
+      "invariant": {
+        "mode": "demo",
+        "workflow": "creative",
+        "step_index": 0,
+        "family": "Image Flow"
+      },
+      "features": {
+        "mode": "demo",
+        "workflow": "creative"
+      },
+      "feature_hash": "6c6df8fb58064620"
+    },
+    {
+      "step_type": "resize_frame",
+      "input_kind": "creative",
+      "invariant_hash": "56a72173865c65f6",
+      "invariant": {
+        "mode": "demo",
+        "workflow": "creative",
+        "step_index": 1,
+        "family": "Image Flow"
+      },
+      "features": {
+        "mode": "demo",
+        "workflow": "creative"
+      },
+      "feature_hash": "cf46ee0bccaeccea"
+    },
+    {
+      "step_type": "optimize_output",
+      "input_kind": "creative",
+      "invariant_hash": "f83f5940c69bfc01",
+      "invariant": {
+        "mode": "demo",
+        "workflow": "creative",
+        "step_index": 2,
+        "family": "Image Flow"
+      },
+      "features": {
+        "mode": "demo",
+        "workflow": "creative"
+      },
+      "feature_hash": "e350179d7550ace9"
+    },
+    {
+      "step_type": "export_render",
+      "input_kind": "creative",
+      "invariant_hash": "2da3db057eaf9950",
+      "invariant": {
+        "mode": "demo",
+        "workflow": "creative",
+        "step_index": 3,
+        "family": "Image Flow"
+      },
+      "features": {
+        "mode": "demo",
+        "workflow": "creative"
+      },
+      "feature_hash": "71b33071813ac872"
+    },
+    {
+      "step_type": "decode_asset",
+      "input_kind": "creative",
+      "invariant_hash": "aec888c62833ae71",
+      "invariant": {
+        "mode": "demo",
+        "workflow": "creative",
+        "step_index": 0,
+        "family": "Image Flow"
+      },
+      "features": {
+        "mode": "demo",
+        "workflow": "creative"
+      },
+      "feature_hash": "6c6df8fb58064620"
+    },
+    {
+      "step_type": "resize_frame",
+      "input_kind": "creative",
+      "invariant_hash": "56a72173865c65f6",
+      "invariant": {
+        "mode": "demo",
+        "workflow": "creative",
+        "step_index": 1,
+        "family": "Image Flow"
+      },
+      "features": {
+        "mode": "demo",
+        "workflow": "creative"
+      },
+      "feature_hash": "cf46ee0bccaeccea"
+    },
+    {
+      "step_type": "optimize_output",
+      "input_kind": "creative",
+      "invariant_hash": "f83f5940c69bfc01",
+      "invariant": {
+        "mode": "demo",
+        "workflow": "creative",
+        "step_index": 2,
+        "family": "Image Flow"
+      },
+      "features": {
+        "mode": "demo",
+        "workflow": "creative"
+      },
+      "feature_hash": "e350179d7550ace9"
+    },
+    {
+      "step_type": "export_render",
+      "input_kind": "creative",
+      "invariant_hash": "2da3db057eaf9950",
+      "invariant": {
+        "mode": "demo",
+        "workflow": "creative",
+        "step_index": 3,
+        "family": "Image Flow"
+      },
+      "features": {
+        "mode": "demo",
+        "workflow": "creative"
+      },
+      "feature_hash": "71b33071813ac872"
+    }
+  ]
+}
