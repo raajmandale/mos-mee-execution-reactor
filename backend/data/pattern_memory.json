@@ -12,5 +12,33 @@
     "seen": 6,
     "bestReuse": 84,
     "lastSeen": "14/04/2026, 08:12:50 PM"
+  },
+  "6aba772c69095de833bba4ccd50343eb3d367ab901cf0f337ac0e01d8b705b19": {
+    "family": "Bundle Pattern",
+    "workflow": "Bundle Workload",
+    "count": 2,
+    "created": 1777898483,
+    "last_seen": 1777898649
+  },
+  "2f9229899bf4c2bf1d9740778e17027b925d7fb8d91e4e790772440ff64e87fe": {
+    "family": "Bundle Pattern",
+    "workflow": "Bundle Workload",
+    "count": 1,
+    "created": 1777904685,
+    "last_seen": 1777904685
+  },
+  "13d8f1001a296ccf151ea190ff7fd4531cb21c22dc2648e40b5b89f5b407fabc": {
+    "family": "Generic Pattern",
+    "workflow": "Generic Flow",
+    "count": 1,
+    "created": 1777904804,
+    "last_seen": 1777904804
+  },
+  "f630c2fb9a487cc713fe7e1fe889a8c7aa894ed253ed98ae137af6fadff253ed": {
+    "family": "Bundle Pattern",
+    "workflow": "Bundle Workload",
+    "count": 1,
+    "created": 1777908220,
+    "last_seen": 1777908220
   }
 }

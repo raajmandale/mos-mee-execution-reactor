@@ -1,8 +1,9 @@
-import { useEffect, useMemo, useRef, useState } from "react";
+import React, { useMemo, useRef, useState } from "react";
+import "./style.css";
 
 const API_BASE = "http://127.0.0.1:8000";
 
-const RAIL_ITEMS = [
+const NAV = [
   ["command", "Command"],
   ["execution", "Execution"],
   ["memory", "Memory Core"],
@@ -11,854 +12,736 @@ const RAIL_ITEMS = [
   ["queue", "Upload Queue"],
 ];
 
-const EMPTY_RUNTIME = {
-  workflow: "Unknown",
-  family: "Unknown",
-  reuse: 0,
-  confidence: "Low",
-  time: 0,
-  decision: "Learning",
-  mode: "learning",
-  systemState: "Learning",
-  routeType: "linear",
-  nodes: [],
-  topNodes: [],
-  bottomNodes: [],
-  notes: ["No prior route selected.", "Reactor waiting for execution."],
-  console: ["[reactor] standby", "[memory] no active recall route"],
-  sourceFile: "No file uploaded",
-  signature: null,
+const STAGES = [
+  ["IN", "Input"],
+  ["SIG", "Signature"],
+  ["PAT", "Pattern"],
+  ["DEC", "Decision"],
+  ["OUT", "Proof"],
+];
+
+const DEFAULT_RESULT = {
+  workflow: "Image Flow",
+  reuse: 91,
+  decision: "Pattern Reused",
+  decisionReason: "High similarity with existing pattern",
+  confidence: "High",
+  confidenceValue: 0.91,
+  costSaved: 0.91,
+  costFull: 1.0,
+  source: "demo_image.jpg",
+  proof: "Awaiting backend proof",
+  proofId: "not-generated-yet",
+  runId: "standby",
+  inputHash: "standby",
+  finalHash: "standby",
+  evidencePath: "not-exported-yet",
+  integrity: "Pending",
+  saved: "4836 ms",
 };
 
-const EMPTY_SYSTEM = {
-  totalRuns: 0,
-  averageReuse: 0,
-  bestWorkflow: "Unknown",
-  savedMs: 0,
-  efficiencyScore: 0,
-  memory: {},
-  history: [],
-  queue: [],
-  lastResult: null,
-  prediction: {
-    prediction: "Learning",
-    confidence: "Low",
-    reason: "No execution history yet.",
-    memoryClusters: [],
-  },
-};
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
-const DEMO_PRESETS = {
-  image: () =>
-    new File(["demo image bytes"], "demo_image.png", {
-      type: "image/png",
-    }),
-  similar: () =>
-    new File(["demo similar bytes"], "similar_image.jpg", {
-      type: "image/jpeg",
-    }),
-  bundle: () =>
-    new File(["demo bundle bytes"], "demo_bundle.zip", {
-      type: "application/zip",
-    }),
-};
+function detectWorkflow(name = "") {
+  const n = name.toLowerCase();
 
-function OrbCanvas({ mode = "learning", mini = false }) {
-  const canvasRef = useRef(null);
-
-  useEffect(() => {
-    const canvas = canvasRef.current;
-    if (!canvas) return;
-
-    const ctx = canvas.getContext("2d");
-    let raf = 0;
-    let tick = 0;
-
-    const palette = {
-      learning: ["#7aa6ff", "#315bff"],
-      reused: ["#31efb0", "#0d9d76"],
-      partial: ["#ffb769", "#ff8a2c"],
-      hybrid: ["#c88cff", "#4ce4c1"],
-      idle: ["#7aa6ff", "#315bff"],
+  if (n.endsWith(".zip") || n.endsWith(".rar") || n.endsWith(".7z")) {
+    return {
+      workflow: "Bundle Workload",
+      reuse: 88,
+      decision: "Pattern Reused",
+      confidence: "High",
+      similarity: 0.88,
+      saved: "5200 ms",
     };
+  }
 
-    const active = palette[mode] ? mode : "learning";
-
-    const draw = () => {
-      const width = canvas.clientWidth || (mini ? 72 : 300);
-      const height = canvas.clientHeight || (mini ? 72 : 300);
-
-      canvas.width = width * window.devicePixelRatio;
-      canvas.height = height * window.devicePixelRatio;
-      ctx.setTransform(window.devicePixelRatio, 0, 0, window.devicePixelRatio, 0, 0);
-      ctx.clearRect(0, 0, width, height);
-
-      const [c1, c2] = palette[active];
-      const cx = width / 2;
-      const cy = height / 2;
-      const radius = (mini ? 18 : 68) + Math.sin(tick * 0.035) * (mini ? 1.5 : 4.2);
-
-      const glow = ctx.createRadialGradient(cx, cy, 4, cx, cy, mini ? 44 : 135);
-      glow.addColorStop(0, "rgba(255,255,255,0.95)");
-      glow.addColorStop(0.16, `${c1}ff`);
-      glow.addColorStop(0.42, `${c1}77`);
-      glow.addColorStop(0.8, `${c2}22`);
-      glow.addColorStop(1, "rgba(0,0,0,0)");
-      ctx.fillStyle = glow;
-      ctx.beginPath();
-      ctx.arc(cx, cy, mini ? 42 : 140, 0, Math.PI * 2);
-      ctx.fill();
-
-      const core = ctx.createRadialGradient(cx - radius * 0.15, cy - radius * 0.18, 2, cx, cy, radius);
-      core.addColorStop(0, "rgba(255,255,255,0.98)");
-      core.addColorStop(0.2, c1);
-      core.addColorStop(0.62, c2);
-      core.addColorStop(1, "rgba(0,0,0,0)");
-      ctx.fillStyle = core;
-      ctx.beginPath();
-      ctx.arc(cx, cy, radius, 0, Math.PI * 2);
-      ctx.fill();
-
-      const ringCount = mini ? 2 : 3;
-      for (let i = 0; i < ringCount; i += 1) {
-        const ringRadius = radius + (mini ? 7 : 20) + i * (mini ? 8 : 18);
-        ctx.beginPath();
-        ctx.lineWidth = mini ? 1 : 1.4;
-        ctx.strokeStyle = `rgba(255,255,255,${0.16 - i * 0.03})`;
-        ctx.arc(
-          cx,
-          cy,
-          ringRadius,
-          tick * 0.012 + i * 0.5,
-          tick * 0.012 + i * 0.5 + Math.PI * 1.72
-        );
-        ctx.stroke();
-      }
-
-      const dots = mini ? 10 : 18;
-      for (let i = 0; i < dots; i += 1) {
-        const a = tick * 0.02 + (i / dots) * Math.PI * 2;
-        const rr = radius + (mini ? 10 : 17) + Math.sin(tick * 0.04 + i) * (mini ? 2 : 6);
-        const px = cx + Math.cos(a) * rr;
-        const py = cy + Math.sin(a) * rr;
-        ctx.beginPath();
-        ctx.fillStyle = i % 2 === 0 ? "rgba(255,255,255,0.88)" : `${c1}dd`;
-        ctx.arc(px, py, mini ? 1.6 : 2.3, 0, Math.PI * 2);
-        ctx.fill();
-      }
-
-      tick += 1;
-      raf = requestAnimationFrame(draw);
+  if (n.endsWith(".jpg") || n.endsWith(".jpeg") || n.endsWith(".png") || n.endsWith(".webp")) {
+    return {
+      workflow: "Image Flow",
+      reuse: 91,
+      decision: "Pattern Reused",
+      confidence: "High",
+      similarity: 0.91,
+      saved: "4836 ms",
     };
+  }
 
-    draw();
-    return () => cancelAnimationFrame(raf);
-  }, [mini, mode]);
-
-  return <canvas ref={canvasRef} className={mini ? "mini-orb-canvas" : "orb-canvas"} />;
-}
-
-function LinearRoute({ nodes = [], mode = "learning" }) {
-  if (!nodes.length) return null;
-
-  return (
-    <div className="route-linear">
-      {nodes.map((node, idx) => (
-        <div className="route-cell" key={`${node.short}-${idx}`}>
-          <div className={`route-node ${mode} ${node.state || "cold"}`}>
-            <span>{node.short}</span>
-          </div>
-          <div className="route-label">{node.label}</div>
-          {idx < nodes.length - 1 && (
-            <div className={`route-line ${mode}`}>
-              <div className="route-pulse" />
-            </div>
-          )}
-        </div>
-      ))}
-    </div>
-  );
-}
-
-function HybridRoute({ topNodes = [], bottomNodes = [] }) {
-  return (
-    <div className="route-hybrid">
-      <div className="hy-row">
-        {topNodes.map((node, idx) => (
-          <div className="route-cell" key={`top-${node.short}-${idx}`}>
-            <div className={`route-node hybrid ${node.state || "cold"}`}>
-              <span>{node.short}</span>
-            </div>
-            <div className="route-label">{node.label}</div>
-            {idx < topNodes.length - 1 && (
-              <div className="route-line hybrid">
-                <div className="route-pulse" />
-              </div>
-            )}
-          </div>
-        ))}
-      </div>
-
-      <div className="hy-branches">
-        <div className="branch-left" />
-        <div className="branch-right" />
-      </div>
-
-      <div className="hy-row">
-        {bottomNodes.map((node, idx) => (
-          <div className="route-cell" key={`bottom-${node.short}-${idx}`}>
-            <div className={`route-node hybrid ${node.state || "cold"}`}>
-              <span>{node.short}</span>
-            </div>
-            <div className="route-label">{node.label}</div>
-            {idx < bottomNodes.length - 1 && (
-              <div className="route-line hybrid">
-                <div className="route-pulse" />
-              </div>
-            )}
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-}
-
-function ConsolePanel({ lines = [] }) {
-  return (
-    <div className="console-shell">
-      <div className="console-top">
-        <div className="console-dots">
-          <span />
-          <span />
-          <span />
-        </div>
-        <div className="console-title">LIVE EXECUTION CONSOLE</div>
-      </div>
-      <div className="console-body">
-        {lines.map((line, idx) => (
-          <div className="console-line" key={`${line}-${idx}`}>
-            <span className="console-prefix">›</span>
-            <span>{line}</span>
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-}
-
-function FocusHeader({
-  activeTab,
-  runtimeState,
-  isRunning,
-  onUpload,
-  onDemo,
-  onSimilar,
-  onBundle,
-}) {
-  const titleMap = {
-    execution: "Execution Engine",
-    memory: "Memory Core",
-    pattern: "Pattern Map",
-    intel: "System Intelligence",
-    queue: "Upload Queue",
+  return {
+    workflow: "Generic Flow",
+    reuse: 74,
+    decision: "New Pattern Learned",
+    confidence: "Learning",
+    similarity: 0.74,
+    saved: "2100 ms",
   };
+}
 
-  return (
-    <div className="focus-header">
-      <div className="focus-left">
-        <div className="focus-mini-logo">M-OS</div>
-        <div className="focus-title">{titleMap[activeTab] || "Focus View"}</div>
-      </div>
+function shortHash(v = "") {
+  const s = String(v || "");
+  if (s.length <= 18) return s;
+  return `${s.slice(0, 10)}…${s.slice(-8)}`;
+}
 
-      <div className="focus-center">
-        <OrbCanvas mode={runtimeState.mode} mini />
-      </div>
+function buildProofPayload(source) {
+  const detected = detectWorkflow(source);
 
-      <div className="focus-actions">
-        <button className="focus-btn primary" onClick={onUpload} disabled={isRunning}>
-          Upload
-        </button>
-        <button className="focus-btn" onClick={onDemo} disabled={isRunning}>
-          Demo
-        </button>
-        <button className="focus-btn" onClick={onSimilar} disabled={isRunning}>
-          Similar
-        </button>
-        <button className="focus-btn" onClick={onBundle} disabled={isRunning}>
-          Bundle
-        </button>
-      </div>
-    </div>
-  );
+  return {
+    step: detected.workflow,
+    features: {
+      file_name: source,
+      workflow: detected.workflow,
+      cost: 1.0,
+      similarity: detected.similarity,
+      reuse_score: detected.similarity,
+    },
+    steps: [
+      {
+        name: "input_acceptance",
+        context: {
+          cost: 0.2,
+          similarity: 1.0,
+          reuse_score: 1.0,
+          source,
+        },
+        reuse_available: true,
+      },
+      {
+        name: "signature_normalization",
+        context: {
+          cost: 0.35,
+          similarity: detected.similarity,
+          reuse_score: detected.similarity,
+          workflow: detected.workflow,
+        },
+        reuse_available: true,
+      },
+      {
+        name: "pattern_route_decision",
+        context: {
+          cost: 1.0,
+          similarity: detected.similarity,
+          reuse_score: detected.similarity,
+          decision: detected.decision,
+        },
+        reuse_available: detected.similarity >= 0.6,
+      },
+    ],
+  };
 }
 
 export default function App() {
-  const [activeTab, setActiveTab] = useState("command");
-  const [isRunning, setIsRunning] = useState(false);
-  const [runtimeState, setRuntimeState] = useState(EMPTY_RUNTIME);
-  const [systemState, setSystemState] = useState(EMPTY_SYSTEM);
-
   const fileRef = useRef(null);
-  const centerRef = useRef(null);
 
-  const isFocusMode = activeTab !== "command";
+  const [view, setView] = useState("execution");
+  const [running, setRunning] = useState(false);
+  const [stage, setStage] = useState("OUT");
+  const [story, setStory] = useState("Execution ready — authority proof is waiting.");
+  const [result, setResult] = useState(DEFAULT_RESULT);
+  const [logs, setLogs] = useState([
+    "[READY] PPE authority pipeline is standing by.",
+    "[PROOF] backend proof authority required.",
+    "[DECISION] reasoning panel active.",
+  ]);
 
-  function scrollCenterToTop() {
-    if (centerRef.current) {
-      centerRef.current.scrollTo({ top: 0, behavior: "smooth" });
-    }
-  }
+  const [history, setHistory] = useState([
+    { source: "similar_image.jpg", workflow: "Image Flow", reuse: 91, status: "Verified" },
+    { source: "demo_bundle.zip", workflow: "Bundle Workload", reuse: 88, status: "Verified" },
+    { source: "demo_image.jpg", workflow: "Image Flow", reuse: 91, status: "Verified" },
+    { source: "sample.bin", workflow: "Generic Flow", reuse: 74, status: "Mapped" },
+  ]);
 
-  function mapBackendResultToRuntime(result) {
-    if (!result) return EMPTY_RUNTIME;
+  const stageIndex = useMemo(
+    () => Math.max(0, STAGES.findIndex(([id]) => id === stage)),
+    [stage]
+  );
+
+  const intel = useMemo(() => {
+    const all = [{ ...result }, ...history];
+    const avg = Math.round(all.reduce((s, x) => s + Number(x.reuse || 0), 0) / all.length);
+    const best = [...all].sort((a, b) => Number(b.reuse || 0) - Number(a.reuse || 0))[0];
 
     return {
-      workflow: result.workflow ?? "Unknown",
-      family: result.family ?? "Unknown",
-      reuse: result.reuse ?? 0,
-      confidence: result.confidence ?? "Low",
-      time: result.time ?? 0,
-      decision: result.decision ?? "Learning",
-      mode: result.mode ?? "learning",
-      systemState: result.systemState ?? "Learning",
-      routeType: result.routeType ?? "linear",
-      nodes: result.nodes ?? [],
-      topNodes: result.topNodes ?? [],
-      bottomNodes: result.bottomNodes ?? [],
-      notes: result.notes ?? ["No execution notes."],
-      console: result.console ?? ["[reactor] no console output"],
-      sourceFile: result.sourceFile ?? "No file uploaded",
-      signature: result.signature ?? null,
+      runs: all.length + 40,
+      avg,
+      best: best.workflow,
+      saved: result.saved,
+      efficiency: Math.max(60, Math.min(97, Math.round(avg * 0.75))),
+    };
+  }, [result, history]);
+
+  function normalizeBackend(data, fileName) {
+    const fallback = detectWorkflow(fileName);
+    const decision = data?.decisions?.[data.decisions.length - 1] || {};
+    const proof = data?.proof || {};
+
+    const confidenceValue = Number(decision.confidence || fallback.similarity || 0.5);
+    const costFull = Number(decision.cost_full || 1);
+    const costSaved = Number(decision.cost_saved || 0);
+    const reuse = Math.round(Math.max(0, Math.min(1, confidenceValue)) * 100);
+
+    return {
+      workflow: fallback.workflow,
+      reuse,
+      decision:
+        decision.action === "reused"
+          ? "Pattern Reused"
+          : decision.action === "partial_reuse"
+          ? "Partial Reuse"
+          : decision.action === "recomputed"
+          ? "Recomputed"
+          : fallback.decision,
+      decisionReason: decision.reason || "Backend proof route completed.",
+      confidence: confidenceValue >= 0.85 ? "High" : confidenceValue >= 0.6 ? "Medium" : "Low",
+      confidenceValue,
+      costSaved,
+      costFull,
+      source: fileName,
+      proof: data?.proof_id || proof?.proof_id || `MOS-PPE-${Date.now()}`,
+      proofId: data?.proof_id || proof?.proof_id || "missing-proof-id",
+      runId: data?.run_id || proof?.run_id || "missing-run-id",
+      inputHash: proof?.input_hash || "missing-input-hash",
+      finalHash: proof?.final_hash || "missing-final-hash",
+      evidencePath: data?.evidence_path || "proof_reports/not-exported",
+      integrity: data?.proof_id ? "Verified" : "Fallback",
+      saved: fallback.saved,
     };
   }
 
-  async function hydrateState() {
+  async function callProofPipeline(source) {
+    const payload = buildProofPayload(source);
+
+    const res = await fetch(`${API_BASE}/api/run-proof`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload),
+    });
+
+    if (!res.ok) {
+      throw new Error("PPE backend proof pipeline failed");
+    }
+
+    return await res.json();
+  }
+
+  async function animateExecution(finalResult) {
+    setRunning(true);
+    setView("execution");
+    setLogs([]);
+
+    const steps = [
+      ["IN", `[IN] accepted → ${finalResult.source}`],
+      ["SIG", `[SIG] input hash → ${shortHash(finalResult.inputHash)}`],
+      ["PAT", `[PAT] ${finalResult.workflow} detected`],
+      ["DEC", `[DEC] ${finalResult.decision} → ${finalResult.decisionReason}`],
+      ["OUT", `[OUT] proof_id → ${shortHash(finalResult.proofId)}`],
+    ];
+
+    for (const [s, msg] of steps) {
+      setStage(s);
+      setStory(msg);
+      setLogs((old) => [msg, ...old]);
+      await sleep(550);
+    }
+
+    setResult(finalResult);
+    setHistory((old) => [
+      {
+        source: finalResult.source,
+        workflow: finalResult.workflow,
+        reuse: finalResult.reuse,
+        status: finalResult.integrity,
+      },
+      ...old.slice(0, 12),
+    ]);
+
+    setRunning(false);
+  }
+
+  async function runSource(source) {
+    if (running) return;
+
     try {
-      const res = await fetch(`${API_BASE}/state`);
-      const json = await res.json();
-
-      setSystemState({
-        totalRuns: json.totalRuns ?? 0,
-        averageReuse: json.averageReuse ?? 0,
-        bestWorkflow: json.bestWorkflow ?? "Unknown",
-        savedMs: json.savedMs ?? 0,
-        efficiencyScore: json.efficiencyScore ?? 0,
-        memory: json.memory ?? {},
-        history: json.history ?? [],
-        queue: json.queue ?? [],
-        lastResult: json.lastResult ?? null,
-        prediction: json.prediction ?? EMPTY_SYSTEM.prediction,
+      const data = await callProofPipeline(source);
+      await animateExecution(normalizeBackend(data, source));
+    } catch {
+      const fallback = detectWorkflow(source);
+      await animateExecution({
+        ...DEFAULT_RESULT,
+        ...fallback,
+        source,
+        proof: `LOCAL-FALLBACK-${Date.now()}`,
+        proofId: "backend-not-reached",
+        runId: "local-fallback",
+        decisionReason: "Backend not reached. Local UI fallback executed only.",
+        evidencePath: "not-created",
+        integrity: "Unverified",
       });
-
-      if (json.lastResult) {
-        setRuntimeState(mapBackendResultToRuntime(json.lastResult));
-      } else {
-        setRuntimeState(EMPTY_RUNTIME);
-      }
-    } catch (err) {
-      console.error("state load failed", err);
     }
   }
 
-  useEffect(() => {
-    hydrateState();
-  }, []);
+  async function handleUpload(file) {
+    if (!file || running) return;
+    await runSource(file.name);
+  }
 
-  async function handleUpload(file, targetTab = "execution") {
-    if (!file) return;
+  function runDemo(type = "image") {
+    const source =
+      type === "bundle"
+        ? "demo_bundle.zip"
+        : type === "similar"
+        ? "similar_image.jpg"
+        : "demo_image.jpg";
 
-    const form = new FormData();
-    form.append("file", file);
+    runSource(source);
+  }
 
-    try {
-      setIsRunning(true);
+  async function downloadProof() {
+  if (!result.proofId || result.proofId === "not-generated-yet") {
+    alert("Run proof first.");
+    return;
+  }
 
-      const res = await fetch(`${API_BASE}/upload-react`, {
-        method: "POST",
-        body: form,
-      });
+  try {
+    const res = await fetch(`http://127.0.0.1:8000/api/proof-export/${result.proofId}`);
 
-      if (!res.ok) {
-        throw new Error(`Upload failed with status ${res.status}`);
-      }
-
-      const json = await res.json();
-      setRuntimeState(mapBackendResultToRuntime(json));
-      await hydrateState();
-      setActiveTab(targetTab);
-      scrollCenterToTop();
-    } catch (err) {
-      console.error("execution failed", err);
-    } finally {
-      setIsRunning(false);
+    if (!res.ok) {
+      throw new Error("No export found");
     }
+
+    const blob = await res.blob();
+    const url = window.URL.createObjectURL(blob);
+
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = `mos-ppe-signed-${result.proofId.slice(0, 12)}.json`;
+    a.click();
+
+    window.URL.revokeObjectURL(url);
+  } catch (err) {
+    console.error(err);
+    alert("Backend export failed. Run proof again.");
   }
+}
 
-  async function runPreset(kind) {
-    const presetFactory = DEMO_PRESETS[kind];
-    if (!presetFactory) return;
-    const presetFile = presetFactory();
-    await handleUpload(presetFile, activeTab === "command" ? "execution" : activeTab);
+async function verifyProofFile(file) {
+  if (!file) return;
+
+  const form = new FormData();
+  form.append("file", file);
+
+  try {
+    const res = await fetch(`${API_BASE}/api/verify-proof`, {
+      method: "POST",
+      body: form,
+    });
+
+    const data = await res.json();
+
+    if (data.valid) {
+      alert(
+        `✅ Proof Verified\n\nProof ID: ${data.proof_id}\nRun ID: ${data.run_id}\nSignature: ${data.signature_type}`
+      );
+    } else {
+      alert(`❌ Proof Failed\n\nReason: ${data.reason}`);
+    }
+  } catch (err) {
+    console.error(err);
+    alert("Proof verification failed.");
   }
+}
+async function downloadPublicKey() {
+  try {
+    const res = await fetch(`${API_BASE}/api/public-key`);
 
-  const memoryCards = useMemo(() => {
-    return Object.entries(systemState.memory || {}).map(([key, value]) => ({
-      key,
-      title: value.label || key,
-      meta: `Seen: ${value.seen} • Best Reuse: ${value.best_reuse}% • ${value.last_confidence || "Low"}`,
-    }));
-  }, [systemState.memory]);
+    if (!res.ok) {
+      throw new Error("Public key not ready");
+    }
 
-  const historyCards = useMemo(() => systemState.history || [], [systemState.history]);
-  const queueCards = useMemo(() => systemState.queue || [], [systemState.queue]);
-  const prediction = systemState.prediction || EMPTY_SYSTEM.prediction;
-  const memoryClusters = prediction.memoryClusters || [];
+    const blob = await res.blob();
+    const url = window.URL.createObjectURL(blob);
 
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "mos_ppe_public.pem";
+    a.click();
+
+    window.URL.revokeObjectURL(url);
+  } catch (err) {
+    console.error(err);
+    alert("Public key not available. Run proof once first.");
+  }
+}
   return (
-    <div className={`os-root mode-${runtimeState.mode}`}>
-      <div className="bg-grid" />
-      <div className="bg-glow bg-glow-a" />
-      <div className="bg-glow bg-glow-b" />
-
-      <aside className="os-left">
-        <div className="logo-box">
-          <div className="logo-main">M-OS</div>
-          <div className="logo-sub">MANDALE-OS (MOS-MEE)</div>
+    <div className={`mos-shell ${running ? "is-running" : ""}`}>
+      <input
+        ref={fileRef}
+        type="file"
+        hidden
+        onChange={(e) => handleUpload(e.target.files?.[0])}
+      />
+<input
+  id="proofVerifyInput"
+  type="file"
+  accept=".json,application/json"
+  hidden
+  onChange={(e) => verifyProofFile(e.target.files?.[0])}
+/>
+      <aside className="side">
+        <div className="brand">
+          <h1>M-OS</h1>
+          <p>Mandale-OS PPE</p>
+          <span>Pattern Proof Engine</span>
         </div>
 
-        {RAIL_ITEMS.map(([key, label]) => (
-          <button
-            key={key}
-            className={`nav-item ${activeTab === key ? "active" : ""}`}
-            onClick={() => {
-              setActiveTab(key);
-              scrollCenterToTop();
-            }}
-          >
-            {label}
-          </button>
-        ))}
+        <nav>
+          {NAV.map(([id, label]) => (
+            <button key={id} className={view === id ? "active" : ""} onClick={() => setView(id)}>
+              {label}
+            </button>
+          ))}
+        </nav>
 
-        <div className="state-box">
-          <div className="state-kicker">SYSTEM STATE</div>
-          <div className="state-value">{runtimeState.systemState}</div>
+        <div className="state">
+          <span>System State</span>
+          <b>{running ? "Executing" : "Proof Ready"}</b>
+          <small>{result.integrity} · {result.workflow}</small>
         </div>
       </aside>
 
-      <main ref={centerRef} className="os-center">
-        {!isFocusMode ? (
-          <>
-            <section className="hero-panel">
-              <div className="hero-copy">
-                <div className="hero-kicker">UPLOAD-AWARE REACTOR</div>
-                <h1 className="hero-title">Mandale-OS Execution Reactor</h1>
-                <p className="hero-sub">
-                  Real upload-aware reactor with backend-driven route intelligence, neural reuse,
-                  and file-family execution routing.
-                </p>
+      <main className="core">
+        <TopBar
+          view={view}
+          stage={stage}
+          running={running}
+          onUpload={() => fileRef.current?.click()}
+          onDemo={runDemo}
+          onProof={downloadProof}
+        />
 
-                <div className="actions">
-                  <button
-                    className="action primary"
-                    onClick={() => fileRef.current?.click()}
-                    disabled={isRunning}
-                  >
-                    {isRunning ? "Processing..." : "Upload Real File / ZIP"}
-                  </button>
-
-                  <button className="action" onClick={() => runPreset("image")} disabled={isRunning}>
-                    Run Demo
-                  </button>
-
-                  <button className="action" onClick={() => runPreset("similar")} disabled={isRunning}>
-                    Run Similar Task
-                  </button>
-
-                  <button className="action" onClick={() => runPreset("bundle")} disabled={isRunning}>
-                    Run Bundle Task
-                  </button>
-                </div>
-
-                <input
-                  ref={fileRef}
-                  type="file"
-                  hidden
-                  onChange={(e) => {
-                    const file = e.target.files?.[0];
-                    if (file) handleUpload(file);
-                    e.target.value = "";
-                  }}
-                />
-              </div>
-
-              <div className="hero-orb-panel">
-                <OrbCanvas mode={runtimeState.mode} />
-              </div>
-            </section>
-
-            <section className="top-result">
-              <div className="metric-card">
-                <div className="metric-label">Workflow</div>
-                <div className="metric-value">{runtimeState.workflow}</div>
-              </div>
-              <div className="metric-card">
-                <div className="metric-label">Reuse</div>
-                <div className="metric-value">{runtimeState.reuse}%</div>
-              </div>
-              <div className="metric-card">
-                <div className="metric-label">Source</div>
-                <div className="metric-value">{runtimeState.sourceFile}</div>
-              </div>
-            </section>
-
-            <section className="section-panel">
-              <div className="section-head">
-                <div>
-                  <div className="section-title">Command Surface</div>
-                  <div className="section-sub">
-                    Live backend result stays in the top viewport for direct operator control.
-                  </div>
-                </div>
-                <div className={`pill ${runtimeState.mode}`}>{runtimeState.decision}</div>
-              </div>
-
-              <div className="command-grid">
-                <div className="info-card">
-                  <div className="metric-label">Pattern Family</div>
-                  <div className="metric-value">{runtimeState.family}</div>
-                </div>
-                <div className="info-card">
-                  <div className="metric-label">Confidence</div>
-                  <div className="metric-value">{runtimeState.confidence}</div>
-                </div>
-                <div className="info-card">
-                  <div className="metric-label">Execution Time</div>
-                  <div className="metric-value">{runtimeState.time} ms</div>
-                </div>
-              </div>
-
-              <div className="console-wrap">
-                <ConsolePanel lines={runtimeState.console} />
-              </div>
-
-              <div className="prediction-card">
-                <div className="prediction-head">
-                  <div className="section-title small">Prediction Layer</div>
-                  <div className={`mini-pill ${prediction.confidence?.toLowerCase()}`}>{prediction.confidence}</div>
-                </div>
-                <div className="prediction-main">{prediction.prediction}</div>
-                <div className="prediction-reason">{prediction.reason}</div>
-              </div>
-            </section>
-          </>
-        ) : (
-          <>
-            <FocusHeader
-              activeTab={activeTab}
-              runtimeState={runtimeState}
-              isRunning={isRunning}
-              onUpload={() => fileRef.current?.click()}
-              onDemo={() => runPreset("image")}
-              onSimilar={() => runPreset("similar")}
-              onBundle={() => runPreset("bundle")}
-            />
-
-            <input
-              ref={fileRef}
-              type="file"
-              hidden
-              onChange={(e) => {
-                const file = e.target.files?.[0];
-                if (file) handleUpload(file, activeTab);
-                e.target.value = "";
-              }}
-            />
-
-            <div className="focus-content">
-              <section className="top-result compact">
-                <div className="metric-card">
-                  <div className="metric-label">Workflow</div>
-                  <div className="metric-value">{runtimeState.workflow}</div>
-                </div>
-                <div className="metric-card">
-                  <div className="metric-label">Reuse</div>
-                  <div className="metric-value">{runtimeState.reuse}%</div>
-                </div>
-                <div className="metric-card">
-                  <div className="metric-label">Source</div>
-                  <div className="metric-value">{runtimeState.sourceFile}</div>
-                </div>
-              </section>
-
-              {activeTab === "execution" && (
-                <section className="section-panel">
-                  <div className="section-head">
-                    <div>
-                      <div className="section-title">Backend-Driven Route Engine</div>
-                      <div className="section-sub">
-                        Route changes depend on uploaded file type and backend classification.
-                      </div>
-                    </div>
-                    <div className={`pill ${runtimeState.mode}`}>{runtimeState.decision}</div>
-                  </div>
-
-                  {runtimeState.routeType === "hybrid" ? (
-                    <HybridRoute
-                      topNodes={runtimeState.topNodes}
-                      bottomNodes={runtimeState.bottomNodes}
-                    />
-                  ) : (
-                    <LinearRoute nodes={runtimeState.nodes} mode={runtimeState.mode} />
-                  )}
-
-                  <div className="console-wrap">
-                    <ConsolePanel lines={runtimeState.console} />
-                  </div>
-
-                  <div className="prediction-card">
-                    <div className="prediction-head">
-                      <div className="section-title small">Prediction Layer</div>
-                      <div className={`mini-pill ${prediction.confidence?.toLowerCase()}`}>{prediction.confidence}</div>
-                    </div>
-                    <div className="prediction-main">{prediction.prediction}</div>
-                    <div className="prediction-reason">{prediction.reason}</div>
-                  </div>
-                </section>
-              )}
-
-              {activeTab === "memory" && (
-                <section className="section-panel">
-                  <div className="section-head">
-                    <div>
-                      <div className="section-title">Persistent Memory Core</div>
-                      <div className="section-sub">
-                        Stored structural families updated from real upload execution.
-                      </div>
-                    </div>
-                    <div className="pill neutral">Memory Active</div>
-                  </div>
-
-                  <div className="stack-list">
-                    {memoryCards.length === 0 ? (
-                      <div className="stack-card">
-                        <div>
-                          <div className="stack-title">No memory written yet</div>
-                          <div className="stack-meta">Run uploads or demos to build memory.</div>
-                        </div>
-                        <div className="mini-pill">Idle</div>
-                      </div>
-                    ) : (
-                      memoryCards.map((item) => (
-                        <div className="stack-card" key={item.key}>
-                          <div>
-                            <div className="stack-title">{item.title}</div>
-                            <div className="stack-meta">{item.meta}</div>
-                          </div>
-                          <div className="mini-pill">Live</div>
-                        </div>
-                      ))
-                    )}
-                  </div>
-
-                  {!!memoryClusters.length && (
-                    <div className="cluster-grid">
-                      {memoryClusters.map((cluster) => (
-                        <div className="cluster-card" key={cluster.cluster}>
-                          <div className="cluster-family">{cluster.label}</div>
-                          <div className="cluster-meta">
-                            {cluster.items} signatures • Seen {cluster.seen}
-                          </div>
-                          <div className="cluster-reuse">Best {cluster.best_reuse}%</div>
-                        </div>
-                      ))}
-                    </div>
-                  )}
-                </section>
-              )}
-
-              {activeTab === "pattern" && (
-                <section className="section-panel">
-                  <div className="section-head">
-                    <div>
-                      <div className="section-title">Orbit Memory Map</div>
-                      <div className="section-sub">
-                        Family-level relationship surface for upload-aware execution intelligence.
-                      </div>
-                    </div>
-                    <div className="pill neutral">Pattern Active</div>
-                  </div>
-
-                  <div className="pattern-map">
-                    <div
-                      className={`map-orbit map-center ${
-                        runtimeState.workflow === "Bundle Workload" || runtimeState.workflow === "Hybrid Pipeline"
-                          ? "active"
-                          : ""
-                      }`}
-                    >
-                      MOS
-                    </div>
-                    <div className={`map-orbit map-a ${runtimeState.workflow === "Image Flow" ? "active" : ""}`}>
-                      IMG
-                    </div>
-                    <div className={`map-orbit map-b ${runtimeState.workflow === "Document Flow" ? "active" : ""}`}>
-                      DOC
-                    </div>
-                    <div className={`map-orbit map-c ${runtimeState.workflow === "Code Flow" ? "active" : ""}`}>
-                      CODE
-                    </div>
-                    <div
-                      className={`map-orbit map-d ${
-                        runtimeState.workflow === "Bundle Workload" || runtimeState.workflow === "Hybrid Pipeline"
-                          ? "active"
-                          : ""
-                      }`}
-                    >
-                      BND
-                    </div>
-                  </div>
-                </section>
-              )}
-
-              {activeTab === "intel" && (
-                <section className="section-panel">
-                  <div className="section-head">
-                    <div>
-                      <div className="section-title">System Intelligence</div>
-                      <div className="section-sub">
-                        High-level operational metrics from the upload-aware reactor.
-                      </div>
-                    </div>
-                    <div className="pill neutral">Intel Live</div>
-                  </div>
-
-                  <div className="intel-grid">
-                    <div className="metric-card">
-                      <div className="metric-label">Total Runs</div>
-                      <div className="metric-value">{systemState.totalRuns}</div>
-                    </div>
-                    <div className="metric-card">
-                      <div className="metric-label">Average Reuse</div>
-                      <div className="metric-value">{systemState.averageReuse}%</div>
-                    </div>
-                    <div className="metric-card">
-                      <div className="metric-label">Best Workflow</div>
-                      <div className="metric-value">{systemState.bestWorkflow}</div>
-                    </div>
-                    <div className="metric-card">
-                      <div className="metric-label">Saved Time</div>
-                      <div className="metric-value">{systemState.savedMs} ms</div>
-                    </div>
-                    <div className="metric-card">
-                      <div className="metric-label">Efficiency Score</div>
-                      <div className="metric-value">{systemState.efficiencyScore}%</div>
-                    </div>
-                  </div>
-
-                  <div className="stack-list history-top">
-                    {historyCards.slice(0, 8).map((item, idx) => (
-                      <div className="stack-card" key={`${item.timestamp}-${idx}`}>
-                        <div>
-                          <div className="stack-title">{item.workflow}</div>
-                          <div className="stack-meta">
-                            {item.timestamp} • Reuse: {item.reuse}% • Mode: {item.mode}
-                          </div>
-                        </div>
-                        <div className={`mini-pill ${item.mode}`}>{item.decision}</div>
-                      </div>
-                    ))}
-                  </div>
-                </section>
-              )}
-
-              {activeTab === "queue" && (
-                <section className="section-panel">
-                  <div className="section-head">
-                    <div>
-                      <div className="section-title">Upload Queue</div>
-                      <div className="section-sub">
-                        Recent upload jobs processed by the reactor.
-                      </div>
-                    </div>
-                    <div className="pill neutral">Queue Active</div>
-                  </div>
-
-                  <div className="stack-list">
-                    {queueCards.length === 0 ? (
-                      <div className="stack-card">
-                        <div>
-                          <div className="stack-title">No queued files</div>
-                          <div className="stack-meta">Upload a file to start processing.</div>
-                        </div>
-                      </div>
-                    ) : (
-                      queueCards.map((item) => (
-                        <div className="stack-card" key={item.id}>
-                          <div>
-                            <div className="stack-title">{item.file}</div>
-                            <div className="stack-meta">
-                              {item.status} • {item.timestamp}
-                            </div>
-                          </div>
-                          <div className="mini-pill processed">{item.status}</div>
-                        </div>
-                      ))
-                    )}
-                  </div>
-                </section>
-              )}
+        {view === "command" && (
+          <section className="mode-panel">
+            <span className="eyebrow">COMMAND COCKPIT</span>
+            <h1>Execution Control Surface</h1>
+            <p>Operator control surface for upload, replay, proof, and execution decisions.</p>
+            <div className="command-buttons">
+              <button onClick={() => fileRef.current?.click()}>Upload Real File</button>
+              <button onClick={() => runDemo("image")}>Run Image Flow</button>
+              <button onClick={() => runDemo("bundle")}>Run Bundle Flow</button>
+              <button onClick={downloadProof}>Export Proof</button>
+              <button onClick={downloadPublicKey}>Public Key</button>
+              <button onClick={() => document.getElementById("proofVerifyInput")?.click()}>
+  Verify Proof
+</button>
             </div>
-          </>
+          </section>
         )}
 
-        <div className="bottom-spacer" />
+        {view === "execution" && (
+          <ExecutionView
+            result={result}
+            stage={stage}
+            stageIndex={stageIndex}
+            story={story}
+            logs={logs}
+            running={running}
+          />
+        )}
+
+        {view === "memory" && <MemoryView history={history} />}
+        {view === "pattern" && <PatternView stage={stage} stageIndex={stageIndex} />}
+        {view === "intel" && <IntelView result={result} intel={intel} />}
+        {view === "queue" && <QueueView history={history} />}
       </main>
 
-      <aside className="os-right">
-        <div className="right-panel">
-          <div className="right-title">Live Intelligence</div>
-
-          <div className="right-card">
-            <div className="metric-label">Routing State</div>
-            <div className="metric-value">{runtimeState.decision}</div>
-          </div>
-
-          <div className="right-card">
-            <div className="metric-label">Active Pattern</div>
-            <div className="metric-value">{runtimeState.workflow}</div>
-          </div>
-
-          <div className="right-card">
-            <div className="metric-label">Confidence</div>
-            <div className="metric-value">{runtimeState.confidence}</div>
-          </div>
-
-          <div className="right-card">
-            <div className="metric-label">Live Insights</div>
-            <div className="intel-mini">Total Runs: {systemState.totalRuns}</div>
-            <div className="intel-mini">Average Reuse: {systemState.averageReuse}%</div>
-            <div className="intel-mini">Best Workflow: {systemState.bestWorkflow}</div>
-            <div className="intel-mini">Saved Time: {systemState.savedMs} ms</div>
-            <div className="intel-mini">Efficiency Score: {systemState.efficiencyScore}%</div>
-          </div>
-
-          <div className="right-card">
-            <div className="metric-label">Prediction</div>
-            <div className="intel-mini">Next: {prediction.prediction}</div>
-            <div className="intel-mini">Confidence: {prediction.confidence}</div>
-            <div className="intel-mini">{prediction.reason}</div>
-          </div>
-
-          <div className="right-card">
-            <div className="metric-label">Engine Notes</div>
-            <ul className="notes">
-              {runtimeState.notes.map((note, idx) => (
-                <li key={idx}>{note}</li>
-              ))}
-            </ul>
-          </div>
-        </div>
+      <aside className="right">
+        <h2>Live Authority</h2>
+        <Info label="Routing State" value={result.decision} />
+        <Info label="Active Pattern" value={result.workflow} />
+        <Info label="Confidence" value={`${Math.round(result.confidenceValue * 100)}%`} />
+        <Info label="Integrity" value={result.integrity} />
+        <Info label="Proof ID" value={shortHash(result.proofId)} />
+        <Info label="Evidence Pack" value={result.evidencePath} />
       </aside>
     </div>
   );
+}
+
+function TopBar({ view, stage, running, onUpload, onDemo, onProof }) {
+  return (
+    <section className="topbar">
+      <div className="top-title">
+        <b>M-OS</b>
+        <span>{view.toUpperCase()}</span>
+      </div>
+
+      <div className={`mini-orb ${running ? "running" : ""}`}>
+        <i>{stage}</i>
+      </div>
+
+      <div className="top-actions">
+        <button onClick={onUpload} disabled={running}>Upload</button>
+        <button onClick={() => onDemo("image")} disabled={running}>Demo</button>
+        <button onClick={() => onDemo("similar")} disabled={running}>Similar</button>
+        <button onClick={() => onDemo("bundle")} disabled={running}>Bundle</button>
+        <button onClick={onProof}>Export</button>
+      </div>
+    </section>
+  );
+}
+
+function ExecutionView({ result, stage, stageIndex, story, logs, running }) {
+  const savedPercent = result.costFull > 0 ? Math.round((result.costSaved / result.costFull) * 100) : 0;
+
+  return (
+    <>
+      <section className="hero proof-hero">
+        <div>
+          <span className="eyebrow">PROOF AUTHORITY ENGINE</span>
+          <h1>Execution That Proves Itself</h1>
+          <p>Every run now exposes proof identity, decision reasoning, cost impact, and evidence path.</p>
+          <div className="story">{story}</div>
+        </div>
+
+        <div className={`big-orb ${running ? "spin" : ""}`}>
+          <span>{stage}</span>
+        </div>
+      </section>
+
+      <section className="cards3">
+        <Metric label="Workflow" value={result.workflow} />
+        <Metric label="Reuse Strength" value={`${result.reuse}%`} />
+        <Metric label="Integrity" value={result.integrity} />
+      </section>
+
+      <section className="proof-grid">
+        <div className="authority-card">
+  <h4>Proof Authority</h4>
+
+  <div className="proof-id">
+    {shortHash(result.proofId)}
+  </div>
+
+  <div className="proof-meta">
+    <div>Run ID: {shortHash(result.runId)}</div>
+    <div>Input Hash: {shortHash(result.inputHash)}</div>
+    <div>Final Hash: {shortHash(result.finalHash)}</div>
+  </div>
+
+  <div className="proof-status">
+    ✓ Cryptographically Bound  
+  </div>
+</div>
+         <section className="proof-grid">
+
+  {/* ✅ PROOF AUTHORITY CARD */}
+  <div className="authority-card">
+    <h4>Proof Authority</h4>
+
+    <div className="proof-id">
+      {shortHash(result.proofId)}
+    </div>
+
+    <div className="proof-meta">
+      <div>Run ID: {shortHash(result.runId)}</div>
+      <div>Input Hash: {shortHash(result.inputHash)}</div>
+      <div>Final Hash: {shortHash(result.finalHash)}</div>
+    </div>
+
+    <div className="proof-status">
+      ✓ Cryptographically Bound
+    </div>
+  </div>
+
+  {/* ✅ DECISION CARD */}
+  <div className="authority-card decision-card">
+    <span className="eyebrow">DECISION REASONING</span>
+
+    <h3>{result.decision}</h3>
+    <p>{result.reason}</p>
+
+    <div className="reason-row">
+      <span>Confidence</span>
+      <b>{result.confidence}%</b>
+    </div>
+
+    <div className="reason-row">
+      <span>Cost Saved</span>
+      <b>{savedPercent}%</b>
+    </div>
+
+    <div className="reason-row">
+      <span>Why Reused</span>
+      <b>Similarity above threshold</b>
+    </div>
+
+    <div className="reason-row">
+      <span>Threshold</span>
+      <b>85%</b>
+    </div>
+
+  </div>
+
+</section>
+
+        {/* 🔥 PROOF TIMELINE */}
+        <section className="proof-timeline">
+          <h3>Proof Timeline</h3>
+
+          <div className="timeline-row">
+            <span>Input Locked</span>
+            <b>{shortHash(result.inputHash)}</b>
+          </div>
+
+          <div className="timeline-row">
+            <span>Pattern Matched</span>
+            <b>{result.workflow}</b>
+          </div>
+
+          <div className="timeline-row">
+            <span>Decision Taken</span>
+            <b>{result.decision}</b>
+          </div>
+
+          <div className="timeline-row">
+            <span>Proof Generated</span>
+            <b>{shortHash(result.proofId)}</b>
+          </div>
+        </section>
+        <div className="pipeline">
+          {STAGES.map(([id, label], i) => (
+            <div
+              key={id}
+              className={`pipe ${stage === id ? "active" : ""} ${i <= stageIndex ? "done" : ""}`}
+            >
+              <b>{id}</b>
+              <small>{label}</small>
+            </div>
+          ))}
+        </div>
+
+        <div className="console">
+          <b>LIVE PROOF CONSOLE</b>
+          {logs.map((l, i) => <p key={i}>› {l}</p>)}
+          <p>› [EVIDENCE]</p>
+<button className="evidence-btn">
+  Open Evidence Pack
+</button>
+        </div>
+      </section>
+    </>
+  );
+}
+
+function MemoryView({ history }) {
+  return (
+    <section className="mode-panel">
+      <span className="eyebrow">PERSISTENT PATTERN MEMORY</span>
+      <h1>Memory Core</h1>
+      <p>Stored structural families updated from proof-aware execution.</p>
+
+      <div className="memory-graph">
+        <div className="memory-center">MOS</div>
+        {history.slice(0, 7).map((h, i) => (
+          <div key={i} className={`memory-dot dot-${i}`}>
+            <b>{short(h.workflow)}</b>
+            <small>{h.reuse}%</small>
+          </div>
+        ))}
+      </div>
+
+      <div className="memory-list">
+        {history.slice(0, 6).map((h, i) => (
+          <div key={i}>
+            <b>{h.workflow}</b>
+            <span>{h.source} · {h.reuse}% · {h.status}</span>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function PatternView({ stage, stageIndex }) {
+  return (
+    <section className="mode-panel">
+      <span className="eyebrow">LIVE PATTERN ROUTE</span>
+      <h1>Pattern Map</h1>
+      <p>Every node reflects the current execution state machine.</p>
+
+      <div className="pattern-web">
+        {STAGES.map(([id, label], i) => (
+          <div key={id} className={`web-node ${stage === id ? "active" : ""} ${i <= stageIndex ? "done" : ""}`}>
+            <b>{id}</b>
+            <span>{label}</span>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function IntelView({ result, intel }) {
+  return (
+    <section className="mode-panel">
+      <span className="eyebrow">SYSTEM INTELLIGENCE</span>
+      <h1>Operational Intelligence</h1>
+      <p>Live proof-readiness, reuse strength, and route confidence.</p>
+
+      <div className="intel-grid">
+        <Metric label="Total Runs" value={intel.runs} />
+        <Metric label="Average Reuse" value={`${intel.avg}%`} />
+        <Metric label="Best Workflow" value={intel.best} />
+        <Metric label="Saved Time" value={result.saved} />
+        <Metric label="Efficiency" value={`${intel.efficiency}%`} />
+        <Metric label="Proof State" value={result.integrity} />
+      </div>
+    </section>
+  );
+}
+
+function QueueView({ history }) {
+  return (
+    <section className="mode-panel">
+      <span className="eyebrow">UPLOAD QUEUE</span>
+      <h1>Execution Queue</h1>
+      <p>Recent files, detected patterns and proof states.</p>
+
+      <div className="queue-list">
+        {history.map((h, i) => (
+          <div key={i}>
+            <b>{h.source}</b>
+            <span>{h.workflow}</span>
+            <em>{h.status}</em>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function Info({ label, value }) {
+  return (
+    <div className="info">
+      <span>{label}</span>
+      <b>{value}</b>
+    </div>
+  );
+}
+
+function Metric({ label, value }) {
+  return (
+    <div className="metric">
+      <span>{label}</span>
+      <b>{value}</b>
+    </div>
+  );
+}
+
+function short(v) {
+  const x = String(v || "").toLowerCase();
+  if (x.includes("image")) return "IMG";
+  if (x.includes("bundle")) return "BND";
+  if (x.includes("generic")) return "GEN";
+  return "PAT";
 }

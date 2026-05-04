@@ -1,42 +1,35 @@
-from __future__ import annotations
-
 import hashlib
-import json
-from typing import Any, Dict
+import mimetypes
+from pathlib import Path
 
 
-def _stable_json(payload: Dict[str, Any]) -> str:
-    return json.dumps(payload, sort_keys=True, separators=(",", ":"), ensure_ascii=False)
+def generate_signature(content: bytes) -> str:
+    return hashlib.sha256(content).hexdigest()
 
 
-def _sha256(text: str) -> str:
-    return hashlib.sha256(text.encode("utf-8")).hexdigest()
+def detect_type(filename: str) -> dict:
+    ext = Path(filename).suffix.lower()
 
-
-def build_signatures(normalized_task: Dict[str, Any]) -> Dict[str, str]:
-    canonical_step = normalized_task.get("canonical_step", "unknown")
-    normalized_features = normalized_task.get("normalized_features", {})
-    family_hint = normalized_task.get("family_hint", "generic")
-
-    feature_hash = _sha256(_stable_json(normalized_features))
-
-    invariant_payload = {
-        "canonical_step": canonical_step,
-        "family_hint": family_hint,
-        "feature_keys": sorted(normalized_features.keys()),
+    type_map = {
+        ".jpg": ("image", "Image Flow"),
+        ".jpeg": ("image", "Image Flow"),
+        ".png": ("image", "Image Flow"),
+        ".webp": ("image", "Image Flow"),
+        ".zip": ("bundle", "Bundle Workload"),
+        ".pdf": ("document", "Document Flow"),
+        ".docx": ("document", "Document Flow"),
+        ".txt": ("text", "Text Flow"),
+        ".json": ("data", "Structured Data Flow"),
+        ".csv": ("data", "Structured Data Flow"),
     }
 
-    step_payload = {
-        "canonical_step": canonical_step,
-        "family_hint": family_hint,
-        "features": normalized_features,
-    }
+    category, family = type_map.get(ext, ("unknown", "Generic Flow"))
 
-    invariant_signature = _sha256(_stable_json(invariant_payload))
-    step_signature = _sha256(_stable_json(step_payload))
+    mime, _ = mimetypes.guess_type(filename)
 
     return {
-        "step_signature": step_signature,
-        "invariant_signature": invariant_signature,
-        "feature_hash": feature_hash,
+        "category": category,
+        "family": family,
+        "extension": ext,
+        "mime": mime or "application/octet-stream",
     }
