@@ -1,0 +1,148 @@
+<svg width="1400" height="720" viewBox="0 0 1400 720" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f8fbff"></stop>
+      <stop offset="48%" stop-color="#eef6ff"></stop>
+      <stop offset="100%" stop-color="#fff7ed"></stop>
+    </linearGradient>
+
+    <linearGradient id="blueOrange" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0b6bff"></stop>
+      <stop offset="55%" stop-color="#00b7ff"></stop>
+      <stop offset="100%" stop-color="#ff8a1f"></stop>
+    </linearGradient>
+
+    <radialGradient id="orb" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff"></stop>
+      <stop offset="38%" stop-color="#41c7ff"></stop>
+      <stop offset="76%" stop-color="#0b6bff"></stop>
+      <stop offset="100%" stop-color="#ff8a1f"></stop>
+    </radialGradient>
+
+    <filter id="softShadow">
+      <feDropShadow dx="0" dy="18" stdDeviation="20" flood-color="#0b3b75" flood-opacity="0.18"></feDropShadow>
+    </filter>
+
+    <filter id="glowBlue">
+      <feGaussianBlur stdDeviation="6" result="blur"></feGaussianBlur>
+      <feMerge>
+        <feMergeNode in="blur"></feMergeNode>
+        <feMergeNode in="SourceGraphic"></feMergeNode>
+      </feMerge>
+    </filter>
+
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" fill="none" stroke="#0b6bff" stroke-opacity="0.08" stroke-width="1"></path>
+    </pattern>
+  </defs>
+
+  <rect width="1400" height="720" rx="34" fill="url(#bg)"></rect>
+  <rect width="1400" height="720" rx="34" fill="url(#grid)" opacity="0.9"></rect>
+
+  <circle cx="1160" cy="80" r="220" fill="#ff8a1f" opacity="0.10"></circle>
+  <circle cx="240" cy="640" r="260" fill="#0b6bff" opacity="0.10"></circle>
+
+  <text x="80" y="82" font-family="Inter, Arial, sans-serif" font-size="18" letter-spacing="8" fill="#0b6bff" font-weight="800">
+    M-OS PPE / GLASS EDITION
+  </text>
+
+  <text x="80" y="145" font-family="Inter, Arial Black, sans-serif" font-size="58" fill="#06142e" font-weight="900">
+    Unified Execution Proof System
+  </text>
+
+  <text x="82" y="188" font-family="Inter, Arial, sans-serif" font-size="23" fill="#536179">
+    MEE executes intelligently. PPE makes execution provable, exportable, and verifiable.
+  </text>
+
+  <rect x="80" y="235" width="1240" height="360" rx="36" fill="#ffffff" fill-opacity="0.72" stroke="#d7e7ff" filter="url(#softShadow)"></rect>
+  <rect x="112" y="268" width="1176" height="294" rx="30" fill="#f8fbff" fill-opacity="0.88" stroke="#e6eefb"></rect>
+
+  <path d="M185 415 C360 300, 520 520, 700 415 S1045 300, 1215 415" fill="none" stroke="#0b6bff" stroke-width="4" stroke-opacity="0.22" stroke-dasharray="10 18">
+    <animate attributeName="stroke-dashoffset" from="0" to="-180" dur="4s" repeatCount="indefinite"></animate>
+  </path>
+
+  <path d="M170 415 H1230" stroke="url(#blueOrange)" stroke-width="8" stroke-linecap="round" opacity="0.25"></path>
+  <path d="M170 415 H1230" stroke="url(#blueOrange)" stroke-width="7" stroke-linecap="round" stroke-dasharray="85 1080">
+    <animate attributeName="stroke-dashoffset" from="0" to="-1165" dur="3.8s" repeatCount="indefinite"></animate>
+  </path>
+
+  <g font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="900">
+    <g transform="translate(190 415)">
+      <circle r="70" fill="#ffffff" stroke="#0b6bff" stroke-width="4" filter="url(#glowBlue)"></circle>
+      <circle r="48" fill="url(#orb)" opacity="0.92">
+        <animate attributeName="r" values="44;52;44" dur="2.8s" repeatCount="indefinite"></animate>
+      </circle>
+      <text y="8" font-size="25" fill="#06142e">RUN</text>
+      <text y="105" font-size="15" fill="#536179">Input Lock</text>
+    </g>
+
+    <g transform="translate(395 415)">
+      <circle r="70" fill="#ffffff" stroke="#0b6bff" stroke-width="4" filter="url(#glowBlue)"></circle>
+      <circle r="48" fill="url(#orb)" opacity="0.72">
+        <animate attributeName="r" values="44;52;44" dur="2.8s" begin=".4s" repeatCount="indefinite"></animate>
+      </circle>
+      <text y="8" font-size="23" fill="#06142e">DETECT</text>
+      <text y="105" font-size="15" fill="#536179">Signature</text>
+    </g>
+
+    <g transform="translate(600 415)">
+      <circle r="70" fill="#ffffff" stroke="#0b6bff" stroke-width="4" filter="url(#glowBlue)"></circle>
+      <circle r="48" fill="url(#orb)" opacity="0.72">
+        <animate attributeName="r" values="44;52;44" dur="2.8s" begin=".8s" repeatCount="indefinite"></animate>
+      </circle>
+      <text y="8" font-size="23" fill="#06142e">ROUTE</text>
+      <text y="105" font-size="15" fill="#536179">Decision</text>
+    </g>
+
+    <g transform="translate(805 415)">
+      <circle r="70" fill="#ffffff" stroke="#0b6bff" stroke-width="4" filter="url(#glowBlue)"></circle>
+      <circle r="48" fill="url(#orb)" opacity="0.72">
+        <animate attributeName="r" values="44;52;44" dur="2.8s" begin="1.2s" repeatCount="indefinite"></animate>
+      </circle>
+      <text y="8" font-size="23" fill="#06142e">REUSE</text>
+      <text y="105" font-size="15" fill="#536179">Memory</text>
+    </g>
+
+    <g transform="translate(1010 415)">
+      <circle r="74" fill="#ffffff" stroke="#ff8a1f" stroke-width="5" filter="url(#glowBlue)"></circle>
+      <circle r="50" fill="url(#orb)" opacity="0.9">
+        <animate attributeName="r" values="46;56;46" dur="2.4s" begin="1.6s" repeatCount="indefinite"></animate>
+      </circle>
+      <text y="8" font-size="23" fill="#06142e">PROVE</text>
+      <text y="105" font-size="15" fill="#ff8a1f">Evidence</text>
+    </g>
+
+    <g transform="translate(1215 415)">
+      <circle r="78" fill="#ffffff" stroke="#ff8a1f" stroke-width="5" filter="url(#glowBlue)"></circle>
+      <circle r="52" fill="url(#orb)" opacity="0.94">
+        <animate attributeName="r" values="48;60;48" dur="2s" begin="2s" repeatCount="indefinite"></animate>
+      </circle>
+      <circle r="100" fill="none" stroke="#ff8a1f" stroke-width="3" stroke-dasharray="14 16" opacity=".75">
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="8s" repeatCount="indefinite"></animateTransform>
+      </circle>
+      <text y="8" font-size="21" fill="#06142e">VERIFY</text>
+      <text y="105" font-size="15" fill="#ff8a1f">RSA Public Proof</text>
+    </g>
+  </g>
+
+  <g font-family="Inter, Arial, sans-serif">
+    <rect x="150" y="270" width="385" height="82" rx="22" fill="#ffffff" stroke="#d7e7ff"></rect>
+    <text x="178" y="305" font-size="16" fill="#0b6bff" letter-spacing="4" font-weight="800">MEE CORE</text>
+    <text x="178" y="333" font-size="21" fill="#06142e" font-weight="800">Execution Memory Reactor</text>
+
+    <rect x="865" y="270" width="385" height="82" rx="22" fill="#ffffff" stroke="#ffd7aa"></rect>
+    <text x="893" y="305" font-size="16" fill="#ff8a1f" letter-spacing="4" font-weight="800">PPE LAYER</text>
+    <text x="893" y="333" font-size="21" fill="#06142e" font-weight="800">Pattern Proof Engine</text>
+  </g>
+
+  <g font-family="Inter, Arial, sans-serif">
+    <rect x="80" y="625" width="390" height="48" rx="24" fill="#ffffff" stroke="#d7e7ff"></rect>
+    <text x="110" y="655" font-size="17" fill="#06142e" font-weight="700">RUN → DETECT → ROUTE → REUSE</text>
+
+    <rect x="500" y="625" width="390" height="48" rx="24" fill="#ffffff" stroke="#ffd7aa"></rect>
+    <text x="530" y="655" font-size="17" fill="#06142e" font-weight="700">PROVE → VERIFY → EXPORT</text>
+
+    <rect x="920" y="625" width="400" height="48" rx="24" fill="#06142e"></rect>
+    <text x="950" y="655" font-size="17" fill="#ffffff" font-weight="700">Evidence Pack + RSA Verifier</text>
+  </g>
+</svg>
