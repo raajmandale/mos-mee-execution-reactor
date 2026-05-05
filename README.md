@@ -1,85 +1,63 @@
 <p align="center">
-  <img src="docs/ppe/ppe-banner.svg" width="100%" />
+  <img src="docs/ppe/ppe-banner.svg" width="100%" alt="M-OS MEE + PPE Banner">
 </p>
 
-<h1 align="center">⚡ M-OS MEE + PPE</h1>
+<h1 align="center">⚡ M-OS MEE + PPE — Execution Memory Reactor</h1>
 
 <p align="center">
-  <b>Execution Memory Reactor + Pattern Proof Engine</b><br>
-  Run • Detect • Route • Reuse • Prove • Verify
+<b>Consequence-Aware Execution Engine</b><br>
+Pattern Memory • Signature Routing • Reuse Proof • Verification Layer
 </p>
 
 <p align="center">
 
-![status](https://img.shields.io/badge/status-PRC--2%20Active-blue)
-![core](https://img.shields.io/badge/core-MEE%20Reactor-green)
-![layer](https://img.shields.io/badge/layer-PPE%20Proof-orange)
-![mode](https://img.shields.io/badge/mode-Execution%20Intelligence-cyan)
-![license](https://img.shields.io/badge/license-MIT-lightgrey)
+![Status](https://img.shields.io/badge/Status-PRC--2%20Active-blue)
+![Engine](https://img.shields.io/badge/Core-Memory%20Reactor-green)
+![Layer](https://img.shields.io/badge/Layer-PPE%20Proof-orange)
+![Mode](https://img.shields.io/badge/Mode-Execution%20Intelligence-cyan)
+![License](https://img.shields.io/badge/License-MIT-lightgrey)
 
 </p>
 
 ---
 
-## 🧠 What is M-OS MEE + PPE?
+# 🧠 What is M-OS MEE?
 
-**M-OS MEE (Execution Memory Reactor)** explores a simple idea:
+M-OS MEE explores a simple thesis:
 
 ```text
 Execution does not always need to begin from zero.
 
-Instead:
+Instead of recomputing everything:
 
-Detect patterns
-Route intelligently
-Reuse prior computation
-Generate proof
-Verify independently
-RUN → DETECT → ROUTE → REUSE → PROVE → VERIFY
-⚡ Why this matters
+✔ Detect patterns
+✔ Recognize prior structures
+✔ Route reusable paths
+✔ Activate memory-backed execution
+✔ Produce measurable proof
 
-Modern systems:
+Core chain:
 
-Treat every execution as new
-Recompute unnecessarily
-Optimize after execution
+RUN → DETECT → ROUTE → REUSE → PROVE
+⚡ Why It Matters
 
-M-OS MEE + PPE:
+Modern systems repeatedly process structurally similar workloads.
 
-Traditional Systems	M-OS MEE + PPE
-Execute every workload as new	Detect known execution patterns
-Cache outputs	Remember execution structure
-Optimize after execution	Route before execution
-No proof layer	Verifiable execution with proof
-🧬 Core Hypothesis
-Attack ≠ Loss
+Most still treat:
 
-Likewise—
+Every run as new
+Every task as fresh compute
+Every decision as isolated
 
-Execution ≠ Always New
+M-OS MEE tests a different path:
 
-Patterns can be remembered.
-🧩 Layer Architecture
-🔷 MEE Core (Execution Memory Reactor)
-
-Handles execution intelligence:
-
-RUN → DETECT → ROUTE → REUSE
-Stage	Engine	Purpose
-RUN	Runtime Layer	Accept input
-DETECT	Signature Engine	Extract structure
-ROUTE	Decision Engine	Choose execution path
-REUSE	Memory Reactor	Apply prior computation
-🟠 PPE Layer (Pattern Proof Engine)
-
-Extends MEE with trust + validation:
-
-PROVE → VERIFY
-Stage	Engine	Purpose
-PROVE	Evidence Engine	Generate execution proof
-VERIFY	RSA Verifier	Validate output independently
-🌐 Unified System Flow
-<p align="center"> <img src="docs/ppe/mos-mee-ppe-hero.svg" width="100%" /> </p>
+Traditional Runtime	M-OS MEE
+Recompute	Reuse
+Cache outputs	Remember structures
+Optimize after	Route before
+Runtime-only metrics	Reuse + Proof metrics
+🌐 Visual Architecture
+<p align="center"> <img src="docs/architecture.gif" width="100%"> </p>
 INPUT
  ↓
 SIGNATURE
@@ -89,59 +67,151 @@ ROUTING
 MEMORY
  ↓
 PROOF
- ↓
-VERIFICATION
-🎬 Demo Proof
-<p align="center"> <img src="docs/mos_mee_demo_prc1.gif" width="100%" /> </p>
-What happens:
-Upload workload
-Detect execution signature
-Route intelligently
-Reuse memory if possible
-Generate proof
-Verify output
+
+Layers:
+
+🧩 Signature Layer
+🛣 Routing Layer
+🧠 Memory Reactor
+🌌 Pattern Map
+📜 Proof Surface
+
+🚀 Reactor Surface
+<p align="center"> <img src="docs/mos_mee_demo_prc1.gif" width="100%"> </p>
+
+Shows:
+
+Upload-aware routing
+Pattern detection
+Route promotion
+Reuse activation
+Proof-state transitions
 📊 Benchmark Evidence (PRC-2)
-<p align="center"> <img src="benchmarks/benchmark_results.svg" width="100%" /> </p>
-Key Signals
-Metric	Value
+<p align="center"> <img src="./benchmarks/benchmark_results.svg" width="95%"> </p>
+
+Evidence pack includes:
+
+Routing benchmark
+Signature recall metrics
+Persistence trials
+Failure cases
+Reuse metrics dataset
+Sample Signals
+Signal	Value
 Reuse Match	88–91%
-Time Saved	~4960 ms
+Saved Time	4960 ms
 Recall	Stable
 Confidence	High
-Failure Cases	Documented
-📦 Proof & Evidence Output
+
+Bounded proof model:
+
+Cold Run
+Warm Match
+Reused Path
+Saved Time
+Proof Surface
+🧬 Core Hypothesis
+Attack ≠ Loss
+
+Likewise —
+
+Execution ≠ Always New
+
+Patterns can be remembered.
+🔶 PPE — Pattern Proof Engine
+
+PPE extends MEE beyond proof generation into verifiable execution.
+
+PROVE → VERIFY
+
+Instead of stopping at proof:
+
+Generate execution evidence
+Bind execution to verifiable output
+Enable independent validation
+Transform proof → trust
+⚡ Why PPE Exists
+
+MEE proves execution internally.
+
+PPE ensures:
+
+proof can be exported
+proof can be validated externally
+proof can be trusted independently
+
+Without PPE:
+
+Proof = internal signal
+
+With PPE:
+
+Proof = verifiable artifact
+🌐 PPE Flow Extension
+<p align="center"> <img src="docs/ppe/ppe-architecture.svg" width="100%"> </p>
+
+Extended chain:
+
+RUN → DETECT → ROUTE → REUSE → PROVE → VERIFY
+
+Additional layers:
+
+📜 Evidence Engine
+🔐 Verification Layer
+🌍 External Validator
+
+🚀 Unified System (MEE + PPE)
+<p align="center"> <img src="docs/ppe/mos-mee-ppe-hero.svg" width="100%"> </p>
+
+System becomes:
+
+MEE → execution intelligence
+PPE → execution trust layer
+
+Combined:
+
+Execution → Proof → Verification
+📦 Proof & Verification Output
 
 PPE generates:
 
-docs/proof_reports/
-
-Includes:
-
-execution traces
-proof-state logs
+proof reports
+execution logs
+signature traces
 verification results
-reproducible evidence
-🧱 Repository Structure
+
+Output:
+
+docs/proof_reports/
+🗂 Repository Structure
 mos-mee-execution-reactor/
-│
+
 ├── backend/
 ├── frontend/
-│
+
 ├── benchmarks/
-│   └── benchmark_results.svg
-│
+│  ├── benchmark_results.svg
+│  ├── routing_benchmark.md
+│  ├── reuse_metrics.csv
+│  ├── signature_recall.md
+│  ├── persistence_trials.md
+│  └── failure_cases.md
+
 ├── docs/
-│   ├── ppe/
-│   │   ├── mos-mee-ppe-hero.svg
-│   │   ├── ppe-architecture.svg
-│   │   └── PPE_README.md
-│   └── mos_mee_demo_prc1.gif
-│
+│  ├── banner.svg
+│  ├── architecture.gif
+│  ├── mos_mee_demo_prc1.gif
+│  ├── ppe/
+│  │   ├── ppe-banner.svg
+│  │   ├── ppe-architecture.svg
+│  │   └── mos-mee-ppe-hero.svg
+│  └── MOS_MEE_Project_Brief.docx
+
 ├── tools/
-│   └── verifier/
-│
+│  └── verifier/
+
 └── README.md
-🚀 Quick Run
+⚙ Quick Run
 Frontend
 cd frontend
 npm install
@@ -149,31 +219,58 @@ npm run dev
 Backend
 cd backend
 python app.py
-🔗 Position in M-OS Lineage
+🔬 Position in M-OS Lineage
 M-OS Runtime
    ↓
-Pattern Execution Layer
+Pattern Graph / PSTG
    ↓
-MEE (Execution Memory Reactor)
+CRS / Parameter Golf
    ↓
-PPE (Pattern Proof Engine)
-⚠️ What this is NOT
-Not an OS replacement
-Not a scheduler
-Not a kernel
-Not a production system
-✅ What this IS
-Execution intelligence layer
-Pattern-aware compute system
-Proof-driven execution engine
-Verifiable computation model
+M-OS MEE
+   ↓
+MEE + PPE
+
+Focus shift:
+
+MEE → execution memory
+PPE → execution verification
+❌ What This Is Not
+
+Not:
+
+OS replacement
+Production scheduler
+Compute kernel
+Benchmark claim against production systems
+✅ What This Is
+
+✔ Experimental runtime layer
+✔ Pattern-memory execution system
+✔ Proof-driven execution engine
+✔ Verification-enabled compute model
+✔ Research surface for execution intelligence
+
+📄 Research Brief
+docs/MOS_MEE_Project_Brief.docx
 👤 Author
 
 Raaj Mandale
-Founder — Eranest Technoware Pvt Ltd
+https://github.com/raajmandale
 
-GitHub: https://github.com/raajmandale
+✔ PRC Status
+ PRC-1 Reactor Surface
+ Demo Proof Loop
+ Benchmark Layer
+ PPE Integration
 
-📄 License
+Next:
+
+PRC-3 → External Verification
+License
 
 MIT
+
+
+---
+
+# 🧠 Mandale-OS "M-OS"
