@@ -1,73 +1,125 @@
-<svg width="1500" height="760" viewBox="0 0 1500 760" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="box" x1="0" x2="1">
-      <stop offset="0%" stop-color="#0f274a"></stop>
-      <stop offset="100%" stop-color="#082f2e"></stop>
-    </linearGradient>
-    <linearGradient id="proof" x1="0" x2="1">
-      <stop offset="0%" stop-color="#0e7490"></stop>
-      <stop offset="100%" stop-color="#92400e"></stop>
-    </linearGradient>
-  </defs>
+<svg width="1400" height="520" viewBox="0 0 1400 520" xmlns="http://www.w3.org/2000/svg">
 
-  <rect width="1500" height="760" rx="24" fill="#050b18"></rect>
+<defs>
 
-  <text x="70" y="70" fill="#f8fafc" font-size="46" font-family="Inter, Arial" font-weight="800">
-    M-OS MEE → PPE Architecture
-  </text>
-  <text x="70" y="112" fill="#94a3b8" font-size="22" font-family="Inter, Arial">
-    Execution Memory Reactor extended with proof, evidence, and verification authority.
-  </text>
+<!-- gradients -->
+<radialGradient id="coreGlow">
+  <stop offset="0%" stop-color="#ffffff"></stop>
+  <stop offset="35%" stop-color="#26ffd8"></stop>
+  <stop offset="100%" stop-color="#07172f"></stop>
+</radialGradient>
 
-  <g font-family="Inter, Arial" font-weight="700" font-size="24">
-    <rect x="80" y="190" width="210" height="95" rx="20" fill="url(#box)" stroke="#38bdf8"></rect>
-    <text x="130" y="248" fill="#f8fafc">INPUT</text>
+<linearGradient id="flow" x1="0" y1="0" x2="1400" y2="0">
+  <stop offset="0%" stop-color="#26ffd8"></stop>
+  <stop offset="0.5" stop-color="#35a7ff"></stop>
+  <stop offset="1" stop-color="#ffb454"></stop>
+</linearGradient>
 
-    <rect x="340" y="190" width="230" height="95" rx="20" fill="url(#box)" stroke="#38bdf8"></rect>
-    <text x="380" y="248" fill="#f8fafc">SIGNATURE</text>
+</defs>
 
-    <rect x="620" y="190" width="240" height="95" rx="20" fill="url(#box)" stroke="#38bdf8"></rect>
-    <text x="660" y="248" fill="#f8fafc">PATTERN</text>
+<!-- background -->
+<rect width="1400" height="520" rx="30" fill="#061022"></rect>
 
-    <rect x="910" y="190" width="240" height="95" rx="20" fill="url(#box)" stroke="#38bdf8"></rect>
-    <text x="955" y="248" fill="#f8fafc">DECISION</text>
+<!-- grid -->
+<g opacity="0.08">
+  <path d="M0 100H1400M0 200H1400M0 300H1400M0 400H1400" stroke="#5aa2ff"></path>
+  <path d="M200 0V520M400 0V520M600 0V520M800 0V520M1000 0V520M1200 0V520" stroke="#5aa2ff"></path>
+</g>
 
-    <rect x="1200" y="190" width="230" height="95" rx="20" fill="url(#box)" stroke="#38bdf8"></rect>
-    <text x="1260" y="248" fill="#f8fafc">REUSE</text>
-  </g>
+<!-- title -->
+<text x="80" y="80" fill="#75cfff" font-size="20" font-family="Arial">
+PPE — LIVE EXECUTION FLOW
+</text>
 
-  <g stroke="#2dd4bf" stroke-width="4" stroke-linecap="round">
-    <line x1="290" y1="237" x2="340" y2="237"></line>
-    <line x1="570" y1="237" x2="620" y2="237"></line>
-    <line x1="860" y1="237" x2="910" y2="237"></line>
-    <line x1="1150" y1="237" x2="1200" y2="237"></line>
-  </g>
+<text x="80" y="130" fill="#ffffff" font-size="46" font-family="Arial Black">
+RUN → DETECT → ROUTE → REUSE → PROVE → VERIFY
+</text>
 
-  <text x="80" y="360" fill="#93c5fd" font-size="24" font-family="Inter, Arial" letter-spacing="4">
-    PPE PROOF LAYER
-  </text>
+<!-- FLOW LINE -->
+<path d="M150 260 H1250" stroke="url(#flow)" stroke-width="5" stroke-linecap="round" stroke-dasharray="20 1000">
+  <animate attributeName="stroke-dashoffset" from="0" to="-2000" dur="5s" repeatCount="indefinite"></animate>
+</path>
 
-  <g font-family="Inter, Arial" font-weight="700" font-size="23">
-    <rect x="160" y="420" width="260" height="105" rx="22" fill="url(#proof)" stroke="#f59e0b"></rect>
-    <text x="205" y="482" fill="#fff">PROOF ENGINE</text>
+<!-- NODES -->
+<g font-family="Arial" font-size="20" text-anchor="middle">
 
-    <rect x="500" y="420" width="280" height="105" rx="22" fill="url(#proof)" stroke="#f59e0b"></rect>
-    <text x="545" y="482" fill="#fff">EVIDENCE EXPORT</text>
+<!-- RUN -->
+<g>
+  <circle cx="180" cy="260" r="60" fill="url(#coreGlow)" opacity="0.3">
+    <animate attributeName="opacity" values="0.2;1;0.2" dur="6s" begin="0s" repeatCount="indefinite"></animate>
+  </circle>
+  <text x="180" y="268" fill="#ffffff">RUN</text>
+</g>
 
-    <rect x="860" y="420" width="280" height="105" rx="22" fill="url(#proof)" stroke="#f59e0b"></rect>
-    <text x="910" y="482" fill="#fff">VERIFICATION</text>
+<!-- DETECT -->
+<g>
+  <circle cx="380" cy="260" r="60" fill="url(#coreGlow)" opacity="0.3">
+    <animate attributeName="opacity" values="0.2;1;0.2" dur="6s" begin="0.5s" repeatCount="indefinite"></animate>
+  </circle>
+  <text x="380" y="268" fill="#ffffff">DETECT</text>
+</g>
 
-    <rect x="1220" y="420" width="220" height="105" rx="22" fill="url(#proof)" stroke="#f59e0b"></rect>
-    <text x="1275" y="482" fill="#fff">REPORT</text>
-  </g>
+<!-- ROUTE -->
+<g>
+  <circle cx="580" cy="260" r="60" fill="url(#coreGlow)" opacity="0.3">
+    <animate attributeName="opacity" values="0.2;1;0.2" dur="6s" begin="1s" repeatCount="indefinite"></animate>
+  </circle>
+  <text x="580" y="268" fill="#ffffff">ROUTE</text>
+</g>
 
-  <g stroke="#f59e0b" stroke-width="4" stroke-linecap="round">
-    <line x1="420" y1="472" x2="500" y2="472"></line>
-    <line x1="780" y1="472" x2="860" y2="472"></line>
-    <line x1="1140" y1="472" x2="1220" y2="472"></line>
-  </g>
+<!-- REUSE -->
+<g>
+  <circle cx="780" cy="260" r="60" fill="url(#coreGlow)" opacity="0.3">
+    <animate attributeName="opacity" values="0.2;1;0.2" dur="6s" begin="1.5s" repeatCount="indefinite"></animate>
+  </circle>
+  <text x="780" y="268" fill="#ffffff">REUSE</text>
+</g>
 
-  <text x="80" y="650" fill="#cbd5e1" font-size="24" font-family="Inter, Arial">
-    Core idea: execution is not complete until it can be proven, exported, and independently verified.
-  </text>
+<!-- PROVE -->
+<g>
+  <circle cx="980" cy="260" r="65" fill="url(#coreGlow)">
+    <animate attributeName="r" values="60;70;60" dur="3s" begin="2s" repeatCount="indefinite"></animate>
+  </circle>
+  <text x="980" y="268" fill="#ffffff">PROVE</text>
+</g>
+
+<!-- VERIFY -->
+<g>
+
+  <!-- core -->
+  <circle cx="1180" cy="260" r="70" fill="url(#coreGlow)">
+    <animate attributeName="r" values="65;80;65" dur="3s" begin="2.5s" repeatCount="indefinite"></animate>
+  </circle>
+
+  <!-- rotating ring -->
+  <circle cx="1180" cy="260" r="105" stroke="#ffb454" stroke-width="3" fill="none" stroke-dasharray="10 12">
+    <animateTransform attributeName="transform" type="rotate" from="0 1180 260" to="360 1180 260" dur="8s" repeatCount="indefinite"></animateTransform>
+  </circle>
+
+  <!-- pulse ring -->
+  <circle cx="1180" cy="260" r="140" stroke="#ffb454" stroke-width="2" opacity="0.2" fill="none">
+    <animate attributeName="r" values="120;160;120" dur="3s" repeatCount="indefinite"></animate>
+  </circle>
+
+  <text x="1180" y="268" fill="#ffffff">VERIFY</text>
+
+</g>
+
+</g>
+
+<!-- captions -->
+<g font-family="Arial" font-size="16" fill="#9bb4d1" text-anchor="middle">
+  <text x="180" y="380">Input</text>
+  <text x="380" y="380">Pattern</text>
+  <text x="580" y="380">Routing</text>
+  <text x="780" y="380">Reuse</text>
+  <text x="980" y="380">Proof</text>
+  <text x="1180" y="380">Validation</text>
+</g>
+
+<!-- footer -->
+<text x="80" y="470" fill="#7c97b5" font-size="20" font-family="Arial">
+Execution Memory Reactor + Pattern Proof Engine — verifiable compute layer
+</text>
+
 </svg>
