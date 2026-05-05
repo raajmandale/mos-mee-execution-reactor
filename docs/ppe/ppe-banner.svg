@@ -1,0 +1,46 @@
+<svg width="1400" height="420" viewBox="0 0 1400 420" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="orb" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff"></stop>
+      <stop offset="35%" stop-color="#33f5ff"></stop>
+      <stop offset="75%" stop-color="#00b894"></stop>
+      <stop offset="100%" stop-color="#06101f"></stop>
+    </radialGradient>
+    <linearGradient id="line" x1="0" x2="1">
+      <stop offset="0%" stop-color="#38bdf8"></stop>
+      <stop offset="50%" stop-color="#2dd4bf"></stop>
+      <stop offset="100%" stop-color="#f59e0b"></stop>
+    </linearGradient>
+  </defs>
+
+  <rect width="1400" height="420" rx="28" fill="#06101f"></rect>
+  <circle cx="1080" cy="205" r="130" fill="url(#orb)" opacity="0.95"></circle>
+  <circle cx="1080" cy="205" r="178" fill="none" stroke="#2dd4bf" stroke-width="3" opacity="0.55"></circle>
+  <circle cx="1080" cy="205" r="220" fill="none" stroke="#38bdf8" stroke-width="1.5" opacity="0.22"></circle>
+
+  <text x="90" y="95" fill="#93c5fd" font-size="22" font-family="Inter, Arial" letter-spacing="6">
+    M-OS PPE / V2 LAYER
+  </text>
+
+  <text x="90" y="175" fill="#f8fafc" font-size="68" font-family="Inter, Arial" font-weight="800">
+    Pattern Proof Engine
+  </text>
+
+  <text x="90" y="225" fill="#cbd5e1" font-size="27" font-family="Inter, Arial">
+    Proof, verification, evidence export, and authority binding for execution intelligence.
+  </text>
+
+  <line x1="90" y1="295" x2="890" y2="295" stroke="url(#line)" stroke-width="5" stroke-linecap="round"></line>
+
+  <g font-family="Inter, Arial" font-size="24" font-weight="700">
+    <text x="90" y="350" fill="#38bdf8">RUN</text>
+    <text x="190" y="350" fill="#94a3b8">→</text>
+    <text x="240" y="350" fill="#38bdf8">DETECT</text>
+    <text x="375" y="350" fill="#94a3b8">→</text>
+    <text x="425" y="350" fill="#38bdf8">REUSE</text>
+    <text x="545" y="350" fill="#94a3b8">→</text>
+    <text x="595" y="350" fill="#2dd4bf">PROVE</text>
+    <text x="715" y="350" fill="#94a3b8">→</text>
+    <text x="765" y="350" fill="#f59e0b">VERIFY</text>
+  </g>
+</svg>
