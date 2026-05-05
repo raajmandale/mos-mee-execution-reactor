@@ -1,11 +1,17 @@
 <p align="center">
-  <img src="docs/ppe/mos-mee-ppe-hero.svg" width="100%" />
+  <img src="docs/banner.svg" width="100%" />
 </p>
 
 # ⚡ M-OS MEE + PPE
 
 Execution Memory Reactor + Pattern Proof Engine  
-Run • Detect • Route • Reuse • Prove • Verify
+**Run • Detect • Route • Reuse • Prove • Verify**
+
+---
+
+<p align="center">
+  <img src="docs/ppe/ppe-banner.svg" width="85%" />
+</p>
 
 ---
 
@@ -48,7 +54,7 @@ Handles execution intelligence:
 
 ### 🔸 PPE Layer (Pattern Proof Engine)
 
-Extends MEE with verification:
+Adds trust + verification:
 
 | Stage  | Engine           | Purpose |
 |--------|-----------------|--------|
@@ -63,9 +69,9 @@ Extends MEE with verification:
   <img src="docs/ppe/mos-mee-ppe-hero.svg" width="100%" />
 </p>
 
-Unified chain:
+**Unified chain:**
 
-INPUT → SIGNATURE → ROUTING → MEMORY → PROOF → VERIFICATION
+`INPUT → SIGNATURE → ROUTING → MEMORY → PROOF → VERIFICATION`
 
 ---
 
@@ -77,7 +83,21 @@ INPUT → SIGNATURE → ROUTING → MEMORY → PROOF → VERIFICATION
 
 ---
 
+## 🎬 Demo Proof (PRC-1)
+
+<p align="center">
+  <img src="docs/mos_mee_demo_prc1.gif" width="85%" />
+</p>
+
+---
+
 ## 📊 Benchmark Evidence
+
+<p align="center">
+  <img src="benchmarks/benchmark_results.svg" width="90%" />
+</p>
+
+Measured proof surface:
 
 - Cold Run
 - Warm Match
@@ -89,7 +109,7 @@ INPUT → SIGNATURE → ROUTING → MEMORY → PROOF → VERIFICATION
 
 ## ⚙️ Quick Run
 
-### Frontend
+### 🔗 Frontend
 
 
 cd frontend
@@ -97,7 +117,9 @@ npm install
 npm run dev
 
 
-### Backend
+---
+
+### 🔗 Backend
 
 
 cd backend
@@ -106,17 +128,48 @@ python app.py
 
 ---
 
-## 🔬 Position in M-OS Lineage
+## 🧪 Proof Flow (Concept)
 
-M-OS Runtime  
-↓  
-Pattern Graph / PSTG  
-↓  
-CRS / Parameter Golf  
-↓  
-M-OS MEE  
-↓  
-PPE Layer (Proof)
+1. Input received  
+2. Signature extracted  
+3. Routing decision applied  
+4. Memory reuse triggered  
+5. Proof generated  
+6. Verification executed  
+
+---
+
+## 🧬 Position in M-OS Lineage
+
+
+M-OS Runtime
+↓
+Pattern Graph / PSTG
+↓
+CRS / Parameter Golf
+↓
+M-OS MEE
+↓
+PPE Layer (Proof Engine)
+
+
+---
+
+## ⚠️ What This Is NOT
+
+- Not an OS replacement  
+- Not a scheduler  
+- Not a kernel  
+- Not a production system  
+
+---
+
+## ✅ What This IS
+
+- Execution intelligence layer  
+- Pattern-aware compute system  
+- Proof-driven execution engine  
+- Verifiable computation model  
 
 ---
 
@@ -125,7 +178,7 @@ PPE Layer (Proof)
 Raaj Mandale  
 Founder — Eranest Technoware Pvt Ltd  
 
-GitHub: https://github.com/raajmandale
+🔗 https://github.com/raajmandale  
 
 ---
 
