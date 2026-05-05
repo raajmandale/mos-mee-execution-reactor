@@ -1,234 +1,191 @@
-<!-- HERO BANNER -->
 <p align="center">
-  <img src="docs/ppe/ppe-banner.svg" width="100%" />
+  <img src="docs/ppe/mos-mee-ppe-hero.svg" width="100%" />
 </p>
 
 <h1 align="center">⚡ M-OS MEE + PPE</h1>
 
 <p align="center">
-Execution Memory Reactor + Pattern Proof Engine  
-<br/>
-<b>Run • Detect • Route • Reuse • Prove • Verify</b>
+<b>Execution Memory Reactor + Pattern Proof Engine</b><br>
+Run • Detect • Route • Reuse • Prove • Verify
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Layer-Core%20+%20Proof-black?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/Status-PRC--2-blue?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/System-Execution%20Intelligence-green?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/Proof-RSA%20Verified-orange?style=for-the-badge"/>
+
+![status](https://img.shields.io/badge/status-PRC--2%20Active-blue)
+![core](https://img.shields.io/badge/core-MEE%20Reactor-blue)
+![layer](https://img.shields.io/badge/layer-PPE%20Proof-orange)
+![mode](https://img.shields.io/badge/mode-Execution%20Intelligence-cyan)
+![license](https://img.shields.io/badge/license-MIT-lightgrey)
+
 </p>
 
 ---
 
-## 🧠 System Overview
+# 🧠 System Statement
 
-M-OS MEE + PPE is a **dual-layer execution intelligence system**:
+**M-OS MEE + PPE is a dual-layer execution intelligence system:**
 
-- **MEE (Core)** → Executes + remembers + reuses  
-- **PPE (Extension)** → Proves + validates + verifies  
+- Executes intelligently  
+- Remembers patterns  
+- Reuses computation  
+- Proves execution  
+- Verifies authenticity  
 
 > Execution is not complete until it is provable.
 
 ---
 
-## 🔷 Core Layer — MEE (Execution Memory Reactor)
-
-> Reuse-aware execution system
-
-### What it does
-
-- Detects execution patterns  
-- Routes intelligently  
-- Reuses prior computation  
-- Reduces compute cost  
-
-
-## ⚙️ Core Execution Flow
+# ⚙️ Core Idea
 
 ```text
+Execution ≠ Always New
+
+Traditional systems:
+
+recompute everything
+
+M-OS:
+
+detects structure
+routes execution
+reuses prior computation
+proves correctness
+🔷 Layer Architecture
+🧠 MEE — Execution Memory Reactor (Core)
+
+Handles execution intelligence
 
 RUN → DETECT → ROUTE → REUSE
-🔶 Extension Layer — Pattern Proof Engine (PPE)
-
-Proof + verification layer on top of execution intelligence
-
-🧩 PPE Capabilities
-✔ Proof generation
-✔ Evidence export
-✔ Integrity validation
-✔ RSA-based verification
-✔ External verifier support
-🔄 Extended Execution Flow
-RUN → DETECT → ROUTE → REUSE → PROVE → VERIFY
-🧬 Execution Model
 Stage	Engine	Purpose
-RUN	Runtime	Input execution
-DETECT	Signature Engine	Pattern detection
-ROUTE	Decision Engine	Execution routing
-REUSE	Memory Engine	Compute reuse
-PROVE	PPE	Proof generation
-VERIFY	Verifier	External validation
-⚡ System Principle
+RUN	Runtime Layer	Accept input
+DETECT	Signature Engine	Extract structure
+ROUTE	Decision Engine	Choose path
+REUSE	Memory Reactor	Reuse compute
+🔶 PPE — Pattern Proof Engine (V2 Layer)
 
-Execution is not complete until it is provable.
+Adds proof + trust + verification
 
+RUN → DETECT → ROUTE → REUSE → PROVE → VERIFY
+Stage	Engine	Purpose
+PROVE	Proof Engine	Generate execution evidence
+VERIFY	RSA Verifier	Validate authenticity
+🧩 What PPE Adds
+Proof generation
+Evidence export
+Integrity validation
+RSA-based verification
+External verifier support
+🔁 Full Execution Flow
+RUN → DETECT → ROUTE → REUSE → PROVE → VERIFY
+Phase	Meaning
+Execution	Intelligent compute routing
+Memory	Pattern reuse
+Proof	Evidence generation
+Verification	Trust validation
+🧬 Visual Architecture
+<p align="center"> <img src="docs/ppe/ppe-architecture.svg" width="100%" /> </p>
+🎥 Demo Flow (Live Execution)
+<p align="center"> <img src="docs/mos_mee_demo_prc1.gif" width="100%" /> </p>
 
----
+What happens in demo:
 
-# 🎯 RESULT
+Upload workload
+System detects signature
+Routes execution
+Reuses memory (if possible)
+Generates proof
+Verifies output
+📊 Benchmark Evidence
+<p align="center"> <img src="benchmarks/benchmark_results.svg" width="100%" /> </p>
+Key Signals
+Metric	Value
+Reuse Match	88–91%
+Time Saved	~4960 ms
+Recall Stability	High
+Confidence	Strong
+Failure Cases	Documented
+📦 Proof & Evidence Output
 
-### Before:
-- One grey block
-- Mixed text
-- No hierarchy
+PPE generates:
 
-### After:
-- Clean layered sections
-- Flow separation
-- Reads like **system architecture doc**
+docs/proof_reports/
 
----
+Includes:
 
-# 🔥 PART 2 — FIX SVG (THIS IS YOUR REAL GAP)
+JSON proof logs
+Markdown reports
+Execution metadata
+Validation signals
+🔐 External Verifier (RSA)
+python tools/verifier/verify_proof.py proof.json
 
-Your current SVG = **static + basic**
+Ensures:
 
-You asked for:
+integrity
+authenticity
+tamper resistance
+🧱 Repository Structure
+mos-mee-execution-reactor/
 
-> 👉 “fully animated - high impact visual effect”
+├── backend/
+├── frontend/
 
-So we upgrade to:
+├── benchmarks/
+│   └── benchmark_results.svg
 
-### ✅ REAL 2050 EFFECTS:
-- Flow pulse animation
-- Node breathing
-- Energy particles moving
-- Rotating verification ring
-- Glow intensity variation
+├── docs/
+│   ├── ppe/
+│   │   ├── mos-mee-ppe-hero.svg
+│   │   ├── ppe-architecture.svg
+│   │   └── README.md
+│   └── mos_mee_demo_prc1.gif
 
----
+├── tools/
+│   └── verifier/
 
-# 🚀 REPLACE FILE
+└── README.md
+🚀 Quick Run
+Frontend
+cd frontend
+npm install
+npm run dev
+Backend
+cd backend
+python app.py
+🧠 System Philosophy
+Compute should not repeat unnecessarily
+Execution should be measurable
+Proof should be exportable
+Verification should be independent
+⚠️ What This Is NOT
+Not an OS replacement
+Not a scheduler
+Not a kernel
+Not a final production system
+✅ What This IS
+Execution intelligence layer
+Pattern-aware compute system
+Proof-driven execution engine
+Verifiable computation model
+🔗 Relation to M-OS Ecosystem
+M-OS Runtime
+   ↓
+Pattern Graph / CRS
+   ↓
+MEE (Execution Reactor)
+   ↓
+PPE (Proof Layer)
+👤 Author
 
-👉 `docs/ppe/ppe-architecture.svg`
+Raaj Mandale
+Founder — Eranest Technoware Pvt Ltd
 
----
+Research Areas:
 
-## ✅ FINAL HIGH-IMPACT ANIMATED SVG
+M-OS
+XPADI
+UNI-OS
+QBAIX
+📜 License
 
-```svg
-<svg width="1400" height="520" viewBox="0 0 1400 520" xmlns="http://www.w3.org/2000/svg">
-
-<defs>
-  <radialGradient id="nodeGlow">
-    <stop offset="0%" stop-color="#ffffff"/>
-    <stop offset="40%" stop-color="#26ffd8"/>
-    <stop offset="100%" stop-color="#07172f"/>
-  </radialGradient>
-
-  <linearGradient id="flowLine" x1="0" y1="0" x2="1400" y2="0">
-    <stop offset="0%" stop-color="#26ffd8"/>
-    <stop offset="50%" stop-color="#35a7ff"/>
-    <stop offset="100%" stop-color="#ffb454"/>
-  </linearGradient>
-</defs>
-
-<rect width="1400" height="520" rx="30" fill="#061022"/>
-
-<!-- FLOW LINE -->
-<path d="M150 260 H1250"
-      stroke="url(#flowLine)"
-      stroke-width="6"
-      stroke-linecap="round"
-      stroke-dasharray="30 1000">
-  <animate attributeName="stroke-dashoffset"
-           from="0" to="-2000"
-           dur="6s"
-           repeatCount="indefinite"/>
-</path>
-
-<!-- PARTICLES -->
-<circle r="6" fill="#26ffd8">
-  <animateMotion dur="4s" repeatCount="indefinite">
-    <mpath href="#path"/>
-  </animateMotion>
-</circle>
-
-<!-- NODES -->
-<g font-family="Arial" font-size="22" text-anchor="middle">
-
-  <!-- RUN -->
-  <g>
-    <circle cx="180" cy="260" r="65" fill="url(#nodeGlow)">
-      <animate attributeName="r" values="60;68;60" dur="3s" repeatCount="indefinite"/>
-    </circle>
-    <text x="180" y="268" fill="#fff">RUN</text>
-  </g>
-
-  <!-- DETECT -->
-  <g>
-    <circle cx="380" cy="260" r="65" fill="url(#nodeGlow)">
-      <animate attributeName="r" values="60;68;60" dur="3.2s" repeatCount="indefinite"/>
-    </circle>
-    <text x="380" y="268" fill="#fff">DETECT</text>
-  </g>
-
-  <!-- ROUTE -->
-  <g>
-    <circle cx="580" cy="260" r="65" fill="url(#nodeGlow)">
-      <animate attributeName="r" values="60;68;60" dur="3.4s" repeatCount="indefinite"/>
-    </circle>
-    <text x="580" y="268" fill="#fff">ROUTE</text>
-  </g>
-
-  <!-- REUSE -->
-  <g>
-    <circle cx="780" cy="260" r="65" fill="url(#nodeGlow)">
-      <animate attributeName="r" values="60;68;60" dur="3.6s" repeatCount="indefinite"/>
-    </circle>
-    <text x="780" y="268" fill="#fff">REUSE</text>
-  </g>
-
-  <!-- PROVE -->
-  <g>
-    <circle cx="980" cy="260" r="65" fill="url(#nodeGlow)">
-      <animate attributeName="r" values="60;70;60" dur="3.8s" repeatCount="indefinite"/>
-    </circle>
-    <text x="980" y="268" fill="#fff">PROVE</text>
-  </g>
-
-  <!-- VERIFY -->
-  <g>
-    <circle cx="1180" cy="260" r="70" fill="url(#nodeGlow)">
-      <animate attributeName="r" values="65;75;65" dur="4s" repeatCount="indefinite"/>
-    </circle>
-
-    <!-- ROTATING RING -->
-    <circle cx="1180" cy="260" r="100"
-            stroke="#ffb454"
-            stroke-width="3"
-            fill="none"
-            stroke-dasharray="10 12">
-      <animateTransform attributeName="transform"
-                        type="rotate"
-                        from="0 1180 260"
-                        to="360 1180 260"
-                        dur="8s"
-                        repeatCount="indefinite"/>
-    </circle>
-
-    <text x="1180" y="268" fill="#fff">VERIFY</text>
-  </g>
-
-</g>
-
-<!-- TITLE -->
-<text x="80" y="100" fill="#75cfff" font-size="22" font-family="Arial">
-PPE / VERIFIABLE EXECUTION FLOW
-</text>
-
-<text x="80" y="150" fill="#ffffff" font-size="48" font-family="Arial Black">
-RUN → DETECT → REUSE → PROVE → VERIFY
-</text>
-
-</svg>
+MIT
