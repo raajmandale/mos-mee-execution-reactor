@@ -1,225 +1,161 @@
 <p align="center">
-  <img src="docs/ppe/mos-mee-ppe-hero.svg" width="100%" />
+  <img src="docs/ppe/ppe-banner.svg" width="100%" />
 </p>
 
-<h1 align="center">⚡ M-OS MEE + PPE</h1>
+# ⚡ M-OS MEE + PPE
 
-<p align="center">
 Execution Memory Reactor + Pattern Proof Engine  
-<br/>
-Run • Detect • Route • Reuse • Prove • Verify
-</p>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/status-PRC--2_Active-blue"/>
-  <img src="https://img.shields.io/badge/core-MEE_Reactor-1f6feb"/>
-  <img src="https://img.shields.io/badge/layer-PPE_Proof-orange"/>
-  <img src="https://img.shields.io/badge/mode-Execution_Intelligence-00bcd4"/>
-  <img src="https://img.shields.io/badge/license-MIT-grey"/>
-</p>
+Run → Detect → Route → Reuse → Prove → Verify
 
 ---
 
-## 🧠 System Statement
+# 🧠 What is M-OS MEE + PPE?
 
-**M-OS MEE + PPE is a dual-layer execution intelligence system:**
+M-OS MEE explores:
 
-- Executes intelligently  
-- Remembers patterns  
-- Reuses computation  
-- Proves execution  
-- Verifies authenticity  
+```text
+Execution does not always need to begin from zero.
 
-> ⚡ Execution is not complete until it is provable.
+Instead:
 
----
+Detect patterns
+Route intelligently
+Reuse prior computation
+Generate proof
+Verify independently
 
-## ⚙️ Core Idea
+Core chain:
 
-### Execution ≠ Always New
+RUN → DETECT → ROUTE → REUSE → PROVE → VERIFY
+⚡ Why It Matters
 
-**Traditional systems**
-- Recompute everything  
-- No memory awareness  
-- No verification  
+Modern systems:
 
-**M-OS Approach**
-- Detects structure  
-- Routes execution  
-- Reuses prior computation  
-- Proves correctness  
+Treat every run as new
+Recompute everything
+Have no proof layer
 
----
+M-OS approach:
 
-### 🧩 Layer Architecture
+Traditional Runtime	M-OS + PPE
+Recompute	Reuse
+Stateless execution	Pattern-aware
+No proof	Verifiable execution
+Reactive optimization	Pre-execution routing
+🌐 Visual Architecture
+<p align="center"> <img src="docs/ppe/ppe-architecture.svg" width="100%"> </p>
 
-- 🧠 **MEE — Execution Memory Reactor (Core)**  
-  Handles execution intelligence  
+Flow:
 
-- 📜 **PPE — Pattern Proof Engine (Layer)**  
-  Adds proof + verification on top  
+INPUT
+ ↓
+SIGNATURE
+ ↓
+ROUTING
+ ↓
+MEMORY
+ ↓
+PROOF
+ ↓
+VERIFY
 
----
+Layers:
 
-### ⚡ Execution Flow
+Signature Layer
+Routing Layer
+Memory Reactor
+Proof Engine (PPE)
+Verification Layer
+🚀 Unified System (MEE + PPE)
+<p align="center"> <img src="docs/ppe/mos-mee-ppe-hero.svg" width="100%"> </p>
+MEE → execution intelligence
+PPE → execution proof
+🎬 Reactor + Proof Flow
+<p align="center"> <img src="docs/mos_mee_demo_prc1.gif" width="100%"> </p>
 
-**RUN → DETECT → ROUTE → REUSE → PROVE → VERIFY**
+Flow:
 
----
+Upload workload
+Detect signature
+Route execution
+Reuse memory
+Generate proof
+Verify output
+📊 Benchmark Evidence (PRC-2)
+<p align="center"> <img src="benchmarks/benchmark_results.svg" width="95%"> </p>
+Key Signals
+Signal	Value
+Reuse Match	88–91%
+Saved Time	~4960 ms
+Recall	Stable
+Confidence	High
+🧬 Core Hypothesis
+Attack ≠ Loss
 
-## 🧬 Core Execution Model
+Execution ≠ Always New
 
-| Stage   | Engine              | Purpose                  |
-|--------|-------------------|--------------------------|
-| RUN    | Runtime Layer      | Accept input             |
-| DETECT | Signature Engine   | Identify pattern         |
-| ROUTE  | Decision Engine    | Choose execution path    |
-| REUSE  | Memory Engine      | Reuse prior computation  |
-| PROVE  | PPE Engine         | Generate proof           |
-| VERIFY | RSA Verifier       | Validate output          |
-
----
-
-## 🚀 Reactor Surface
-
-<p align="center">
-  <img src="docs/mos_mee_demo_prc1.gif" width="100%" />
-</p>
-
----
-
-## 📊 Benchmark Evidence (PRC-2)
-
-<p align="center">
-  <img src="benchmarks/benchmark_results.svg" width="100%" />
-</p>
-
-### Key Signals
-
-| Metric        | Value       |
-|--------------|------------|
-| Reuse Match  | 88–91%     |
-| Time Saved   | ~4960 ms   |
-| Recall       | Stable     |
-| Confidence   | High       |
-
----
-
-## 📦 Proof & Evidence
-
-PPE generates:
-
-- Proof Reports  
-- Execution Logs  
-- Signature Data  
-- RSA Verifiable Output  
-
-📁 Output:
-
-docs/proof_reports/
-
-
----
-
-## ⚡ Quick Run
-
-### Frontend
-
-
-cd frontend
-npm install
-npm run dev
-
-
-### Backend
-
-
-cd backend
-python app.py
-
-
----
-
-## 📂 Repository Structure
-
-
+Patterns can be remembered.
+🗂 Repository Structure
 mos-mee-execution-reactor/
 
 ├── backend/
 ├── frontend/
 
 ├── benchmarks/
-│ └── benchmark_results.svg
+│   └── benchmark_results.svg
 
 ├── docs/
-│ ├── ppe/
-│ │ ├── mos-mee-ppe-hero.svg
-│ │ ├── ppe-architecture.svg
-│ │ └── README.md
-│ └── mos_mee_demo_prc1.gif
-
-├── tools/
-│ └── verifier/
+│   ├── mos_mee_demo_prc1.gif
+│   └── ppe/
+│       ├── mos-mee-ppe-hero.svg
+│       ├── ppe-architecture.svg
+│       ├── ppe-banner.svg
+│       ├── PPE_OVERVIEW.md
+│       └── PPE_PROOF_FLOW.md
 
 └── README.md
+⚙ Quick Run
+Frontend
+cd frontend
+npm install
+npm run dev
+Backend
+cd backend
+python app.py
+🔬 Position in M-OS Lineage
+M-OS Runtime
+   ↓
+Pattern Graph / CRS
+   ↓
+M-OS MEE
+   ↓
+MEE + PPE (Proof Layer)
+❌ What This Is Not
+Not OS replacement
+Not scheduler
+Not kernel
+Not production system
+✅ What This Is
+Execution intelligence layer
+Pattern-aware compute system
+Memory-based execution
+Proof-driven execution
+Verifiable compute model
+👤 Author
 
+Raaj Mandale
+https://github.com/raajmandale
 
----
+✔ PRC Status
+PRC-1 Reactor Surface
+Demo Proof Loop
+Benchmark Layer
+PPE Integration
 
-## ⚠️ What This Is NOT
+Next:
 
-- Not an OS replacement  
-- Not a scheduler  
-- Not a kernel  
-- Not a final production system  
+PRC-3 → External Verification
+License
 
----
-
-## ✅ What This IS
-
-- Execution intelligence layer  
-- Pattern-aware compute system  
-- Proof-driven execution engine  
-- Verifiable computation model  
-
----
-
-## 🔗 Position in M-OS Lineage
-
-- M-OS Runtime  
-- MEE (Execution Memory Reactor)  
-- PPE (Proof Layer)  
-- XPADI / UNI-OS (Future Integration)  
-
----
-
-## 👤 Author
-
-**Raaj Mandale**  
-Founder — XMECK  
-
-🔗 https://github.com/raajmandale  
-
----
-
-## ✅ PRC Status
-
-- ✔ PRC-1 Reactor Surface  
-- ✔ Demo Proof Loop  
-- ✔ Benchmark Layer  
-- ✔ PPE Integration  
-
----
-
-## ⚡ Core Philosophy
-
-- Compute should not repeat unnecessarily  
-- Execution must be measurable  
-- Proof must be exportable  
-- Verification must be independent  
-
----
-
-## 🔥 Final Statement
-
-**Execution Intelligence + Proof = Trustable Compute**
+MIT
