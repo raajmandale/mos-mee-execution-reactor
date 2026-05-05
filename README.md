@@ -1,6 +1,4 @@
-<p align="center">
-  <img src="docs/banner.svg" width="100%" />
-</p>
+
 
 # ⚡ M-OS MEE + PPE
 
