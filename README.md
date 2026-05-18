@@ -18,10 +18,24 @@ Pattern Memory • Signature Routing • Reuse Proof • Execution Intelligence
 ![License](https://img.shields.io/badge/License-MIT-lightgrey)
 
 </p>
+---
+## 🌐 Mandale-OS Runtime Ecosystem
+
+M-OS MEE now operates as the **Execution Memory Reactor** inside the broader **Mandale-OS Runtime Intelligence Ecosystem**.
+
+<p align="center">
+
+[![MANDALe OS](https://img.shields.io/badge/MANDALE--OS-RUNTIME%20ROOT-06b6d4?style=for-the-badge)](https://github.com/raajmandale/mandale-os)
+[![LIVE DEMO](https://img.shields.io/badge/LIVE-RUNTIME%20SURFACE-0ea5e9?style=for-the-badge)](https://raajmandale.github.io/mandale-os/demo/)
+[![MEE](https://img.shields.io/badge/MEE-EXECUTION%20MEMORY%20REACTOR-f97316?style=for-the-badge)](https://github.com/raajmandale/mos-mee-execution-reactor)
+[![PPE](https://img.shields.io/badge/PPE-PROOF%20RUNTIME-6366f1?style=for-the-badge)](https://github.com/raajmandale/M-OS_PPE)
+[![PARAMETER GOLF](https://img.shields.io/badge/PARAMETER--GOLF-OPTIMIZATION%20LAB-84cc16?style=for-the-badge)](https://github.com/raajmandale/mos-parameter-golf)
+[![XLIFELINEAI](https://img.shields.io/badge/XLIFELINEAI-CONTINUITY%20RUNTIME-0284c7?style=for-the-badge)](https://github.com/raajmandale/XLifelineAI)
+
+</p>
 
 ---
-
-# 🧠 What is M-OS MEE?
+### 🧠 What is M-OS MEE?
 
 M-OS MEE explores a simple thesis:
 
@@ -204,18 +218,20 @@ python app.py
 ```
 
 ---
-
-# 🔬 Position in M-OS Lineage
+### 🔬 Position in Mandale-OS Lineage
 
 ```text
-M-OS Runtime
+Mandale-OS Runtime Root
    ↓
 Pattern Graph / PSTG
    ↓
 CRS / Parameter Golf
    ↓
-M-OS MEE
-```
+M-OS MEE — Execution Memory Reactor
+   ↓
+PPE — Pattern Proof Engine
+   ↓
+XLifelineAI — Continuity Runtime```
 
 Focus shift:
 
@@ -263,22 +279,25 @@ Contains:
 - Packaging brief
 
 ---
-
-# 👤 Author
+## 👤 Founder & Research Direction
 
 **Raaj Mandale**  
-Founder — Eranest Technoware
+Systems Architect • Runtime Intelligence • Mandale-OS • QBAIX
+
+Founder — Eranest Technoware Pvt Ltd
+
+🌐 https://raajmandale.in  
+🔬 https://orcid.org/0009-0005-9810-1655  
+📚 https://openalex.org/A5127026877  
+💻 https://github.com/raajmandale
 
 Research:
 
-- M-OS  
-- XPADI  
-- UNI-OS  
+- Mandale-OS
+- M-OS MEE
 - QBAIX
-
-GitHub:
-
-https://github.com/raajmandale
+- XPADI
+- UNI-OS
 
 ---
 
