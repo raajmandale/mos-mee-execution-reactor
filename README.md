@@ -12,7 +12,22 @@ Execution Memory Reactor + Pattern Proof Engine
 </p>
 
 ---
+# 🌐 Mandale-OS Runtime Ecosystem
 
+M-OS MEE + PPE now operates as the proof-verification branch of the broader **Mandale-OS Runtime Intelligence Ecosystem**.
+
+<p align="center">
+
+[![MANDALe OS](https://img.shields.io/badge/MANDALE--OS-RUNTIME%20ROOT-06b6d4?style=for-the-badge)](https://github.com/raajmandale/mandale-os)
+[![LIVE RUNTIME](https://img.shields.io/badge/LIVE-RUNTIME%20SURFACE-0ea5e9?style=for-the-badge)](https://raajmandale.github.io/mandale-os/demo/)
+[![MEE](https://img.shields.io/badge/MEE-EXECUTION%20MEMORY%20REACTOR-f97316?style=for-the-badge)](https://github.com/raajmandale/mos-mee-execution-reactor)
+[![PPE](https://img.shields.io/badge/PPE-PROOF%20RUNTIME-6366f1?style=for-the-badge)](https://github.com/raajmandale/M-OS_PPE/tree/ppe-v2)
+[![PARAMETER GOLF](https://img.shields.io/badge/PARAMETER--GOLF-OPTIMIZATION%20LAB-84cc16?style=for-the-badge)](https://github.com/raajmandale/mos-parameter-golf)
+[![XLIFELINEAI](https://img.shields.io/badge/XLIFELINEAI-CONTINUITY%20RUNTIME-0284c7?style=for-the-badge)](https://github.com/raajmandale/XLifelineAI)
+
+</p>
+
+---
 ## 🧠 What is M-OS MEE?
 
 M-OS MEE explores a simple thesis:
@@ -136,20 +151,31 @@ python app.py
 6. Verification executed  
 
 ---
+## 🧬 Position in Mandale-OS Lineage
 
-## 🧬 Position in M-OS Lineage
-
-
-M-OS Runtime
-↓
+```text
+Mandale-OS Runtime Root
+   ↓
 Pattern Graph / PSTG
-↓
+   ↓
 CRS / Parameter Golf
-↓
-M-OS MEE
-↓
-PPE Layer (Proof Engine)
+   ↓
+M-OS MEE — Execution Memory Reactor
+   ↓
+PPE — Pattern Proof Engine
+   ↓
+XLifelineAI — Continuity Runtime
 
+```
+Focus shift:
+
+- **Mandale-OS** → runtime intelligence ecosystem
+- **MEE** → execution memory + reuse routing
+- **PPE** → proof verification + trust runtime
+- **Parameter Golf** → optimization experiments
+- **XLifelineAI** → continuity runtime research
+
+---
 
 ---
 
@@ -170,16 +196,40 @@ PPE Layer (Proof Engine)
 - Verifiable computation model  
 
 ---
+### 👤 Founder & Research Direction
 
-## 👤 Author
+**Raaj Mandale**  
+Systems Architect • Runtime Intelligence • Mandale-OS • QBAIX
 
-Raaj Mandale  
-Founder — Eranest Technoware Pvt Ltd  
+Founder — Eranest Technoware Pvt Ltd
 
-🔗 https://github.com/raajmandale  
+🌐 https://raajmandale.in  
+🔬 https://orcid.org/0009-0005-9810-1655  
+📚 https://openalex.org/A5127026877  
+💻 https://github.com/raajmandale
+
+Research Areas:
+
+- Mandale-OS
+- M-OS MEE
+- PPE Runtime
+- QBAIX
+- XPADI
+- UNI-OS
 
 ---
+## 🌌 Runtime Research Surface
 
+| Surface | Link |
+|---|---|
+| Mandale-OS Root Runtime | https://github.com/raajmandale/mandale-os |
+| Live Runtime Surface | https://raajmandale.github.io/mandale-os/demo/ |
+| MEE Reactor | https://github.com/raajmandale/mos-mee-execution-reactor |
+| PPE Runtime | https://github.com/raajmandale/M-OS_PPE/tree/ppe-v2 |
+| XLifelineAI | https://github.com/raajmandale/XLifelineAI |
+| Founder Website | https://raajmandale.in |
+
+---
 ## 📄 License
 
 MIT
