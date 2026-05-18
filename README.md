@@ -236,11 +236,13 @@ XLifelineAI — Continuity Runtime```
 
 Focus shift:
 
-- M-OS Runtime → pattern execution  
-- M-OS MEE → execution memory + reuse proof
+- **Mandale-OS** → runtime intelligence ecosystem
+- **MEE** → execution memory + reuse routing
+- **PPE** → proof verification + trust runtime
+- **Parameter Golf** → optimization experiments
+- **XLifelineAI** → continuity runtime research
 
 ---
-
 # ❌ What This Is Not
 
 Not:
