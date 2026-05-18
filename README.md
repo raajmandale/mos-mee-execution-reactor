@@ -18,8 +18,9 @@ Pattern Memory • Signature Routing • Reuse Proof • Execution Intelligence
 ![License](https://img.shields.io/badge/License-MIT-lightgrey)
 
 </p>
+
 ---
-## 🌐 Mandale-OS Runtime Ecosystem
+### 🌐 Mandale-OS Runtime Ecosystem
 
 M-OS MEE now operates as the **Execution Memory Reactor** inside the broader **Mandale-OS Runtime Intelligence Ecosystem**.
 
